@@ -1,0 +1,172 @@
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) { 
+.bd-placeholder-img-lg {
+  font-size: 3.5rem;
+  }
+}
+
+.no-pad{
+  padding: 0;
+}
+
+.subtitle-line{
+  padding-bottom: 1em;
+}
+
+@media (max-width: 576px) { 
+  .centered {
+    font-size: 22pt;
+    -webkit-text-stroke: 0px black;
+    font-weight: 1000;
+    font-family: "Montserrat";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/maths1.jpg');
+    background-size: cover;
+    min-height: 180px;
+  }
+
+  .nav-link{
+    padding: 0%;
+  }
+
+  .subtitle{
+    font-family: "Montserrat";
+    font-size: small;
+    text-align: center;
+    color: white;
+  }
+
+  img{
+    max-width: 100%;
+  }
+  
+}
+
+@media (min-width: 576px) { 
+  .centered {
+    font-size: 32pt;
+    -webkit-text-stroke: 0px black;
+    font-weight: 1000;
+    font-family: "Montserrat";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/maths1.jpg');
+    background-size: cover;
+    min-height: 250px;
+  }
+
+  .subtitle{
+    font-family: "Montserrat";
+    font-size: smaller;
+    text-align: center;
+    color: white;
+  }
+
+  img:hover{
+    transform: scale(0.5);
+    
+  }
+}
+
+@media (min-width: 768px) { 
+  .centered {
+    font-size: 48pt;
+    -webkit-text-stroke: 0px black;
+    font-weight: 1000;
+    font-family: "Montserrat";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/maths1.jpg');
+    background-size: cover;
+    min-height: 350px;
+  }
+
+  .subtitle{
+    font-family: "Montserrat";
+    font-size: medium;
+    text-align: center;
+    color: white;
+  }
+}
+
+
+@media (min-width: 1024px) { 
+  .centered {
+    font-size: 72pt;
+    -webkit-text-stroke: 0px black;
+    font-weight: 1000;
+    font-family: "Montserrat";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/maths1.jpg');
+    background-size: cover;
+    min-height: 500px;
+  }
+
+  .subtitle{
+    font-family: "Montserrat";
+    font-size: large;
+    text-align: center;
+    color: white;
+  }
+}
+
+
+div a strong {
+  color: white;
+  text-align: center;
+}
+
+.navbar-brand {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.navbar{
+  justify-content: end;
+}
+
+.card{
+  overflow: hidden;
+  border-style: none;
+}
+
+.card-img{
+  transition: transform .5s ease;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.card-img:hover{
+  transform: scale(1.1);
+}
+
+.fixed-top.scrolled {
+  background-color: firebrick !important;
+  transition: background-color 200ms linear;
+}
+
+body{
+  background-color:#232321;
+}
+
+.exercise-card{
+  margin: 1rem;
+}
