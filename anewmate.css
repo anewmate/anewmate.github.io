@@ -75,8 +75,8 @@
     color: white;
   }
 
-  img:hover{
-    transform: scale(0.5);
+  img{
+    max-width: 100%;
     
   }
 }
