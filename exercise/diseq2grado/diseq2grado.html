@@ -63,17 +63,17 @@
       </div>
     <div class="container">
       <div class="row">
-<!--
+
         <div class="col-12">
           <div class="card mb-12 shadow-sm exercise-card">
             <div class="card-body">
               <h4 class="card-title">Esercizio 1</h4>
               
               <blockquote>
-                <p>Disegna la parabola con la seguente equazione</p>
+                <p>Risolvi la seguente disequazione</p>
                 </blockquote>
-                <p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/y%20%3D%20-3x%5E2%2B3" alt="y = -3x^2+3" /></p>
-                                                
+                <p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/(x-1)%5E2%20%2B%2010x%20-7(x%2B1)%20%3C%200" alt="(x-1)^2 + 10x -7(x+1) &lt; 0" /></p>
+                                                 
               <p class="card-text"></p>
               
               <div class="collapse" id="es1">
@@ -83,14 +83,37 @@
                       <h5>Soluzione</h5>
                     </div>
                     <!-- remember to modify data-target with the righ ID and the parameter to changeTitle with the right ID of the button -->
-                   <!-- <div class="col-lg-1">
+                    <div class="col-lg-1">
                         <button type="button" class="close" aria-label="Close" onclick="changeTitle('btnes1')" data-toggle="collapse" data-target="#es1">
                             <span aria-hidden="true">&times;</span>
                           </button>
                     </div>
                   </div>
                   
-                  
+                  <p>Come prima cosa svolgo i conti in modo da arrivare a una forma del tipo <img src="https://tex.s2cms.ru/svg/ax%5E2%20%2B%20bx%20%2B%20c" alt="ax^2 + bx + c" /> con <img src="https://tex.s2cms.ru/svg/a%3E0" alt="a&gt;0" />. Ricordo che lo sviluppo del quadrato si svolge come</p>
+                  <p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/(A-B)%5E2%20%3D%20A%5E2%20%2B%20B%5E2%20-%202AB" alt="(A-B)^2 = A^2 + B^2 - 2AB" /></p>
+                  <p>Quindi ottengo</p>
+                  <p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/x%5E2%20%2B%201%20-2x%20%2B%2010x%20-7x%20-%207%20%3C%200" alt="x^2 + 1 -2x + 10x -7x - 7 &lt; 0" /></p>
+                  <p>Sommo tutti i termini con lo stesso grado e ottengo</p>
+                  <p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/x%5E2%20%2B%20x%20-6%20%3C%200" alt="x^2 + x -6 &lt; 0" /></p>
+                  <p>Data la formula generale <img src="https://tex.s2cms.ru/svg/ax%5E2%20%2B%20bx%20%2B%20c" alt="ax^2 + bx + c" />, nel nostro caso abbiamo <img src="https://tex.s2cms.ru/svg/a%3D%2B1" alt="a=+1" />, <img src="https://tex.s2cms.ru/svg/b%3D%2B1" alt="b=+1" />, e <img src="https://tex.s2cms.ru/svg/c%3D-6" alt="c=-6" />. Dato che <img src="https://tex.s2cms.ru/svg/a" alt="a" /> è positivo, possiamo procedere e risolvere l’equazione associata:</p>
+                  <p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/x%5E2%20%2B%20x%20-%206%20%3D%200" alt="x^2 + x - 6 = 0" /></p>
+                  <p>Applico la formula</p>
+                  <p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/x_%7B1%2F2%7D%20%3D%20%5Cfrac%7B-b%5Cpm%20%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D" alt="x_{1/2} = \frac{-b\pm \sqrt{b^2-4ac}}{2a}" /></p>
+                  <p>ottenendo</p>
+                  <p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/x_%7B1%2F2%7D%20%3D%20%5Cfrac%7B-1%5Cpm%20%5Csqrt%7B1-4(1)(-6)%7D%7D%7B2%7D" alt="x_{1/2} = \frac{-1\pm \sqrt{1-4(1)(-6)}}{2}" /></p>
+                  <p>Le due soluzioni sono quindi <img src="https://tex.s2cms.ru/svg/x%20%3D%202" alt="x = 2" /> e <img src="https://tex.s2cms.ru/svg/x%20%3D%20-3" alt="x = -3" />.</p>
+                  <p>Visto che volevamo l’espressione minore di zero, la regola mi dice che devo considerare l’intervallo interno ai due valori trovati. La soluzione è quindi</p>
+                  <p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/-3%20%3C%20x%20%3C%202" alt="-3 &lt; x &lt; 2" /></p>
+                  <p>MEMO: Ricordiamo la regola in generale che ci dice. Se ho</p>
+                  <ol>
+                  <li>espressione del tipo <img src="https://tex.s2cms.ru/svg/ax%5E2%2Bbx%2Bc%20%5Cgtrless%200" alt="ax^2+bx+c \gtrless 0" /></li>
+                  <li><img align="center" src="https://tex.s2cms.ru/svg/%5Ctextbf%7Ba%7D%3E0" alt="\textbf{a}&gt;0" /></li>
+                  <li>delta positivo: <img src="https://tex.s2cms.ru/svg/%5CDelta%20%3E%200" alt="\Delta &gt; 0" /></li>
+                  <li><img src="https://tex.s2cms.ru/svg/x_1%2Cx_2" alt="x_1,x_2" /> soluzioni dell’equazione associata con <img src="https://tex.s2cms.ru/svg/x_2%20%3C%20x_1" alt="x_2 &lt; x_1" /></li>
+                  </ol>
+                  <p>Allora <img src="https://tex.s2cms.ru/svg/ax%5E2%2Bbx%2Bc%20%3E%200" alt="ax^2+bx+c &gt; 0" /> ha soluzione <img src="https://tex.s2cms.ru/svg/x%20%3C%20x_2%20%5Ccup%20x%20%3E%20x_1" alt="x &lt; x_2 \cup x &gt; x_1" />, mentre <img src="https://tex.s2cms.ru/svg/ax%5E2%2Bbx%2Bc%20%3C%200" alt="ax^2+bx+c &lt; 0" /> ha soluzione <img src="https://tex.s2cms.ru/svg/x_2%20%3C%20x%20%3C%20x_1" alt="x_2 &lt; x &lt; x_1" />. A parole, se voglio l’espressione positiva devo prendere l’unione degli intervalli esterni ai due valori che ottengo nell’equazione associata. Se invece voglio l’espressione negativa, devo prendere l’intervallo interno. In entrambi i casi, escludo o includo i punti estremi se la disuguaglianza è stretta oppure no.</p>
+                   
 
 
               </div>
