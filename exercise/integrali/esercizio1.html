@@ -1,0 +1,63 @@
+﻿<h1>INTEGRALI</h1>
+<!--Upmath extremely simplifies this task by using Markdown and LaTeX. It converts the Markdown syntax extended with LaTeX equations support into HTML code you can publish anywhere on the web.-->
+<!--![Paper written in LaTeX](/i/latex.jpg)-->
+<h2></h2>
+<p>Esercizio 1:</p>
+<blockquote>
+<p>Calcola il seguente integrale, se è convergente</p>
+</blockquote>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cint_%7B-1%7D%5E%7B0%7D%20%5Cln%5Cleft(%5Cfrac%7B1%7D%7Bx%2B1%7D%5Cright)dx" alt="\int_{-1}^{0} \ln\left(\frac{1}{x+1}\right)dx" /></p>
+<h2>Soluzione:</h2>
+<p>Come prima cosa ricordiamo che quando si hanno integrali definiti, prima si calcola l’integrale indefinito (ossia senza estremi di integrazione) e poi si applica il teorema fondamentale del calcolo integrale.</p>
+<p>Come seconda cosa ricordiamo che quando si hanno esponenziali o logaritmi come argomenti dell’integrali, se a occhio non si vede qual è la tecnica giusta per risolverli, il primo tentativo che si può fare è quello dell’integrazione per parti. Ricordo la formula:</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cint%20f%5E%7B'%7D(x)g(x)dx%20%3D%20f(x)g(x)%20-%20%5Cint%20f(x)g%5E%7B'%7D(x)dx" alt="\int f^{'}(x)g(x)dx = f(x)g(x) - \int f(x)g^{'}(x)dx" /></p>
+<p>Nel nostro caso <img src="https://tex.s2cms.ru/svg/f%5E%7B'%7D(x)%20%3D%201" alt="f^{'}(x) = 1" /> mentre <img src="https://tex.s2cms.ru/svg/g(x)%20%3D%20%5Cln%5Cleft(%5Cfrac%7B1%7D%7Bx%2B1%7D%5Cright)" alt="g(x) = \ln\left(\frac{1}{x+1}\right)" />.</p>
+<p>Da <img src="https://tex.s2cms.ru/svg/f%5E%7B'%7D(x)%20%3D%201" alt="f^{'}(x) = 1" /> ottengo <img src="https://tex.s2cms.ru/svg/f(x)%20%3D%20x" alt="f(x) = x" />: se infatti mi chiedo qual è quella funzione che derivata fa 1, ottengo subito <img src="https://tex.s2cms.ru/svg/x" alt="x" />.</p>
+<p>Da <img src="https://tex.s2cms.ru/svg/g(x)%20%3D%20%5Cln%5Cleft(%5Cfrac%7B1%7D%7Bx%2B1%7D%5Cright)" alt="g(x) = \ln\left(\frac{1}{x+1}\right)" /> ottengo <img src="https://tex.s2cms.ru/svg/g%5E%7B'%7D(x)%20%3D%20%5Cfrac%7B1%7D%7B%5Cfrac%7B1%7D%7Bx%2B1%7D%7D%5Ccdot%20%5Cleft(-%5Cfrac%7B1%7D%7B(x%2B1)%5E2%7D%5Cright)%20%3D%20(x%2B1)%20%5Ccdot%20%5Cleft(-%5Cfrac%7B1%7D%7B(x%2B1)%5E2%7D%5Cright)%20%3D%20-%5Cfrac%7B1%7D%7Bx%2B1%7D" alt="g^{'}(x) = \frac{1}{\frac{1}{x+1}}\cdot \left(-\frac{1}{(x+1)^2}\right) = (x+1) \cdot \left(-\frac{1}{(x+1)^2}\right) = -\frac{1}{x+1}" />. Si tratta infatti di una derivata composta che, ricordo, si risolve in generale come</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cln(%5Cstar(x))%20%3D%20%5Cfrac%7B1%7D%7B%5Cstar(x)%7D%20%5Ccdot%20D(%5Cstar(x))" alt="\ln(\star(x)) = \frac{1}{\star(x)} \cdot D(\star(x))" /></p>
+<p>dove <img src="https://tex.s2cms.ru/svg/%5Cstar(x)" alt="\star(x)" /> è una qualsiasi funzione di <img src="https://tex.s2cms.ru/svg/x" alt="x" />, nel nostro caso <img src="https://tex.s2cms.ru/svg/%5Cstar(x)%20%3D%20%5Cfrac%7B1%7D%7Bx%2B1%7D" alt="\star(x) = \frac{1}{x+1}" />.</p>
+<p>Quindi</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A%5Cint%20%5Cln%5Cleft(%5Cfrac%7B1%7D%7Bx%2B1%7D%5Cright)dx%20%26%20%3D%20x%5Cln%5Cleft(%5Cfrac%7B1%7D%7Bx%2B1%7D%5Cright)%20-%20%5Cint%20x%20%5Ccdot%20%5Cleft(-%5Cfrac%7B1%7D%7Bx%2B1%7D%5Cright)dx%20%5C%5C%0A%26%20%3D%20x%5Cln%5Cleft(%5Cfrac%7B1%7D%7Bx%2B1%7D%5Cright)%20%2B%20%5Cint%20%20%5Cfrac%7Bx%7D%7Bx%2B1%7Ddx%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\int \ln\left(\frac{1}{x+1}\right)dx &amp; = x\ln\left(\frac{1}{x+1}\right) - \int x \cdot \left(-\frac{1}{x+1}\right)dx \\
+&amp; = x\ln\left(\frac{1}{x+1}\right) + \int  \frac{x}{x+1}dx
+\end{align*}" /></p>
+<p>Per risolvere il secondo integrale che ci troviamo, ci dobbiamo ricordare che quando abbiamo l’integrale di una frazione in cui sia a numeratore che a denominatore ci sono dei polinomi dello stesso grado, la tecnica consiste nel riscrivere il numeratore come il denominatore per poter poi spezzare la frazione in più frazioni. In particolare, vorrei far &quot;comparire&quot; a numeratore <img src="https://tex.s2cms.ru/svg/x%2B1" alt="x+1" />. Ci riesco aggiungendo (e sottraendo, altrimenti non ottengo qualcosa di equivalente) 1 a numeratore.</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A%5Cint%20%5Cfrac%7Bx%7D%7Bx%2B1%7Ddx%20%26%20%3D%20%5Cint%20%5Cfrac%7Bx%2B1-1%7D%7Bx%2B1%7Ddx%20%5C%5C%0A%26%20%3D%20%5Cint%20%5Cleft(%5Cfrac%7Bx%2B1%7D%7Bx%2B1%7D%2B%20%5Cfrac%7B-1%7D%7Bx%2B1%7D%5Cright)dx%20%5C%5C%0A%26%20%3D%20%5Cint%201%20dx%20-%20%5Cint%20%5Cfrac%7B1%7D%7Bx%2B1%7Ddx%20%5C%5C%0A%26%20%3D%20x%20-%20%5Cln(x%2B1)%20%5C%5C%0A%26%20%3D%20x%20%2B%20%5Cln((x%2B1)%5E%7B-1%7D)%20%5C%5C%0A%26%20%3D%20x%20%2B%20%5Cln%5Cleft(%5Cfrac%7B1%7D%7Bx%2B1%7D%5Cright)%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\int \frac{x}{x+1}dx &amp; = \int \frac{x+1-1}{x+1}dx \\
+&amp; = \int \left(\frac{x+1}{x+1}+ \frac{-1}{x+1}\right)dx \\
+&amp; = \int 1 dx - \int \frac{1}{x+1}dx \\
+&amp; = x - \ln(x+1) \\
+&amp; = x + \ln((x+1)^{-1}) \\
+&amp; = x + \ln\left(\frac{1}{x+1}\right)
+\end{align*}" /></p>
+<p>La soluzione se l’integrale fosse indefinito sarebbe dunque</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cint%20%5Cln%5Cleft(%5Cfrac%7B1%7D%7Bx%2B1%7D%5Cright)dx%20%3D%20x%5Cln%5Cleft(%5Cfrac%7B1%7D%7Bx%2B1%7D%5Cright)%20%2B%20x%20%2B%20%5Cln%5Cleft(%5Cfrac%7B1%7D%7Bx%2B1%7D%5Cright)%2Bc" alt="\int \ln\left(\frac{1}{x+1}\right)dx = x\ln\left(\frac{1}{x+1}\right) + x + \ln\left(\frac{1}{x+1}\right)+c" /></p>
+<p>Ma visto che l’integrale va calcolato fra -1 e 0, il teorema fondamentale del calcolo integrale mi dice che</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cint_%7B-1%7D%5E%7B0%7D%20%5Cln%5Cleft(%5Cfrac%7B1%7D%7Bx%2B1%7D%5Cright)dx%20%3D%20%5Cleft%5Bx%5Cln%5Cleft(%5Cfrac%7B1%7D%7Bx%2B1%7D%5Cright)%20%2B%20x%20%2B%20%5Cln%5Cleft(%5Cfrac%7B1%7D%7Bx%2B1%7D%5Cright)%5Cright%5D_%7B-1%7D%5E%7B0%7D" alt="\int_{-1}^{0} \ln\left(\frac{1}{x+1}\right)dx = \left[x\ln\left(\frac{1}{x+1}\right) + x + \ln\left(\frac{1}{x+1}\right)\right]_{-1}^{0}" /></p>
+<p>Se chiamo <img src="https://tex.s2cms.ru/svg/F(x)%20%3D%20x%5Cln%5Cleft(%5Cfrac%7B1%7D%7Bx%2B1%7D%5Cright)%20%2B%20x%20%2B%20%5Cln%5Cleft(%5Cfrac%7B1%7D%7Bx%2B1%7D%5Cright)" alt="F(x) = x\ln\left(\frac{1}{x+1}\right) + x + \ln\left(\frac{1}{x+1}\right)" />, posso vedere subito che <img src="https://tex.s2cms.ru/svg/F" alt="F" /> non è definita in <img src="https://tex.s2cms.ru/svg/x%3D-1" alt="x=-1" />. Quindi</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cint_%7B-1%7D%5E%7B0%7D%20%5Cln%5Cleft(%5Cfrac%7B1%7D%7Bx%2B1%7D%5Cright)dx%20%3D%20F(0)%20-%20%5Clim_%7Bx%5Crightarrow%20-1%7DF(x)" alt="\int_{-1}^{0} \ln\left(\frac{1}{x+1}\right)dx = F(0) - \lim_{x\rightarrow -1}F(x)" /></p>
+<p>Vediamo subito che <img src="https://tex.s2cms.ru/svg/F(0)%20%3D%200%5Cln(1)%2B0%2B%5Cln(1)%20%3D%200" alt="F(0) = 0\ln(1)+0+\ln(1) = 0" /> poichè il logaritmo di 1 è zero. Andiamo invece a calcolare quel limite.</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A%5Clim_%7Bx%5Crightarrow%20-1%7D%20x%5Cln%5Cleft(%5Cfrac%7B1%7D%7Bx%2B1%7D%5Cright)%20%2B%20x%20%2B%20%5Cln%5Cleft(%5Cfrac%7B1%7D%7Bx%2B1%7D%5Cright)%20%26%20%3D%20%5Clim_%7Bx%5Crightarrow%20-1%7D%20%20x%20%2B(x%2B1)%5Cln%5Cleft(%5Cfrac%7B1%7D%7Bx%2B1%7D%5Cright)%5C%5C%0A%26%20%3D%20%22-1%20%2B%200%20%5Ccdot%20%5Cinfty%22%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\lim_{x\rightarrow -1} x\ln\left(\frac{1}{x+1}\right) + x + \ln\left(\frac{1}{x+1}\right) &amp; = \lim_{x\rightarrow -1}  x +(x+1)\ln\left(\frac{1}{x+1}\right)\\
+&amp; = &quot;-1 + 0 \cdot \infty&quot;
+\end{align*}" /></p>
+<p>Devo quindi risolvere quella forma indeterminata <img src="https://tex.s2cms.ru/svg/0%5Ccdot%20%5Cinfty" alt="0\cdot \infty" />.
+<img src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A%5Clim_%7Bx%20%5Crightarrow%20-1%7D(x%2B1)%5Cln%5Cleft(%5Cfrac%7B1%7D%7Bx%2B1%7D%5Cright)%20%26%20%3D%20%5Clim_%7Bx%20%5Crightarrow%20-1%7D%20%5Cfrac%7B%5Cln%5Cleft(%5Cfrac%7B1%7D%7Bx%2B1%7D%5Cright)%7D%7B%5Cfrac%7B1%7D%7Bx%2B1%7D%7D%20%5C%5C%0A%26%20%5Coverset%7B%5Ctext%7BDe%20l'Hopital%7D%7D%7B%3D%7D%20%5Clim_%7Bx%20%5Crightarrow%20-1%7D%20%5Cfrac%7B(x%2B1)%5Ccdot%20%5Cleft(-%5Cfrac%7B1%7D%7B(x%2B1)%5E2%7D%5Cright)%7D%7B-%5Cfrac%7B1%7D%7B(x%2B1)%5E2%7D%7D%20%5C%5C%0A%26%20%3D%20%5Clim_%7Bx%20%5Crightarrow%20-1%7D%20x%2B1%20%5C%5C%0A%26%20%3D%200%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\lim_{x \rightarrow -1}(x+1)\ln\left(\frac{1}{x+1}\right) &amp; = \lim_{x \rightarrow -1} \frac{\ln\left(\frac{1}{x+1}\right)}{\frac{1}{x+1}} \\
+&amp; \overset{\text{De l'Hopital}}{=} \lim_{x \rightarrow -1} \frac{(x+1)\cdot \left(-\frac{1}{(x+1)^2}\right)}{-\frac{1}{(x+1)^2}} \\
+&amp; = \lim_{x \rightarrow -1} x+1 \\
+&amp; = 0
+\end{align*}" /></p>
+<p>dove noto che posso applicare il teorema di De l’Hopital poichè nella prima uguaglianza il temine a destra è una forma indeterminata del tipo <img src="https://tex.s2cms.ru/svg/%5Cfrac%7B%5Cinfty%7D%7B%5Cinfty%7D" alt="\frac{\infty}{\infty}" />.</p>
+<p>Abbiamo quindi che</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A%5Clim_%7Bx%5Crightarrow%20-1%7D%20F(x)%20%26%20%3D%20%5Clim_%7Bx%5Crightarrow%20-1%7D%20%20x%20%2B(x%2B1)%5Cln%5Cleft(%5Cfrac%7B1%7D%7Bx%2B1%7D%5Cright)%5C%5C%0A%26%20%3D%20-1%20%2B%200%20%5C%5C%0A%26%20%3D%20-1%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\lim_{x\rightarrow -1} F(x) &amp; = \lim_{x\rightarrow -1}  x +(x+1)\ln\left(\frac{1}{x+1}\right)\\
+&amp; = -1 + 0 \\
+&amp; = -1
+\end{align*}" /></p>
+<p>L’integrale di partenza ha quindi soluzione</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A%5Cint_%7B-1%7D%5E%7B0%7D%20%5Cln%5Cleft(%5Cfrac%7B1%7D%7Bx%2B1%7D%5Cright)dx%20%26%20%3D%20F(0)%20-%20%5Clim_%7Bx%5Crightarrow%20-1%7DF(x)%20%5C%5C%0A%26%20%3D%200%20-%20(-1)%20%5C%5C%0A%26%20%3D%201%20%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\int_{-1}^{0} \ln\left(\frac{1}{x+1}\right)dx &amp; = F(0) - \lim_{x\rightarrow -1}F(x) \\
+&amp; = 0 - (-1) \\
+&amp; = 1 
+\end{align*}" /></p>
