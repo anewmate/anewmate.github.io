@@ -63,17 +63,17 @@
       </div>
     <div class="container">
       <div class="row">
-<!--
+
         <div class="col-12">
           <div class="card mb-12 shadow-sm exercise-card">
             <div class="card-body">
               <h4 class="card-title">Esercizio 1</h4>
               
               <blockquote>
-                <p>Disegna la parabola con la seguente equazione</p>
+                <p>Data la seguente funzione, individua i suoi punti di discontinuità e la relativa specie.</p>
                 </blockquote>
-                <p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/y%20%3D%20-3x%5E2%2B3" alt="y = -3x^2+3" /></p>
-                                                
+                <p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/y%20%3D%20%5Cfrac%7B%7Cx%7C%7D%7Bx%7D%5Ccdot%202%5E%7B%5Cfrac%7B1%7D%7Bx-1%7D%7D" alt="y = \frac{|x|}{x}\cdot 2^{\frac{1}{x-1}}" /></p>
+                                                 
               <p class="card-text"></p>
               
               <div class="collapse" id="es1">
@@ -83,14 +83,73 @@
                       <h5>Soluzione</h5>
                     </div>
                     <!-- remember to modify data-target with the righ ID and the parameter to changeTitle with the right ID of the button -->
-                   <!-- <div class="col-lg-1">
+                    <div class="col-lg-1">
                         <button type="button" class="close" aria-label="Close" onclick="changeTitle('btnes1')" data-toggle="collapse" data-target="#es1">
                             <span aria-hidden="true">&times;</span>
                           </button>
                     </div>
                   </div>
                   
-                  
+                  <p>Come prima cosa stabiliamo le condizioni di esistenza (C.E.) di questa funzione. Poichè abbiamo due frazioni, <img src="https://tex.s2cms.ru/svg/%5Cfrac%7B%7Cx%7C%7D%7Bx%7D" alt="\frac{|x|}{x}" /> e <img src="https://tex.s2cms.ru/svg/%5Cfrac%7B1%7D%7Bx-1%7D" alt="\frac{1}{x-1}" />, dobbiamo imporre che esse esistano: dobbiamo cioè escludere che il denominatore si annulli. Quindi</p>
+                  <p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A%5Ctext%7BC.E.%3A%7D%20%26%20%5C%3B%20%20%5Cbegin%7Bcases%7D%0Ax%20%5Cneq%200%20%5C%5C%0Ax-1%20%5Cneq%200%0A%5Cend%7Bcases%7D%20%5C%5C%0A%5Ctext%7BC.E.%3A%7D%20%26%20%5C%3B%20%20%5Cbegin%7Bcases%7D%20%0Ax%20%5Cneq%200%20%5C%5C%0Ax%20%5Cneq%201%0A%5Cend%7Bcases%7D%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+                  \text{C.E.:} &amp; \;  \begin{cases}
+                  x \neq 0 \\
+                  x-1 \neq 0
+                  \end{cases} \\
+                  \text{C.E.:} &amp; \;  \begin{cases} 
+                  x \neq 0 \\
+                  x \neq 1
+                  \end{cases}
+                  \end{align*}" /></p>
+                  <p>Abbiamo quindi due punti di discontinuità: <img src="https://tex.s2cms.ru/svg/x%3D0" alt="x=0" /> e <img src="https://tex.s2cms.ru/svg/x%3D1" alt="x=1" />.</p>
+                  <p>Per poterli classificare dobbiamo andare a calcolare limite destro e sinistro della funzione in quei punti. Prima di procedere, ricordiamo un attimo la definizione di valore assoluto:</p>
+                  <p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%7Cx%7C%20%3D%20%5Cbegin%7Bcases%7D%0Ax%20%26%20%5Ctext%7Bse%7D%20%5C%3B%20x%20%5Cgeq%200%20%5C%5C%0A-x%20%26%20%5Ctext%7Bse%7D%20%5C%3B%20x%20%3C%200%0A%5Cend%7Bcases%7D" alt="|x| = \begin{cases}
+                  x &amp; \text{se} \; x \geq 0 \\
+                  -x &amp; \text{se} \; x &lt; 0
+                  \end{cases}" /></p>
+                  <p>Partiamo con i limiti a zero.</p>
+                  <p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A%5Clim_%7Bx%5Crightarrow%200%5E%2B%7D%20%5Cfrac%7B%7Cx%7C%7D%7Bx%7D%5Ccdot%202%5E%7B%5Cfrac%7B1%7D%7Bx-1%7D%7D%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+                  \lim_{x\rightarrow 0^+} \frac{|x|}{x}\cdot 2^{\frac{1}{x-1}}
+                  \end{align*}" /></p>
+                  <p>Vediamo subito che l’esponenziale non ha problemi e <img src="https://tex.s2cms.ru/svg/2%5E%7B%5Cfrac%7B1%7D%7Bx-1%7D%7D%20%5Crightarrow%202%5E%7B-1%7D%20%3D%20%5Cfrac%7B1%7D%7B2%7D" alt="2^{\frac{1}{x-1}} \rightarrow 2^{-1} = \frac{1}{2}" />. Il problema ce l’abbiamo in <img src="https://tex.s2cms.ru/svg/%5Cfrac%7B%7Cx%7C%7D%7Bx%7D" alt="\frac{|x|}{x}" /> che diventa un <img src="https://tex.s2cms.ru/svg/%5Cfrac%7B0%7D%7B0%7D" alt="\frac{0}{0}" />. Notiamo però una cosa: se noi riscriviamo la funzione inserendo la definizione di valore assoluto, otteniamo</p>
+                  <p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0Ay%20%26%20%3D%20%5Cfrac%7B%7Cx%7C%7D%7Bx%7D%5Ccdot%202%5E%7B%5Cfrac%7B1%7D%7Bx-1%7D%7D%20%5C%5C%0A%26%20%3D%20%5Cbegin%7Bcases%7D%0A%5Cfrac%7Bx%7D%7Bx%7D%20%5Ccdot%202%5E%7B%5Cfrac%7B1%7D%7Bx-1%7D%7D%20%26%20%5Ctext%7Bse%7D%20%5C%3B%20x%20%5Cgeq%200%20%5C%5C%0A%5Cfrac%7B-x%7D%7Bx%7D%20%5Ccdot%202%5E%7B%5Cfrac%7B1%7D%7Bx-1%7D%7D%20%26%20%5Ctext%7Bse%7D%20%5C%3B%20x%20%3C%200%0A%5Cend%7Bcases%7D%20%5C%5C%0A%26%20%3D%20%5Cbegin%7Bcases%7D%0A%20%202%5E%7B%5Cfrac%7B1%7D%7Bx-1%7D%7D%20%26%20%5Ctext%7Bse%7D%20%5C%3B%20x%20%5Cgeq%200%20%5C%5C%0A-2%5E%7B%5Cfrac%7B1%7D%7Bx-1%7D%7D%20%26%20%5Ctext%7Bse%7D%20%5C%3B%20x%20%3C%200%0A%5Cend%7Bcases%7D%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+                  y &amp; = \frac{|x|}{x}\cdot 2^{\frac{1}{x-1}} \\
+                  &amp; = \begin{cases}
+                  \frac{x}{x} \cdot 2^{\frac{1}{x-1}} &amp; \text{se} \; x \geq 0 \\
+                  \frac{-x}{x} \cdot 2^{\frac{1}{x-1}} &amp; \text{se} \; x &lt; 0
+                  \end{cases} \\
+                  &amp; = \begin{cases}
+                    2^{\frac{1}{x-1}} &amp; \text{se} \; x \geq 0 \\
+                  -2^{\frac{1}{x-1}} &amp; \text{se} \; x &lt; 0
+                  \end{cases}
+                  \end{align*}" /></p>
+                  <p>Con questa riscrittura vediamo subito che quando facciamo il limite per <img src="https://tex.s2cms.ru/svg/x" alt="x" /> che tende a <img src="https://tex.s2cms.ru/svg/0%5E%2B" alt="0^+" /> siamo nel primo caso della funzione, mentre quando <img src="https://tex.s2cms.ru/svg/x" alt="x" /> tende a <img src="https://tex.s2cms.ru/svg/0%5E-" alt="0^-" /> siamo nel secondo caso. Quindi</p>
+                  <p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A%5Clim_%7Bx%5Crightarrow%200%5E%2B%7D%20%5Cfrac%7B%7Cx%7C%7D%7Bx%7D%5Ccdot%202%5E%7B%5Cfrac%7B1%7D%7Bx-1%7D%7D%20%26%20%3D%20%5Clim_%7Bx%5Crightarrow%200%5E%2B%7D%202%5E%7B%5Cfrac%7B1%7D%7Bx-1%7D%7D%20%5C%5C%0A%26%20%3D%202%5E%7B-1%7D%20%5C%5C%0A%26%20%3D%20%5Cfrac%7B1%7D%7B2%7D%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+                  \lim_{x\rightarrow 0^+} \frac{|x|}{x}\cdot 2^{\frac{1}{x-1}} &amp; = \lim_{x\rightarrow 0^+} 2^{\frac{1}{x-1}} \\
+                  &amp; = 2^{-1} \\
+                  &amp; = \frac{1}{2}
+                  \end{align*}" /></p>
+                  <p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A%5Clim_%7Bx%5Crightarrow%200%5E-%7D%20%5Cfrac%7B%7Cx%7C%7D%7Bx%7D%5Ccdot%202%5E%7B%5Cfrac%7B1%7D%7Bx-1%7D%7D%20%26%20%3D%20%5Clim_%7Bx%5Crightarrow%200%5E-%7D%20-2%5E%7B%5Cfrac%7B1%7D%7Bx-1%7D%7D%20%5C%5C%0A%26%20%3D%20-2%5E%7B-1%7D%20%5C%5C%0A%26%20%3D%20-%5Cfrac%7B1%7D%7B2%7D%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+                  \lim_{x\rightarrow 0^-} \frac{|x|}{x}\cdot 2^{\frac{1}{x-1}} &amp; = \lim_{x\rightarrow 0^-} -2^{\frac{1}{x-1}} \\
+                  &amp; = -2^{-1} \\
+                  &amp; = -\frac{1}{2}
+                  \end{align*}" /></p>
+                  <p>Il punto <img src="https://tex.s2cms.ru/svg/x%3D0" alt="x=0" /> è quindi un punto di discontinuità di prima specie, o di salto, poichè limite destro e sinistro sono entrambi finiti e diversi fra loro.</p>
+                  <p>Passiamo ora a <img src="https://tex.s2cms.ru/svg/x%3D1" alt="x=1" />.</p>
+                  <p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A%5Clim_%7Bx%5Crightarrow%201%5E%2B%7D%20%5Cfrac%7B%7Cx%7C%7D%7Bx%7D%5Ccdot%202%5E%7B%5Cfrac%7B1%7D%7Bx-1%7D%7D%20%26%20%3D%20%5Clim_%7Bx%5Crightarrow%201%5E%2B%7D%202%5E%7B%5Cfrac%7B1%7D%7Bx-1%7D%7D%20%5C%5C%0A%26%20%3D%20%222%5E%7B%5Cfrac%7B1%7D%7B0%5E%2B%7D%7D%22%20%5C%5C%0A%26%20%3D%20%222%5E%7B%2B%5Cinfty%7D%22%20%5C%5C%0A%26%20%3D%20%2B%20%5Cinfty%20%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+                  \lim_{x\rightarrow 1^+} \frac{|x|}{x}\cdot 2^{\frac{1}{x-1}} &amp; = \lim_{x\rightarrow 1^+} 2^{\frac{1}{x-1}} \\
+                  &amp; = &quot;2^{\frac{1}{0^+}}&quot; \\
+                  &amp; = &quot;2^{+\infty}&quot; \\
+                  &amp; = + \infty 
+                  \end{align*}" /></p>
+                  <p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A%5Clim_%7Bx%5Crightarrow%201%5E-%7D%20%5Cfrac%7B%7Cx%7C%7D%7Bx%7D%5Ccdot%202%5E%7B%5Cfrac%7B1%7D%7Bx-1%7D%7D%20%26%20%3D%20%5Clim_%7Bx%5Crightarrow%201%5E-%7D%202%5E%7B%5Cfrac%7B1%7D%7Bx-1%7D%7D%20%5C%5C%0A%26%20%3D%20%222%5E%7B%5Cfrac%7B1%7D%7B0%5E-%7D%7D%22%20%5C%5C%0A%26%20%3D%20%222%5E%7B-%5Cinfty%7D%22%20%5C%5C%0A%26%20%3D%200%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+                  \lim_{x\rightarrow 1^-} \frac{|x|}{x}\cdot 2^{\frac{1}{x-1}} &amp; = \lim_{x\rightarrow 1^-} 2^{\frac{1}{x-1}} \\
+                  &amp; = &quot;2^{\frac{1}{0^-}}&quot; \\
+                  &amp; = &quot;2^{-\infty}&quot; \\
+                  &amp; = 0
+                  \end{align*}" /></p>
+                  <p>Il punto <img src="https://tex.s2cms.ru/svg/x%3D1" alt="x=1" /> è quindi un punto di discontinuità di seconda specie poichè uno dei due limiti (quello destro) è infinito.</p>
+                    
 
 
               </div>
@@ -98,7 +157,7 @@
                 <div class="btn-group">
                   <button type="button" id="btnes1" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" aria-expanded="false" aria-controls="es1" data-target="#es1" onclick="changeTitle('btnes1')">Mostra Soluzione</button>
                 </div>
-                <small class="text-muted">1 Marzo 2020</small>
+                <!--<small class="text-muted">1 Marzo 2020</small>-->
               </div>
             </div>
           </div>
