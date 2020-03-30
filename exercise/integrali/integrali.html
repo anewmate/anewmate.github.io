@@ -233,6 +233,173 @@
           </div>
         </div>
         <!-- NUOVO ESERCIZIO-->
+
+        <div class="col-12">
+          <div class="card mb-12 shadow-sm exercise-card">
+            <div class="card-body">
+              <h4 class="card-title">Esercizio 3</h4>
+              
+              <blockquote>
+                <p>Calcola il seguente integrale</p>
+                </blockquote>
+                <p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cint%20%5Cfrac%7Bx%5E2%2B5x-1%7D%7Bx%5E3%2Bx%5E2-2%7Ddx" alt="\int \frac{x^2+5x-1}{x^3+x^2-2}dx" /></p>
+                                                    
+              <p class="card-text"></p>
+              
+              <div class="collapse" id="es3">
+                  <blockquote>
+                  <div class="row">
+                    <div class="col-lg-11">
+                      <h5>Soluzione</h5>
+                    </div>
+                    <!-- remember to modify data-target with the righ ID and the parameter to changeTitle with the right ID of the button -->
+                    <div class="col-lg-1">
+                        <button type="button" class="close" aria-label="Close" onclick="changeTitle('btnes3')" data-toggle="collapse" data-target="#es3">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                    </div>
+                  </div>
+                  
+                  <p>Come prima cosa noto che l’integrale è indefinito. Come seconda cosa noto che ho una frazione di polinomi come argomento dell’integrale. L’integrazione di funzioni razionali fratte, segue delle regole precise.</p>
+<hr>
+<p>Nell’integrazione di funzioni razionali fratte <img src="https://tex.s2cms.ru/svg/%5Cint%20%5Cfrac%7BN(x)%7D%7BD(x)%7Ddx" alt="\int \frac{N(x)}{D(x)}dx" /> quando il <strong>grado del numeratore è minore di quello del denominatore</strong>:</p>
+<ul>
+<li>se il numeratore è la derivata del denominatore:</li>
+</ul>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cint%20%5Cfrac%7Bf%5E%7B'%7D(x)%7D%7Bf(x)%7D%20dx%20%3D%20%5Cln(%7Cf(x)%7C)%2Bc" alt="\int \frac{f^{'}(x)}{f(x)} dx = \ln(|f(x)|)+c" /></p>
+<ul>
+<li>se il denominatore è di primo grado:</li>
+</ul>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cint%20%5Cfrac%7B1%7D%7Bax%2Bb%7Ddx%20%3D%20%5Cfrac%7B1%7D%7Ba%7D%5Cln(%7Cax%2Bb%7C)%2Bc" alt="\int \frac{1}{ax+b}dx = \frac{1}{a}\ln(|ax+b|)+c" /></p>
+<ul>
+<li>se il denominatore è di secondo grado:</li>
+</ul>
+<ol>
+<li>se <img src="https://tex.s2cms.ru/svg/%5CDelta%20%3E%200" alt="\Delta &gt; 0" />: essendo <img src="https://tex.s2cms.ru/svg/ax%5E2%2Bbx%2Bc%20%3D%20a(x-x_1)(x-x_2)" alt="ax^2+bx+c = a(x-x_1)(x-x_2)" />, si cercano i valori <img src="https://tex.s2cms.ru/svg/A" alt="A" /> e <img src="https://tex.s2cms.ru/svg/B" alt="B" /> tali che</li>
+</ol>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cfrac%7Bpx%2Bq%7D%7Bax%5E2%2Bbx%2Bc%7D%20%3D%20%5Cfrac%7BA%7D%7Ba(x-x_1)%7D%2B%5Cfrac%7BB%7D%7Bx-x_2%7D" alt="\frac{px+q}{ax^2+bx+c} = \frac{A}{a(x-x_1)}+\frac{B}{x-x_2}" /></p>
+<ol start="2">
+<li>se <img src="https://tex.s2cms.ru/svg/%5CDelta%20%3D%200" alt="\Delta = 0" />: essendo <img src="https://tex.s2cms.ru/svg/ax%5E2%2Bbx%2Bc%20%3D%20a(x-x_1)%5E2" alt="ax^2+bx+c = a(x-x_1)^2" />, si cercano i valori <img src="https://tex.s2cms.ru/svg/A" alt="A" /> e <img src="https://tex.s2cms.ru/svg/B" alt="B" /> tali che</li>
+</ol>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cfrac%7Bpx%2Bq%7D%7Bax%5E2%2Bbx%2Bc%7D%20%3D%20%5Cfrac%7BA%7D%7Ba(x-x_1)%7D%2B%5Cfrac%7BB%7D%7B(x-x_1)%5E2%7D" alt="\frac{px+q}{ax^2+bx+c} = \frac{A}{a(x-x_1)}+\frac{B}{(x-x_1)^2}" /></p>
+<ol start="3">
+<li>se <img src="https://tex.s2cms.ru/svg/%5CDelta%20%3C%200" alt="\Delta &lt; 0" />: allora <img src="https://tex.s2cms.ru/svg/%5Cint%20%5Cfrac%7B1%7D%7Bax%5E2%2Bbx%2Bc%7Ddx" alt="\int \frac{1}{ax^2+bx+c}dx" /> si trasforma in modo da utilizzare la formula</li>
+</ol>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cint%20%5Cfrac%7Bf%5E%7B'%7D(x)%7D%7Bk%5E2%2B(f(x))%5E2%7Ddx%20%3D%20%5Cfrac%7B1%7D%7Bk%7D%5Carctan%5Cleft(%5Cfrac%7Bf(x)%7D%7Bk%7D%5Cright)%20%2Bc" alt="\int \frac{f^{'}(x)}{k^2+(f(x))^2}dx = \frac{1}{k}\arctan\left(\frac{f(x)}{k}\right) +c" /></p>
+<p>mentre <img src="https://tex.s2cms.ru/svg/%5Cint%20%5Cfrac%7Bpx%2Bq%7D%7Bax%5E2%2Bbx%2Bc%7Ddx" alt="\int \frac{px+q}{ax^2+bx+c}dx" /> si trasforma nella somma</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/r%5Cint%20%5Cfrac%7B2ax%2Bb%7D%7Bax%5E2%2Bbx%2Bc%7Ddx%20%2B%20s%5Cint%20%5Cfrac%7B1%7D%7Bax%5E2%2Bbx%2Bc%7Ddx" alt="r\int \frac{2ax+b}{ax^2+bx+c}dx + s\int \frac{1}{ax^2+bx+c}dx" /></p>
+<p>dove gli integrali si risolvono con i metodi precedenti.</p>
+<ul>
+<li>se il denominatore è di grado superiore al secondo, occorre scomporlo in fattori irriducibili e riscrivere la frazione come somma di frazioni con numeratori di primo e di secondo grado.</li>
+</ul>
+<p>Quando, nell’integrale <img src="https://tex.s2cms.ru/svg/%5Cint%20%5Cfrac%7BN(x)%7D%7BD(x)%7Ddx" alt="\int \frac{N(x)}{D(x)}dx" />, il <strong>grado del numeratore è maggiore o uguale di quello del denominatore</strong> si ritorna ai casi precedenti mediante la divisione polinomiale: <img src="https://tex.s2cms.ru/svg/%5Cfrac%7BN(x)%7D%7BD(x)%7D%20%3D%20Q(x)%20%2B%20%5Cfrac%7BR(x)%7D%7BD(x)%7D" alt="\frac{N(x)}{D(x)} = Q(x) + \frac{R(x)}{D(x)}" /> dove il grado di <img src="https://tex.s2cms.ru/svg/R(x)" alt="R(x)" /> è minore di quello di <img src="https://tex.s2cms.ru/svg/D(x)" alt="D(x)" />.</p>
+<hr>
+<p>Nel nostro caso abbiamo che il grado del numeratore (ossia 2) è minore del grado del denominatore (ossia 3).</p>
+<p>Regola mi dice che devo scomporre il denominatore in fattori irriducibili e riscrivere la frazione come somma di frazioni con numeratori di primo e di secondo grado. Parto quindi scomponendo il denominatore.</p>
+<p>Per scomporre il denominatore utilizzo la formula di Ruffini. Vedo subito che <img src="https://tex.s2cms.ru/svg/x%3D1" alt="x=1" /> è una radice del polinomio <img src="https://tex.s2cms.ru/svg/x%5E3%2Bx%5E2-2" alt="x^3+x^2-2" /> in quanto</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/(1)%5E3%2B(1)%5E2-2%20%3D%200" alt="(1)^3+(1)^2-2 = 0" /></p>
+<p>Quindi</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Btikzpicture%7D%0A%5Cdraw%20(-0.25%2C0)%20--%20(3%2C0)%3B%0A%5Cdraw%20(0.25%2C1.5)--(0.25%2C-0.5)%3B%0A%5Cdraw%20(2.2%2C1.5)--(2.2%2C-0.5)%3B%0A%25%5Cnode%20at%20(0.25%2C1)%20%7B%241%24%7D%3B%0A%5Cnode%20at%20(0.75%2C1)%20%7B%241%24%7D%3B%0A%5Cnode%20at%20(1.25%2C1)%20%7B%241%24%7D%3B%0A%5Cnode%20at%20(1.75%2C1)%20%7B%240%24%7D%3B%0A%5Cnode%20at%20(2.5%2C1)%20%7B%24-2%24%7D%3B%0A%5Cnode%20at%20(0%2C0.5)%20%7B%241%24%7D%3B%0A%25%5Cnode%20at%20(0.25%2C-0.25)%20%7B%241%24%7D%3B%0A%25%5Cnode%20at%20(0.75%2C0.5)%20%7B%241%24%7D%3B%0A%5Cnode%20at%20(0.75%2C-0.25)%20%7B%241%24%7D%3B%0A%5Cnode%20at%20(1.25%2C0.5)%20%7B%241%24%7D%3B%0A%5Cnode%20at%20(1.25%2C-0.25)%20%7B%242%24%7D%3B%0A%5Cnode%20at%20(1.75%2C0.5)%20%7B%242%24%7D%3B%0A%5Cnode%20at%20(1.75%2C-0.25)%20%7B%242%24%7D%3B%0A%5Cnode%20at%20(2.5%2C0.5)%20%7B%242%24%7D%3B%0A%5Cnode%20at%20(2.5%2C-0.25)%20%7B%240%24%7D%3B%0A%5Cend%7Btikzpicture%7D" alt="\begin{tikzpicture}
+\draw (-0.25,0) -- (3,0);
+\draw (0.25,1.5)--(0.25,-0.5);
+\draw (2.2,1.5)--(2.2,-0.5);
+%\node at (0.25,1) {$1$};
+\node at (0.75,1) {$1$};
+\node at (1.25,1) {$1$};
+\node at (1.75,1) {$0$};
+\node at (2.5,1) {$-2$};
+\node at (0,0.5) {$1$};
+%\node at (0.25,-0.25) {$1$};
+%\node at (0.75,0.5) {$1$};
+\node at (0.75,-0.25) {$1$};
+\node at (1.25,0.5) {$1$};
+\node at (1.25,-0.25) {$2$};
+\node at (1.75,0.5) {$2$};
+\node at (1.75,-0.25) {$2$};
+\node at (2.5,0.5) {$2$};
+\node at (2.5,-0.25) {$0$};
+\end{tikzpicture}" /></p>
+<p>e posso scomporre <img src="https://tex.s2cms.ru/svg/x%5E3%2Bx%5E2-2" alt="x^3+x^2-2" /> come</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/(x-1)(x%5E2%2B2x%2B2)" alt="(x-1)(x^2+2x+2)" /></p>
+<p>Calcolo il delta di <img src="https://tex.s2cms.ru/svg/x%5E2%2B2x%2B2" alt="x^2+2x+2" /> per vedere se si può scomporre ulteriormente.</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5CDelta%20%3D%20b%5E2-4ac%20%3D%204-4(1)(2)%20%3D%20-4%20%3C%200" alt="\Delta = b^2-4ac = 4-4(1)(2) = -4 &lt; 0" /></p>
+<p>Essendo il delta negativo, <img src="https://tex.s2cms.ru/svg/x%5E2%2B2x%2B2" alt="x^2+2x+2" /> è irriducibile.</p>
+<p>Devo ora scrivere la frazione iniziale come somma di due frazioni con denominatori rispettivamente <img src="https://tex.s2cms.ru/svg/x-1" alt="x-1" /> e <img src="https://tex.s2cms.ru/svg/x%5E2%2B2x%2B2" alt="x^2+2x+2" />. Ossia devo trovare <img src="https://tex.s2cms.ru/svg/A" alt="A" />, <img src="https://tex.s2cms.ru/svg/B" alt="B" /> e <img src="https://tex.s2cms.ru/svg/C" alt="C" /> numeri reali tali che</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cfrac%7Bx%5E2%2B5x-1%7D%7Bx%5E3%2Bx%5E2-2%7D%20%3D%20%5Cfrac%7BA%7D%7Bx-1%7D%20%2B%20%5Cfrac%7BBx%2BC%7D%7Bx%5E2%2B2x%2B2%7D" alt="\frac{x^2+5x-1}{x^3+x^2-2} = \frac{A}{x-1} + \frac{Bx+C}{x^2+2x+2}" /></p>
+<p>Per trovarli facciamo la somma di quelle due frazioni:</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A%5Cfrac%7BA%7D%7Bx-1%7D%20%2B%20%5Cfrac%7BBx%2BC%7D%7Bx%5E2%2B2x%2B2%7D%20%26%20%3D%20%5Cfrac%7BA(x%5E2%2B2x%2B2)%2B(Bx%2BC)(x-1)%7D%7B(x-1)(x%5E2%2B2x%2B2)%7D%20%5C%5C%0A%26%20%3D%20%5Cfrac%7BAx%5E2%2B2Ax%2B2A%2BBx%5E2-Bx%2BCx-C%7D%7B(x-1)(x%5E2%2B2x%2B2)%7D%20%5C%5C%0A%26%20%3D%20%5Cfrac%7Bx%5E2(A%2BB)%2Bx(2A-B%2BC)%2B2A-C%7D%7B(x-1)(x%5E2%2B2x%2B2)%7D%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\frac{A}{x-1} + \frac{Bx+C}{x^2+2x+2} &amp; = \frac{A(x^2+2x+2)+(Bx+C)(x-1)}{(x-1)(x^2+2x+2)} \\
+&amp; = \frac{Ax^2+2Ax+2A+Bx^2-Bx+Cx-C}{(x-1)(x^2+2x+2)} \\
+&amp; = \frac{x^2(A+B)+x(2A-B+C)+2A-C}{(x-1)(x^2+2x+2)}
+\end{align*}" /></p>
+<p>Poichè deve valere l’uguaglianza</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cfrac%7Bx%5E2(A%2BB)%2Bx(2A-B%2BC)%2B2A-C%7D%7B(x-1)(x%5E2%2B2x%2B2)%7D%20%3D%20%5Cfrac%7Bx%5E2%2B5x-1%7D%7B(x-1)(x%5E2%2B2x%2B2)%7D" alt="\frac{x^2(A+B)+x(2A-B+C)+2A-C}{(x-1)(x^2+2x+2)} = \frac{x^2+5x-1}{(x-1)(x^2+2x+2)}" /></p>
+<p>devo avere</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Bcases%7D%0AA%2BB%20%26%20%3D%201%20%5C%5C%0A2A-B%2BC%20%26%20%3D%205%20%5C%5C%0A2A-C%20%26%20%3D%20-1%0A%5Cend%7Bcases%7D" alt="\begin{cases}
+A+B &amp; = 1 \\
+2A-B+C &amp; = 5 \\
+2A-C &amp; = -1
+\end{cases}" /></p>
+<p>Risolviamo il sistema: isolo <img src="https://tex.s2cms.ru/svg/A" alt="A" /> dalla prima equazione e lo sostituisco nelle altre due.</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Bcases%7D%0AA%20%26%20%3D%201%20-B%5C%5C%0A2(1-B)-B%2BC%20%26%20%3D%205%20%5C%5C%0A2(1-B)%20-C%26%20%3D%20-1%0A%5Cend%7Bcases%7D" alt="\begin{cases}
+A &amp; = 1 -B\\
+2(1-B)-B+C &amp; = 5 \\
+2(1-B) -C&amp; = -1
+\end{cases}" /></p>
+<p>Isolo <img src="https://tex.s2cms.ru/svg/C" alt="C" /> dalla seconda equazione e lo sostituisco nella terza.</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Bcases%7D%0AA%20%26%20%3D%201%20-B%5C%5C%0AC%20%26%20%3D%203%20%2B3B%5C%5C%0A2-2B%20-(3%2B3B)%26%20%3D%20-1%0A%5Cend%7Bcases%7D" alt="\begin{cases}
+A &amp; = 1 -B\\
+C &amp; = 3 +3B\\
+2-2B -(3+3B)&amp; = -1
+\end{cases}" /></p>
+<p>Risolvo la terza equazione solo in <img src="https://tex.s2cms.ru/svg/B" alt="B" />.</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Bcases%7D%0AA%20%26%20%3D%201%20-B%5C%5C%0AC%20%26%20%3D%203%20%2B3B%5C%5C%0AB%20%26%20%3D%200%0A%5Cend%7Bcases%7D" alt="\begin{cases}
+A &amp; = 1 -B\\
+C &amp; = 3 +3B\\
+B &amp; = 0
+\end{cases}" /></p>
+<p>Sostituendo il <img src="https://tex.s2cms.ru/svg/B" alt="B" /> trovato nelle prime due equazioni ottengo</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Bcases%7D%0AA%20%26%20%3D%201%20%5C%5C%0AC%20%26%20%3D%203%20%5C%5C%0AB%20%26%20%3D%200%0A%5Cend%7Bcases%7D" alt="\begin{cases}
+A &amp; = 1 \\
+C &amp; = 3 \\
+B &amp; = 0
+\end{cases}" /></p>
+<p>Quindi</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A%5Cfrac%7Bx%5E2%2B5x-1%7D%7B(x-1)(x%5E2%2B2x%2B2)%7D%20%26%20%3D%20%5Cfrac%7BA%7D%7Bx-1%7D%20%2B%20%5Cfrac%7BBx%2BC%7D%7Bx%5E2%2B2x%2B2%7D%20%5C%5C%0A%26%20%3D%20%5Cfrac%7B1%7D%7Bx-1%7D%20%2B%20%5Cfrac%7B3%7D%7Bx%5E2%2B2x%2B2%7D%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\frac{x^2+5x-1}{(x-1)(x^2+2x+2)} &amp; = \frac{A}{x-1} + \frac{Bx+C}{x^2+2x+2} \\
+&amp; = \frac{1}{x-1} + \frac{3}{x^2+2x+2}
+\end{align*}" /></p>
+<p>e di conseguenza</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A%5Cint%20%5Cfrac%7Bx%5E2%2B5x-1%7D%7B(x-1)(x%5E2%2B2x%2B2)%7Ddx%0A%26%20%3D%20%5Cint%20%5Cleft(%20%5Cfrac%7B1%7D%7Bx-1%7D%20%2B%20%5Cfrac%7B3%7D%7Bx%5E2%2B2x%2B2%7D%5Cright)%20dx%20%5C%5C%0A%26%20%3D%20%5Cint%20%5Cfrac%7B1%7D%7Bx-1%7Ddx%20%2B%20%5Cint%20%5Cfrac%7B3%7D%7Bx%5E2%2B2x%2B2%7Ddx%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\int \frac{x^2+5x-1}{(x-1)(x^2+2x+2)}dx
+&amp; = \int \left( \frac{1}{x-1} + \frac{3}{x^2+2x+2}\right) dx \\
+&amp; = \int \frac{1}{x-1}dx + \int \frac{3}{x^2+2x+2}dx
+\end{align*}" /></p>
+<p>Il primo integrale è immediato e si ha</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cint%20%5Cfrac%7B1%7D%7Bx-1%7Ddx%20%3D%20%5Cln(%7Cx-1%7C)" alt="\int \frac{1}{x-1}dx = \ln(|x-1|)" /></p>
+<p>mentre per il secondo</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A%5Cint%20%5Cfrac%7B3%7D%7Bx%5E2%2B2x%2B2%7Ddx%20%26%20%3D%203%20%5Cint%20%5Cfrac%7B1%7D%7Bx%5E2%2B2x%2B2%7Ddx%20%5C%5C%0A%26%20%3D%203%20%5Cint%20%5Cfrac%7B1%7D%7B(x%5E2%2B2x%2B1)%2B1%7D%20dx%20%5C%5C%0A%26%20%3D%203%20%5Cint%20%5Cfrac%7B1%7D%7B(x%2B1)%5E2%2B1%7Ddx%20%5C%5C%0A%26%20%3D%203%20%5Carctan(x%2B1)%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\int \frac{3}{x^2+2x+2}dx &amp; = 3 \int \frac{1}{x^2+2x+2}dx \\
+&amp; = 3 \int \frac{1}{(x^2+2x+1)+1} dx \\
+&amp; = 3 \int \frac{1}{(x+1)^2+1}dx \\
+&amp; = 3 \arctan(x+1)
+\end{align*}" /></p>
+<p>Alla fine quindi si ha</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cint%20%5Cfrac%7Bx%5E2%2B5x-1%7D%7Bx%5E3%2Bx%5E2-2%7D%20%3D%20%5Cln(%7Cx-1%7C)%20%2B%203%5Carctan(x%2B1)%20%2Bc" alt="\int \frac{x^2+5x-1}{x^3+x^2-2} = \ln(|x-1|) + 3\arctan(x+1) +c" /></p>
+    
+
+
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" id="btnes3" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" aria-expanded="false" aria-controls="es3" data-target="#es3" onclick="changeTitle('btnes3')">Mostra Soluzione</button>
+                </div>
+                <!--<small class="text-muted">1 Marzo 2020</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- NUOVO ESERCIZIO-->
         
       </div>
     </div>
