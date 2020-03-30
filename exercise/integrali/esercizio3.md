@@ -180,7 +180,7 @@ $$\begin{align*}
 
 Alla fine quindi si ha
 
-$$\int \frac{x^2+5x-1}{x^3+x^2-2} = \ln(|x-1|) + 3\arctan(x+1) +c$$
+$$\int \frac{x^2+5x-1}{x^3+x^2-2}dx = \ln(|x-1|) + 3\arctan(x+1) +c$$
 
 
 

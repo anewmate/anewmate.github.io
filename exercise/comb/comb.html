@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>A new MATE</title>
+
+    <base href="https://anewmate.github.io">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Add CSS -->
+    <link rel="stylesheet" href="anewmate.css">
+    
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+  <header class="jumbotron jumbotron-fluid no-pad">
+    <div class="navbar transparent fixed-top flex-row-reverse no-pad"> 
+      <div class="p-1 nav-center">
+        <a href="#" class="navbar-brand align-items-center">
+          <strong class="nav-link">About</strong>
+        </a>
+      </div>
+      <div class="p-1 nav-center">
+        <a href="#" class="navbar-brand align-items-center">
+          <strong class="nav-link">Contatti</strong>
+        </a>
+      </div>
+      <div class="p-2 nav-center">
+          <a href="index.html" class="navbar-brand align-items-center">
+              <strong class="nav-link">A new MATE</strong>
+            </a>
+      </div>        
+    </div>
+    <div class="centered" style="background-image: url(images/maths1.jpg); text-align: center;">Calcolo combinatorio</div>
+  </header>
+
+  <main role="main" class="content">
+      
+  <div class="album">
+      <div class="container subtitle-line">
+          <p class="subtitle">
+            In questa sezione trovi esercizi svolti sulla calcolo combinatorio.<br>
+            Il sito è ancora in construzione, quindi se gli esercizi non ci sono e/o sono pochi abbi un po' di pazienza.<br>
+            Cerco di scriverne il più possibile! Se hai esercizi da proporre, non farti problemi a mandarmeli su Instragram <a href="https://instagram.com/anewmate" class="fa fa-instagram" target="_blank"></a>
+            o per mail <a href="mailto:anewmate@gmail.com" class="fa fa-google"></a>.
+          <p>
+      </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="card mb-12 shadow-sm exercise-card">
+            <div class="card-body">
+              <h4 class="card-title">Esercizio 1</h4>
+              
+              <blockquote>
+                <p>Determina in quanti modi possono disporsi in fila tre gettoni rossi e quattro gialli se il primo gettone deve essere giallo.</p>
+                </blockquote>
+              <p class="card-text"></p>
+              
+              <div class="collapse" id="es1">
+                  <blockquote>
+                  <div class="row">
+                    <div class="col-lg-11">
+                      <h5>Soluzione</h5>
+                    </div>
+                    <!-- remember to modify data-target with the righ ID and the parameter to changeTitle with the right ID of the button -->
+                    <div class="col-lg-1">
+                        <button type="button" class="close" aria-label="Close" onclick="changeTitle('btnes1')" data-toggle="collapse" data-target="#es1">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                    </div>
+                  </div>
+                  
+                  <p>Come prima cosa ricordiamo la differenza fra disposizioni, permutazioni e combinazioni.</p>
+<p>Le <strong>disposizioni</strong> semplici di <img src="https://tex.s2cms.ru/svg/n" alt="n" /> elementi distinti di classe <img src="https://tex.s2cms.ru/svg/k" alt="k" /> (con <img src="https://tex.s2cms.ru/svg/k%5Cleq%20n" alt="k\leq n" />) sono tutti i possibili gruppi che si possono formare con <img src="https://tex.s2cms.ru/svg/k" alt="k" /> elementi, presi fra gli <img src="https://tex.s2cms.ru/svg/n" alt="n" />, tali che ogni gruppo è diverso dagli altri per gli elementi contenuti o per il loro ordine.</p>
+<p>Le <strong>permutazioni</strong> semplici di <img src="https://tex.s2cms.ru/svg/n" alt="n" /> elementi distinti sono tutti i gruppi formati dagli <img src="https://tex.s2cms.ru/svg/n" alt="n" /> elementi che differiscono per il loro ordine.</p>
+<p>Le <strong>combinazioni</strong> semplici di <img src="https://tex.s2cms.ru/svg/n" alt="n" /> elementi distinti di classe <img src="https://tex.s2cms.ru/svg/k" alt="k" /> (con <img src="https://tex.s2cms.ru/svg/k%20%5Cleq%20n" alt="k \leq n" />) sono tutti i possibili gruppi che si possono formare con <img src="https://tex.s2cms.ru/svg/k" alt="k" /> elementi, presi fra gli <img src="https://tex.s2cms.ru/svg/n" alt="n" />, e tali che ogni gruppo è diverso dagli altri per almeno un elemento contenuto.</p>
+<p>Nel nostro caso ci stanno sostanzialmente chiedendo come si possono mettere in fila 7 gettoni. Siamo quindi nel caso delle permutazioni.</p>
+<p>Essendo però i 7 gettoni divisi in 3 rossi e 4 gialli, siamo nello specifico nel caso di permutazioni con ripetizione. La regola ci dice che le permutazioni di <img src="https://tex.s2cms.ru/svg/n" alt="n" /> elementi di cui <img src="https://tex.s2cms.ru/svg/h%2Ck" alt="h,k" /> ripetuti sono</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/P_n%5E%7B(h%2Ck)%7D%20%3D%20%5Cfrac%7Bn!%7D%7Bh!%5Ccdot%20k!%7D" alt="P_n^{(h,k)} = \frac{n!}{h!\cdot k!}" /></p>
+<p>dove con &quot;!&quot; indico il simbolo del fattoriale.</p>
+<p>Poichè ci dicono che il primo gettone deve essere fissato giallo, nel nostro caso <img src="https://tex.s2cms.ru/svg/n%20%3D%206" alt="n = 6" /> (7 meno quello fissato), <img src="https://tex.s2cms.ru/svg/h%20%3D%203" alt="h = 3" /> (gettoni rossi) e <img src="https://tex.s2cms.ru/svg/k%20%3D%203" alt="k = 3" /> (gettoni gialli, 4 meno uno fissato). Quindi i gettoni possono disporsi in fila in</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0AP_6%5E%7B(3%2C3)%7D%20%26%20%3D%20%5Cfrac%7B6!%7D%7B3!%20%5Ccdot%203!%7D%20%5C%5C%0A%26%20%3D%20%5Cfrac%7B6%5Ccdot%205%20%5Ccdot%204%20%5Ccdot%203!%7D%7B3!%20%5Ccdot%203%20%5Ccdot%202%7D%20%5C%5C%0A%26%20%3D%20%5Cfrac%7B6%5Ccdot%205%20%5Ccdot%204%7D%7B3%20%5Ccdot%202%7D%20%5C%5C%0A%26%20%3D%202%20%5Ccdot%205%20%5Ccdot%202%20%5C%5C%0A%26%20%3D%2020%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+P_6^{(3,3)} &amp; = \frac{6!}{3! \cdot 3!} \\
+&amp; = \frac{6\cdot 5 \cdot 4 \cdot 3!}{3! \cdot 3 \cdot 2} \\
+&amp; = \frac{6\cdot 5 \cdot 4}{3 \cdot 2} \\
+&amp; = 2 \cdot 5 \cdot 2 \\
+&amp; = 20
+\end{align*}" /></p>
+<p>modi.</p>
+
+
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" id="btnes1" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" aria-expanded="false" aria-controls="es1" data-target="#es1" onclick="changeTitle('btnes1')">Mostra Soluzione</button>
+                </div>
+                <!--<small class="text-muted">1 Marzo 2020</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- NUOVO ESERCIZIO-->
+        
+        
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted">
+    <div class="container">
+        <p class="float-right">
+        <a href="#">Back to top</a>
+        </p>
+        <p>Want to learn more? Contact me! <a href="https://instagram.com/anewmate" class="fa fa-instagram"></a> <a href="mailto:anewmate@gmail.com" class="fa fa-google"></a>.</p>
+    </div>
+</footer>
+
+<script>
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".fixed-top");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
+</script>
+<script>
+function changeTitle(btn){
+  if (document.getElementById(btn).innerHTML == "Mostra Soluzione") document.getElementById(btn).innerHTML = "Nascondi Soluzione";
+  else document.getElementById(btn).innerHTML = "Mostra Soluzione";
+}
+</script>
+</html>
