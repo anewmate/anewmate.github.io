@@ -1,0 +1,27 @@
+﻿<h1>CALCOLO COMBINATORIO</h1>
+<!--Upmath extremely simplifies this task by using Markdown and LaTeX. It converts the Markdown syntax extended with LaTeX equations support into HTML code you can publish anywhere on the web.-->
+<!--![Paper written in LaTeX](/i/latex.jpg)-->
+<h2></h2>
+<p>Esercizio 2:</p>
+<blockquote>
+<p>Determina in quanti modi diversi possiamo distribuire otto tavolette di cioccolato a cinque bambini.</p>
+</blockquote>
+<h2>Soluzione:</h2>
+<p>Come prima cosa ricordiamo la differenza fra disposizioni, permutazioni e combinazioni.</p>
+<p>Le <strong>disposizioni</strong> semplici di <img src="https://tex.s2cms.ru/svg/n" alt="n" /> elementi distinti di classe <img src="https://tex.s2cms.ru/svg/k" alt="k" /> (con <img src="https://tex.s2cms.ru/svg/k%5Cleq%20n" alt="k\leq n" />) sono tutti i possibili gruppi che si possono formare con <img src="https://tex.s2cms.ru/svg/k" alt="k" /> elementi, presi fra gli <img src="https://tex.s2cms.ru/svg/n" alt="n" />, tali che ogni gruppo è diverso dagli altri per gli elementi contenuti o per il loro ordine.</p>
+<p>Le <strong>permutazioni</strong> semplici di <img src="https://tex.s2cms.ru/svg/n" alt="n" /> elementi distinti sono tutti i gruppi formati dagli <img src="https://tex.s2cms.ru/svg/n" alt="n" /> elementi che differiscono per il loro ordine.</p>
+<p>Le <strong>combinazioni</strong> semplici di <img src="https://tex.s2cms.ru/svg/n" alt="n" /> elementi distinti di classe <img src="https://tex.s2cms.ru/svg/k" alt="k" /> (con <img src="https://tex.s2cms.ru/svg/k%20%5Cleq%20n" alt="k \leq n" />) sono tutti i possibili gruppi che si possono formare con <img src="https://tex.s2cms.ru/svg/k" alt="k" /> elementi, presi fra gli <img src="https://tex.s2cms.ru/svg/n" alt="n" />, e tali che ogni gruppo è diverso dagli altri per almeno un elemento contenuto.</p>
+<p>Nel nostro caso abbiamo <img src="https://tex.s2cms.ru/svg/n%3D5" alt="n=5" /> bambini e <img src="https://tex.s2cms.ru/svg/k%3D8" alt="k=8" /> tavolette. Visto che l’ordine con cui i bambini si presentano <strong>non</strong> è importante, siamo nell’ambito delle combinazioni, e non disposizioni (dove invece l’ordine è importante). Tradotto: non importa se prima do una tavoletta al bambino numero 2 e poi una tavoletta al bambino numero 4, ma è importante quante ne ho date a testa. In particolare, abbiamo combinazioni con ripetizione che, ricordiamo, si calcolano come</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0AC_%7Bn%2Ck%7D%5E%7B'%7D%20%26%20%3D%20%5Cbinom%7Bn%2Bk-1%7D%7Bk%7D%20%5C%5C%0A%26%20%3D%20%5Cfrac%7B(n%2Bk-1)%5Ccdot%20(n%2Bk-2)%20%5Ccdot%20%5Cdots%20%5Ccdot%20(n%2B1)%20%5Ccdot%20n%7D%7Bk!%7D%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+C_{n,k}^{'} &amp; = \binom{n+k-1}{k} \\
+&amp; = \frac{(n+k-1)\cdot (n+k-2) \cdot \dots \cdot (n+1) \cdot n}{k!}
+\end{align*}" /></p>
+<p>Nel nostro caso quindi</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0AC_%7B5%2C8%7D%5E%7B'%7D%20%26%20%3D%20%5Cbinom%7B12%7D%7B8%7D%20%5C%5C%0A%26%20%3D%20%5Cfrac%7B12%5Ccdot%2011%20%5Ccdot%2010%20%5Ccdot%209%20%5Ccdot%208%20%5Ccdot%206%20%5Ccdot%205%7D%7B8!%7D%20%5C%5C%0A%26%20%3D%20%5Cfrac%7B12%5Ccdot%2011%20%5Ccdot%2010%20%5Ccdot%209%20%5Ccdot%208%20%5Ccdot%206%20%5Ccdot%205%7D%7B8%5Ccdot%207%20%5Ccdot%206%20%5Ccdot%205%20%5Ccdot%204%20%5Ccdot%203%20%5Ccdot%202%7D%20%5C%5C%0A%26%20%3D%2011%5Ccdot%205%20%5Ccdot%209%20%5C%5C%0A%26%20%3D%20495%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+C_{5,8}^{'} &amp; = \binom{12}{8} \\
+&amp; = \frac{12\cdot 11 \cdot 10 \cdot 9 \cdot 8 \cdot 6 \cdot 5}{8!} \\
+&amp; = \frac{12\cdot 11 \cdot 10 \cdot 9 \cdot 8 \cdot 6 \cdot 5}{8\cdot 7 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2} \\
+&amp; = 11\cdot 5 \cdot 9 \\
+&amp; = 495
+\end{align*}" /></p>
+<p>Possiamo quindi distribuire otto tavolette di cioccolato a cinque bambini in <img src="https://tex.s2cms.ru/svg/495" alt="495" /> modi diversi.</p>
