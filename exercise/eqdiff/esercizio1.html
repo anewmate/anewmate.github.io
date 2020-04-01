@@ -1,0 +1,55 @@
+﻿<h1>EQUAZIONI DIFFERENZIALI</h1>
+<!--Upmath extremely simplifies this task by using Markdown and LaTeX. It converts the Markdown syntax extended with LaTeX equations support into HTML code you can publish anywhere on the web.-->
+<!--![Paper written in LaTeX](/i/latex.jpg)-->
+<h2></h2>
+<p>Esercizio 2:</p>
+<blockquote>
+<p>Risolvi la seguente equazione differenziale</p>
+</blockquote>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/x%5E3y%5E%7B'%7D-2x-1%20%3D%200" alt="x^3y^{'}-2x-1 = 0" /></p>
+<h2>Soluzione:</h2>
+<p>Come prima cosa isoliamo la derivata di <img src="https://tex.s2cms.ru/svg/y" alt="y" />:</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0Ax%5E3y%5E%7B'%7D-2x-1%20%26%20%3D%200%20%5C%5C%0Ax%5E3y%5E%7B'%7D%20%26%20%3D%202x%2B1%20%5C%5C%0Ay%5E%7B'%7D%20%26%20%3D%20%5Cfrac%7B2x%2B1%7D%7Bx%5E3%7D%20%5C%5C%0Ay%5E%7B'%7D%20%26%20%3D%20%5Cfrac%7B2x%7D%7Bx%5E3%7D%20%2B%20%5Cfrac%7B1%7D%7Bx%5E3%7D%20%5C%5C%0Ay%5E%7B'%7D%20%26%20%3D%20%5Cunderbrace%7B%5Cfrac%7B2%7D%7Bx%5E2%7D%20%2B%20%5Cfrac%7B1%7D%7Bx%5E3%7D%7D_%7B%5Ctext%7Bfunzione%20che%20dipende%20solo%20da%20x%7D%7D%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+x^3y^{'}-2x-1 &amp; = 0 \\
+x^3y^{'} &amp; = 2x+1 \\
+y^{'} &amp; = \frac{2x+1}{x^3} \\
+y^{'} &amp; = \frac{2x}{x^3} + \frac{1}{x^3} \\
+y^{'} &amp; = \underbrace{\frac{2}{x^2} + \frac{1}{x^3}}_{\text{funzione che dipende solo da x}}
+\end{align*}" /></p>
+<p>Siamo quindi di fronte a un’equazione differenziale del tipo</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/y%5E%7B'%7D%20%3D%20f(x)" alt="y^{'} = f(x)" /></p>
+<p>dove, nel nostro caso, <img src="https://tex.s2cms.ru/svg/f(x)%20%3D%20%5Cfrac%7B2%7D%7Bx%5E2%7D%20%2B%20%5Cfrac%7B1%7D%7Bx%5E3%7D" alt="f(x) = \frac{2}{x^2} + \frac{1}{x^3}" />.</p>
+<p>Per risolverla basta integrare destra e sinistra <strong>rispetto a <img src="https://tex.s2cms.ru/svg/%5Cmathbf%7Bx%7D" alt="\mathbf{x}" /></strong>, ossia fare l’integrale in <img src="https://tex.s2cms.ru/svg/dx" alt="dx" />:</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0Ay%5E%7B'%7D%20%26%20%3D%20%5Cfrac%7B2%7D%7Bx%5E2%7D%20%2B%20%5Cfrac%7B1%7D%7Bx%5E3%7D%20%5C%5C%0A%5Cint%20y%5E%7B'%7D%20dx%20%26%20%3D%20%5Cint%20%5Cleft(%5Cfrac%7B2%7D%7Bx%5E2%7D%20%2B%20%5Cfrac%7B1%7D%7Bx%5E3%7D%5Cright)dx%20%5C%5C%0Ay%20%26%20%3D%20%5Cint%20%5Cfrac%7B2%7D%7Bx%5E2%7Ddx%20%2B%20%5Cint%20%5Cfrac%7B1%7D%7Bx%5E3%7Ddx%20%5C%5C%0A%26%20%3D%202%20%5Cint%20x%5E%7B-2%7D%20dx%20%2B%20%5Cint%20x%5E%7B-3%7Ddx%20%5C%5C%0A%26%20%3D%202%20%5Ccdot%20%5Cfrac%7Bx%5E%7B-1%7D%7D%7B-1%7D%20%2B%20%5Cfrac%7Bx%5E%7B-2%7D%7D%7B-2%7D%20%2Bc%5C%5C%0A%26%20%3D%20-2x%5E%7B-1%7D%20-%5Cfrac%7B1%7D%7B2%7Dx%5E%7B-2%7D%20%2Bc%5C%5C%0A%26%20%3D%20-%5Cfrac%7B2%7D%7Bx%7D%20-%20%5Cfrac%7B1%7D%7B2x%5E2%7D%2Bc%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+y^{'} &amp; = \frac{2}{x^2} + \frac{1}{x^3} \\
+\int y^{'} dx &amp; = \int \left(\frac{2}{x^2} + \frac{1}{x^3}\right)dx \\
+y &amp; = \int \frac{2}{x^2}dx + \int \frac{1}{x^3}dx \\
+&amp; = 2 \int x^{-2} dx + \int x^{-3}dx \\
+&amp; = 2 \cdot \frac{x^{-1}}{-1} + \frac{x^{-2}}{-2} +c\\
+&amp; = -2x^{-1} -\frac{1}{2}x^{-2} +c\\
+&amp; = -\frac{2}{x} - \frac{1}{2x^2}+c
+\end{align*}" /></p>
+<p>Le soluzioni sono quindi tutte le funzioni del tipo</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/y%20%3D%20-%5Cfrac%7B2%7D%7Bx%7D%20-%20%5Cfrac%7B1%7D%7B2x%5E2%7D%2Bc" alt="y = -\frac{2}{x} - \frac{1}{2x^2}+c" /></p>
+<p><strong>Nota</strong> sul perchè prendo l’integrale in <img src="https://tex.s2cms.ru/svg/x" alt="x" />:</p>
+<p>Sappiamo che scrivere <img src="https://tex.s2cms.ru/svg/y" alt="y" /> o scrivere <img src="https://tex.s2cms.ru/svg/f(x)" alt="f(x)" /> è lo stesso: modi diversi per scrivere la stessa identica cosa. Quindi, quando considero la derivata, che posso indicare con <img src="https://tex.s2cms.ru/svg/'" alt="'" /> oppure <img src="https://tex.s2cms.ru/svg/D" alt="D" /> oppure <img src="https://tex.s2cms.ru/svg/%5Cfrac%7Bd%7D%7Bdx%7D" alt="\frac{d}{dx}" />, scrivere <img src="https://tex.s2cms.ru/svg/y%5E%7B'%7D" alt="y^{'}" /> equivale a scrivere <img src="https://tex.s2cms.ru/svg/f%5E%7B'%7D(x)" alt="f^{'}(x)" />. Siccome l’obiettivo del problema è trovare <img src="https://tex.s2cms.ru/svg/y" alt="y" />, ossia <img src="https://tex.s2cms.ru/svg/f(x)" alt="f(x)" />, nel momento in cui ho un’equazione del tipo</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/y%5E%7B'%7D%20%3D%20%5Ctext%7Bfunzione%20di%20x%7D" alt="y^{'} = \text{funzione di x}" /></p>
+<p>ossia</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/f%5E%7B'%7D(x)%20%3D%20%5Ctext%7Bfunzione%20di%20x%7D" alt="f^{'}(x) = \text{funzione di x}" /></p>
+<p>a sinistra dell’uguale ottengo <img src="https://tex.s2cms.ru/svg/f(x)" alt="f(x)" /> solo se considero l’integrale rispetto a <img src="https://tex.s2cms.ru/svg/x" alt="x" />. In quel caso infatti, per il termine a sinistra dell’uguale ho</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cint%20y%5E%7B'%7D%20dx%20%3D%20%5Cint%20f%5E%7B'%7D(x)%20dx%20%3D%20f(x)%20%3D%20y" alt="\int y^{'} dx = \int f^{'}(x) dx = f(x) = y" /></p>
+<p>proprio per definizione di integrale. Se prendessi l’integrale rispetto a <img src="https://tex.s2cms.ru/svg/y" alt="y" /> otterei</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cint%20%5Cunderbrace%7Bf%5E%7B'%7D(x)%7D_%7B%5Ctext%7Bnon%20dipende%20da%20y%7D%7D%20dy%20%3D%20f%5E%7B'%7D(x)%20%5Cint%201%20%5Ccdot%20dy%20%3D%20f%5E%7B'%7D(x)%20y" alt="\int \underbrace{f^{'}(x)}_{\text{non dipende da y}} dy = f^{'}(x) \int 1 \cdot dy = f^{'}(x) y" /></p>
+<p>Dato che <img src="https://tex.s2cms.ru/svg/f%5E%7B'%7D(x)" alt="f^{'}(x)" /> non dipende da <img src="https://tex.s2cms.ru/svg/y" alt="y" /> (<img src="https://tex.s2cms.ru/svg/f%5E%7B'%7D(x)" alt="f^{'}(x)" /> è una funzione di <img src="https://tex.s2cms.ru/svg/x" alt="x" />, non di <img src="https://tex.s2cms.ru/svg/y" alt="y" />) è come se fosse una costante che posso portare fuori dall’integrale. In questo caso non ottengo neanche lontanamente quello che mi interessa, ossia <img src="https://tex.s2cms.ru/svg/f(x)" alt="f(x)" />.</p>
+<p><strong>Nota</strong>: volendo essere rigorosi al 100%, poichè ogni integrale che risolvo è indefinito, avrei</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0Ay%5E%7B'%7D%20%26%20%3D%20%5Cfrac%7B2%7D%7Bx%5E2%7D%20%2B%20%5Cfrac%7B1%7D%7Bx%5E3%7D%20%5C%5C%0A%5Cint%20y%5E%7B'%7D%20dx%20%26%20%3D%20%5Cint%20%5Cleft(%5Cfrac%7B2%7D%7Bx%5E2%7D%20%2B%20%5Cfrac%7B1%7D%7Bx%5E3%7D%5Cright)dx%20%5C%5C%0Ay%20%2Bc_1%20%26%20%3D%20%5Cint%20%5Cfrac%7B2%7D%7Bx%5E2%7Ddx%20%2B%20%5Cint%20%5Cfrac%7B1%7D%7Bx%5E3%7Ddx%20%5C%5C%0Ay%20%2Bc_1%20%26%20%3D%202%20%5Cint%20x%5E%7B-2%7D%20dx%20%2B%20%5Cint%20x%5E%7B-3%7Ddx%20%5C%5C%0Ay%20%2Bc_1%20%26%20%3D%202%20%5Ccdot%20%5Cfrac%7Bx%5E%7B-1%7D%7D%7B-1%7D%20%2Bc_2%20%2B%20%5Cfrac%7Bx%5E%7B-2%7D%7D%7B-2%7D%20%2Bc_3%5C%5C%0Ay%20%2Bc_1%20%26%20%3D%20-2x%5E%7B-1%7D%20-%5Cfrac%7B1%7D%7B2%7Dx%5E%7B-2%7D%20%2Bc_2%2Bc_3%5C%5C%0Ay%20%2Bc_1%20%26%20%3D%20-%5Cfrac%7B2%7D%7Bx%7D%20-%20%5Cfrac%7B1%7D%7B2x%5E2%7D%2Bc_2%2Bc_3%20%5C%5C%0Ay%20%26%20%3D%20-%5Cfrac%7B2%7D%7Bx%7D%20-%20%5Cfrac%7B1%7D%7B2x%5E2%7D%2B%5Cunderbrace%7Bc_2%2Bc_3-c_1%7D_%7B%3D%20c%7D%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+y^{'} &amp; = \frac{2}{x^2} + \frac{1}{x^3} \\
+\int y^{'} dx &amp; = \int \left(\frac{2}{x^2} + \frac{1}{x^3}\right)dx \\
+y +c_1 &amp; = \int \frac{2}{x^2}dx + \int \frac{1}{x^3}dx \\
+y +c_1 &amp; = 2 \int x^{-2} dx + \int x^{-3}dx \\
+y +c_1 &amp; = 2 \cdot \frac{x^{-1}}{-1} +c_2 + \frac{x^{-2}}{-2} +c_3\\
+y +c_1 &amp; = -2x^{-1} -\frac{1}{2}x^{-2} +c_2+c_3\\
+y +c_1 &amp; = -\frac{2}{x} - \frac{1}{2x^2}+c_2+c_3 \\
+y &amp; = -\frac{2}{x} - \frac{1}{2x^2}+\underbrace{c_2+c_3-c_1}_{= c}
+\end{align*}" /></p>
+<p>Poichè la somma (e sottrazione) di costanti è una costante, scrivo sempre solo una cosante <img src="https://tex.s2cms.ru/svg/c" alt="c" /> quando risolvo l’integrale a destra dell’uguaglianza.</p>

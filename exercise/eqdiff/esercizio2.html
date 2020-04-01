@@ -1,0 +1,73 @@
+﻿<h1>EQUAZIONI DIFFERENZIALI</h1>
+<!--Upmath extremely simplifies this task by using Markdown and LaTeX. It converts the Markdown syntax extended with LaTeX equations support into HTML code you can publish anywhere on the web.-->
+<!--![Paper written in LaTeX](/i/latex.jpg)-->
+<h2></h2>
+<p>Esercizio 2:</p>
+<blockquote>
+<p>Risolvi la seguente equazione differenziale</p>
+</blockquote>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/2yy%5E%7B'%7D-y%5E%7B2%7Dx-2x%20%3D%200" alt="2yy^{'}-y^{2}x-2x = 0" /></p>
+<h2>Soluzione:</h2>
+<p>Come prima cosa isoliamo la derivata di <img src="https://tex.s2cms.ru/svg/y" alt="y" />:</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A2yy%5E%7B'%7D-y%5E%7B2%7Dx-2x%20%26%20%3D%200%20%5C%5C%0A2yy%5E%7B'%7D%20%26%20%3D%20y%5E%7B2%7Dx%2B2x%20%5C%5C%0Ay%5E%7B'%7D%20%26%20%3D%20%5Cfrac%7By%5E%7B2%7Dx%2B2x%7D%7B2y%7D%20%5C%5C%0Ay%5E%7B'%7D%20%26%20%3D%20%5Cfrac%7Bx(y%5E2%2B2)%7D%7B2y%7D%20%5C%5C%0Ay%5E%7B'%7D%20%26%20%3D%20x%5Cleft(%5Cfrac%7By%5E2%2B2%7D%7B2y%7D%5Cright)%20%5C%5C%0Ay%5E%7B'%7D%20%26%20%3D%20%5Cunderbrace%7Bx%7D_%7B%5Ctext%7Bfunzione%20di%20x%7D%7D%5Cunderbrace%7B%5Cleft(%5Cfrac%7By%5E2%2B2%7D%7B2y%7D%5Cright)%7D_%7B%5Ctext%7Bfunzione%20di%20y%7D%7D%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+2yy^{'}-y^{2}x-2x &amp; = 0 \\
+2yy^{'} &amp; = y^{2}x+2x \\
+y^{'} &amp; = \frac{y^{2}x+2x}{2y} \\
+y^{'} &amp; = \frac{x(y^2+2)}{2y} \\
+y^{'} &amp; = x\left(\frac{y^2+2}{2y}\right) \\
+y^{'} &amp; = \underbrace{x}_{\text{funzione di x}}\underbrace{\left(\frac{y^2+2}{2y}\right)}_{\text{funzione di y}}
+\end{align*}" /></p>
+<p>Siamo quindi di fronte a un’equazione differenziale del tipo</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/y%5E%7B'%7D%20%3D%20g(x)%5Ccdot%20h(y)" alt="y^{'} = g(x)\cdot h(y)" /></p>
+<p>dove, nel nostro caso, <img src="https://tex.s2cms.ru/svg/g(x)%20%3D%20x" alt="g(x) = x" /> e <img src="https://tex.s2cms.ru/svg/h(y)%20%3D%20%5Cfrac%7By%5E2%2B2%7D%7B2y%7D" alt="h(y) = \frac{y^2+2}{2y}" />.</p>
+<p>Per risolverla si applica il metodo della separazione delle variabili.</p>
+<p>Piccola parentesi per capire come funziona questo metodo:</p>
+<p>Sappiamo che scrivere <img src="https://tex.s2cms.ru/svg/y" alt="y" /> o scrivere <img src="https://tex.s2cms.ru/svg/f(x)" alt="f(x)" /> è lo stesso: modi diversi per scrivere la stessa identica cosa. Analogamente, ci sono vari modi per indicare la derivata: i più comuni sono <img src="https://tex.s2cms.ru/svg/'" alt="'" /> oppure <img src="https://tex.s2cms.ru/svg/D" alt="D" />. Un terzo modo è</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cfrac%7Bd(%5Ctext%7Bcosa%20voglio%20derivare%7D)%7D%7Bd(%5Ctext%7Bvariabile%20rispetto%20a%20cui%20voglio%20fare%20la%20derivata%7D)%7D" alt="\frac{d(\text{cosa voglio derivare})}{d(\text{variabile rispetto a cui voglio fare la derivata})}" /></p>
+<p>Per esempio, se voglio derivare la nostra funzione <img src="https://tex.s2cms.ru/svg/f(x)" alt="f(x)" /> rispetto alla variabile <img src="https://tex.s2cms.ru/svg/x" alt="x" /> (tradotto: la derivata che facciamo sempre) posso scrivere equivalentemente</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cfrac%7Bd%20f(x)%7D%7Bdx%7D%2C%20D(f(x))%2C%20f%5E%7B'%7D(x)" alt="\frac{d f(x)}{dx}, D(f(x)), f^{'}(x)" /></p>
+<p>E visto che scrivere <img src="https://tex.s2cms.ru/svg/f(x)" alt="f(x)" /> è come scrivere <img src="https://tex.s2cms.ru/svg/y" alt="y" /> ho</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cfrac%7Bdy%7D%7Bdx%7D%2C%20D(y)%2C%20y%5E%7B'%7D" alt="\frac{dy}{dx}, D(y), y^{'}" /></p>
+<p>Ora, se invece di <img src="https://tex.s2cms.ru/svg/y%5E%7B'%7D" alt="y^{'}" /> scrivo <img src="https://tex.s2cms.ru/svg/%5Cfrac%7Bdy%7D%7Bdx%7D" alt="\frac{dy}{dx}" /> e lo tratto come se fosse una frazione, ottengo</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0Ay%5E%7B'%7D%20%26%20%3D%20g(x)h(y)%20%5C%5C%0A%5Cfrac%7Bdy%7D%7Bdx%7D%20%26%20%3D%20g(x)h(y)%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+y^{'} &amp; = g(x)h(y) \\
+\frac{dy}{dx} &amp; = g(x)h(y)
+\end{align*}" /></p>
+<p>Moltiplico destra e sinistra per <img src="https://tex.s2cms.ru/svg/%5Cfrac%7Bdx%7D%7Bh(y)%7D" alt="\frac{dx}{h(y)}" />:</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A%5Cfrac%7Bdy%7D%7Bdx%7D%20%5Ccdot%20%5Cfrac%7Bdx%7D%7Bh(y)%7D%20%26%20%3D%20g(x)h(y)%20%5Ccdot%20%5Cfrac%7Bdx%7D%7Bh(y)%7D%20%5C%5C%0A%5Cfrac%7Bdy%7D%7Bh(y)%7D%20%26%20%3D%20g(x)dx%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\frac{dy}{dx} \cdot \frac{dx}{h(y)} &amp; = g(x)h(y) \cdot \frac{dx}{h(y)} \\
+\frac{dy}{h(y)} &amp; = g(x)dx
+\end{align*}" /></p>
+<p>Integro destra e sinistra:</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A%5Cint%20%5Cfrac%7Bdy%7D%7Bh(y)%7D%20%26%20%3D%20%5Cint%20g(x)dx%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\int \frac{dy}{h(y)} &amp; = \int g(x)dx
+\end{align*}" /></p>
+<p>e calcolo infine e due integrali separatamente.</p>
+<p>Applichiamo questo metodo al nostro caso.</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A%5Cfrac%7Bdy%7D%7Bdx%7D%20%26%20%3D%20x%5Cleft(%5Cfrac%7By%5E2%2B2%7D%7B2y%7D%5Cright)%20%5C%5C%0A%5Cfrac%7Bdy%7D%7Bdx%7D%20%5Ccdot%20%5Cfrac%7Bdx%7D%7B%5Cfrac%7By%5E2%2B2%7D%7B2y%7D%7D%26%20%3D%20x%5Cleft(%5Cfrac%7By%5E2%2B2%7D%7B2y%7D%5Cright)%20%5Ccdot%20%5Cfrac%7Bdx%7D%7B%5Cfrac%7By%5E2%2B2%7D%7B2y%7D%7D%20%5C%5C%0A%5Cfrac%7Bdy%7D%7B%5Cfrac%7By%5E2%2B2%7D%7B2y%7D%7D%20%26%20%3D%20xdx%20%5C%5C%0A%5Cfrac%7B2y%7D%7By%5E2%2B2%7Ddy%20%26%20%3D%20xdx%20%5C%5C%0A%5Cint%20%5Cfrac%7B2y%7D%7By%5E2%2B2%7Ddy%20%26%20%3D%20%5Cint%20xdx%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\frac{dy}{dx} &amp; = x\left(\frac{y^2+2}{2y}\right) \\
+\frac{dy}{dx} \cdot \frac{dx}{\frac{y^2+2}{2y}}&amp; = x\left(\frac{y^2+2}{2y}\right) \cdot \frac{dx}{\frac{y^2+2}{2y}} \\
+\frac{dy}{\frac{y^2+2}{2y}} &amp; = xdx \\
+\frac{2y}{y^2+2}dy &amp; = xdx \\
+\int \frac{2y}{y^2+2}dy &amp; = \int xdx
+\end{align*}" /></p>
+<p>Risolviamo ora i due integrali separatamente. Quello a destra è facile e otteniamo</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cint%20xdx%20%3D%20%5Cfrac%7Bx%5E2%7D%7B2%7D%2Bc" alt="\int xdx = \frac{x^2}{2}+c" /></p>
+<p>Per quello a sinistra invece basta notare che a numeratore della frazione c’è esattamente la derivata del denominatore quindi</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cint%20%5Cfrac%7B2y%7D%7By%5E2%2B2%7Ddy%20%3D%20%5Cln(y%5E2%2B2)" alt="\int \frac{2y}{y^2+2}dy = \ln(y^2+2)" /></p>
+<hr>
+<p>Memo:</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cint%20%5Cfrac%7Bf%5E%7B'%7D(x)%7D%7Bf(x)%7Ddx%20%3D%20%5Cln(%7Cf(x)%7C)%2Bc" alt="\int \frac{f^{'}(x)}{f(x)}dx = \ln(|f(x)|)+c" /></p>
+<p>Nel nostro caso la variabile è <img src="https://tex.s2cms.ru/svg/y" alt="y" /> invece che <img src="https://tex.s2cms.ru/svg/x" alt="x" />, <img src="https://tex.s2cms.ru/svg/f(y)%20%3D%20y%5E2%2B2%20%5CRightarrow%20f%5E%7B'%7D(y)%20%3D%202y" alt="f(y) = y^2+2 \Rightarrow f^{'}(y) = 2y" />, e non metto il valore assoluto ad argomento del logaritmo in quanto so già che <img src="https://tex.s2cms.ru/svg/y%5E2%2B2" alt="y^2+2" /> è positivo: <img src="https://tex.s2cms.ru/svg/y%5E2" alt="y^2" /> è positivo perchè è un quadrato, sommandoci +2 ottengo sempre qualcosa di positivo.</p>
+<hr>
+<p>Ora che abbiamo calcolato i due integrali abbiamo quindi che</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A%5Cint%20%5Cfrac%7B2y%7D%7By%5E2%2B2%7Ddy%20%26%20%3D%20%5Cint%20xdx%20%5C%5C%0A%5Cln(y%5E2%2B2)%20%26%20%3D%20%5Cfrac%7Bx%5E2%7D%7B2%7D%2Bc%20%5C%5C%0Ae%5E%7B%5Cln(y%5E2%2B2)%7D%20%26%20%3D%20e%5E%7B%5Cfrac%7Bx%5E2%7D%7B2%7D%2Bc%7D%20%5C%5C%0Ay%5E2%2B2%20%26%20%3D%20e%5E%7B%5Cfrac%7Bx%5E2%7D%7B2%7D%2Bc%7D%20%5C%5C%0Ay%5E2%20%26%20%3D%20e%5E%7B%5Cfrac%7Bx%5E2%7D%7B2%7D%2Bc%7D%20-2%20%5C%5C%0Ay%20%26%20%3D%20%5Cpm%20%5Csqrt%7Be%5E%7B%5Cfrac%7Bx%5E2%7D%7B2%7D%2Bc%7D-2%7D%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\int \frac{2y}{y^2+2}dy &amp; = \int xdx \\
+\ln(y^2+2) &amp; = \frac{x^2}{2}+c \\
+e^{\ln(y^2+2)} &amp; = e^{\frac{x^2}{2}+c} \\
+y^2+2 &amp; = e^{\frac{x^2}{2}+c} \\
+y^2 &amp; = e^{\frac{x^2}{2}+c} -2 \\
+y &amp; = \pm \sqrt{e^{\frac{x^2}{2}+c}-2}
+\end{align*}" /></p>
+<p>Le soluzioni dell’equazione differenziali sono quindi</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/y%20%3D%20%5Cpm%20%5Csqrt%7Be%5E%7B%5Cfrac%7Bx%5E2%7D%7B2%7D%2Bc%7D-2%7D" alt="y = \pm \sqrt{e^{\frac{x^2}{2}+c}-2}" /></p>
