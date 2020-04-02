@@ -253,6 +253,106 @@ y &amp; = \pm \sqrt{e^{\frac{x^2}{2}+c}-2}
           </div>
         </div>
         <!-- NUOVO ESERCIZIO-->
+
+        <div class="col-12">
+          <div class="card mb-12 shadow-sm exercise-card">
+            <div class="card-body">
+              <h4 class="card-title">Esercizio 3</h4>
+              
+              <blockquote>
+                <p>Risolvi la seguente equazione differenziale</p>
+                </blockquote>
+                <p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/y%5E%7B'%7D%2B3x%5E2y%20%3D%20x%5E2" alt="y^{'}+3x^2y = x^2" /></p>
+                <blockquote>
+                <p>che soddisfa la condizione <img src="https://tex.s2cms.ru/svg/y(0)%20%3D%20%5Cfrac%7B4%7D%7B3%7D" alt="y(0) = \frac{4}{3}" />.</p>
+                </blockquote>
+                
+              <p class="card-text"></p>
+              
+              <div class="collapse" id="es3">
+                  <blockquote>
+                  <div class="row">
+                    <div class="col-lg-11">
+                      <h5>Soluzione</h5>
+                    </div>
+                    <!-- remember to modify data-target with the righ ID and the parameter to changeTitle with the right ID of the button -->
+                    <div class="col-lg-1">
+                        <button type="button" class="close" aria-label="Close" onclick="changeTitle('btnes3')" data-toggle="collapse" data-target="#es3">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                    </div>
+                  </div>
+                  
+                  <p>Come prima cosa notiamo che abbiamo sia <img src="https://tex.s2cms.ru/svg/y" alt="y" /> che <img src="https://tex.s2cms.ru/svg/y%5E%7B'%7D" alt="y^{'}" /> di primo grado: siamo quindi di fronte a un’equazione differenziale lineare.</p>
+<p>Sappiamo che in generale si scrive nella forma</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/y%5E%7B'%7D%20%2B%20a(x)%20%5Ccdot%20y%20%3D%20b(x)" alt="y^{'} + a(x) \cdot y = b(x)" /></p>
+<p>e ha soluzione</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/y%20%3D%20e%5E%7B-A(x)%7D%5Cleft(%5Cint%20e%5E%7BA(x)%7Db(x)dx%20%2B%20c%5Cright)" alt="y = e^{-A(x)}\left(\int e^{A(x)}b(x)dx + c\right)" /></p>
+<p>dove <img src="https://tex.s2cms.ru/svg/A(x)%20%3D%20%5Cint%20a(x)dx" alt="A(x) = \int a(x)dx" /> (senza <img src="https://tex.s2cms.ru/svg/%2Bc" alt="+c" />).</p>
+<p>Nel nostro caso <img src="https://tex.s2cms.ru/svg/a(x)%20%3D%203x%5E2" alt="a(x) = 3x^2" /> mentre <img src="https://tex.s2cms.ru/svg/b(x)%20%3D%20x%5E2" alt="b(x) = x^2" />. Calcoliamo subito <img src="https://tex.s2cms.ru/svg/A(x)" alt="A(x)" />.</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0AA(x)%20%26%20%3D%20%5Cint%20a(x)dx%20%5C%5C%0A%26%20%3D%20%5Cint%203x%5E2dx%20%5C%5C%0A%26%20%3D%203%20%5Cint%20x%5E2%20dx%20%5C%5C%0A%26%20%3D%203%20%5Ccdot%20%5Cleft(%5Cfrac%7Bx%5E3%7D%7B3%7D%5Cright)%20%5C%5C%0A%26%20%3D%20x%5E3%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+A(x) &amp; = \int a(x)dx \\
+&amp; = \int 3x^2dx \\
+&amp; = 3 \int x^2 dx \\
+&amp; = 3 \cdot \left(\frac{x^3}{3}\right) \\
+&amp; = x^3
+\end{align*}" /></p>
+<p>La soluzione è quindi data da</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/y%20%3D%20e%5E%7B-x%5E3%7D%5Cleft(%5Cint%20e%5E%7Bx%5E3%7Dx%5E2dx%20%2Bc%5Cright)" alt="y = e^{-x^3}\left(\int e^{x^3}x^2dx +c\right)" /></p>
+<p>Calcoliamo separatamente l’integrale nella parentesi.</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cint%20e%5E%7Bx%5E3%7Dx%5E2%20dx" alt="\int e^{x^3}x^2 dx" /></p>
+<p>Analizziamo un attimo questo integrale: ad argomento abbiamo un esponenziale (<img src="https://tex.s2cms.ru/svg/e%5E%7Bx%5E3%7D" alt="e^{x^3}" />) moltiplicato per qualcosa (<img src="https://tex.s2cms.ru/svg/x%5E2" alt="x^2" />) di molto simile alla derivata dell’esponente (<img src="https://tex.s2cms.ru/svg/x%5E3" alt="x^3" />). Se calcoliamo infatti la derivata di <img src="https://tex.s2cms.ru/svg/e%5E%7Bx%5E3%7D" alt="e^{x^3}" /> otteniamo</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/D%5Cleft(e%5E%7Bx%5E3%7D%5Cright)%20%3D%20e%5E%7Bx%5E3%7D%20%5Ccdot%20D(x%5E3)%20%3D%20e%5E%7Bx%5E3%7D%20%5Ccdot%203x%5E2%20%3D%203e%5E%7Bx%5E3%7Dx%5E2" alt="D\left(e^{x^3}\right) = e^{x^3} \cdot D(x^3) = e^{x^3} \cdot 3x^2 = 3e^{x^3}x^2" /></p>
+<p>che è quasi quello che abbiamo ad argomento dell’integrale. Visto che ci &quot;manca solo quel 3&quot; moltiplichiamo (e dividiamo, se no non otteniamo un’equivalenza) l’argomento per 3:</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A%5Cint%20e%5E%7Bx%5E3%7Dx%5E2%20dx%20%26%20%3D%20%5Cint%20%5Cfrac%7B1%7D%7B3%7D%20%5Ccdot%203%20%5Ccdot%20e%5E%7Bx%5E3%7Dx%5E2%20dx%20%5C%5C%0A%26%20%3D%20%5Cfrac%7B1%7D%7B3%7D%20%5Cint%203e%5E%7Bx%5E3%7Dx%5E2dx%20%5C%5C%0A%26%20%3D%20%5Cfrac%7B1%7D%7B3%7D%20%5Cint%20D%5Cleft(e%5E%7Bx%5E3%7D%5Cright)dx%20%5C%5C%0A%26%20%3D%20%5Cfrac%7B1%7D%7B3%7De%5E%7Bx%5E3%7D%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\int e^{x^3}x^2 dx &amp; = \int \frac{1}{3} \cdot 3 \cdot e^{x^3}x^2 dx \\
+&amp; = \frac{1}{3} \int 3e^{x^3}x^2dx \\
+&amp; = \frac{1}{3} \int D\left(e^{x^3}\right)dx \\
+&amp; = \frac{1}{3}e^{x^3}
+\end{align*}" /></p>
+<p>La funzione <img src="https://tex.s2cms.ru/svg/y" alt="y" /> che cercavamo diventa quindi</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0Ay%20%26%20%3D%20e%5E%7B-x%5E3%7D%5Cleft(%5Cint%20e%5E%7Bx%5E3%7Dx%5E2dx%20%2Bc%5Cright)%20%5C%5C%0A%26%20%3D%20e%5E%7B-x%5E3%7D%5Cleft(%5Cfrac%7B1%7D%7B3%7De%5E%7Bx%5E3%7D%20%2Bc%5Cright)%20%5C%5C%0A%26%20%3D%20%5Cfrac%7B1%7D%7B3%7De%5E%7Bx%5E3%7De%5E%7B-x%5E3%7D%20%2B%20ce%5E%7B-x%5E3%7D%20%5C%5C%0A%26%20%3D%20%5Cfrac%7B1%7D%7B3%7De%5E%7Bx%5E3-x%5E3%7D%20%2B%20ce%5E%7B-x%5E3%7D%20%5C%5C%0A%26%20%3D%20%5Cfrac%7B1%7D%7B3%7De%5E%7B0%7D%20%2B%20%5Cfrac%7Bc%7D%7Be%5E%7Bx%5E3%7D%7D%20%5C%5C%0A%26%20%3D%20%5Cfrac%7B1%7D%7B3%7D%20%5Ccdot%201%20%2B%5Cfrac%7Bc%7D%7Be%5E%7Bx%5E3%7D%7D%20%5C%5C%0A%26%20%3D%20%5Cfrac%7B1%7D%7B3%7D%20%2B%20%5Cfrac%7Bc%7D%7Be%5E%7Bx%5E3%7D%7D%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+y &amp; = e^{-x^3}\left(\int e^{x^3}x^2dx +c\right) \\
+&amp; = e^{-x^3}\left(\frac{1}{3}e^{x^3} +c\right) \\
+&amp; = \frac{1}{3}e^{x^3}e^{-x^3} + ce^{-x^3} \\
+&amp; = \frac{1}{3}e^{x^3-x^3} + ce^{-x^3} \\
+&amp; = \frac{1}{3}e^{0} + \frac{c}{e^{x^3}} \\
+&amp; = \frac{1}{3} \cdot 1 +\frac{c}{e^{x^3}} \\
+&amp; = \frac{1}{3} + \frac{c}{e^{x^3}}
+\end{align*}" /></p>
+<p>La soluzione generale è quindi</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/y%20%3D%20%5Cfrac%7B1%7D%7B3%7D%20%2B%20%5Cfrac%7Bc%7D%7Be%5E%7Bx%5E3%7D%7D" alt="y = \frac{1}{3} + \frac{c}{e^{x^3}}" /></p>
+<p>Dobbiamo però trovare la soluzione particolare tale che <img src="https://tex.s2cms.ru/svg/y(0)%20%3D%20%5Cfrac%7B4%7D%7B3%7D" alt="y(0) = \frac{4}{3}" />. Ciò significa che devo trovare <img src="https://tex.s2cms.ru/svg/c" alt="c" /> imponendo quella condizione, ossia che la mia funzione calcolata in <img src="https://tex.s2cms.ru/svg/x%3D0" alt="x=0" /> sia uguale a <img src="https://tex.s2cms.ru/svg/%5Cfrac%7B4%7D%7B3%7D" alt="\frac{4}{3}" />. Come prima cosa quindi calcoliamo la funzione in zero:</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0Ay(0)%20%26%20%3D%20%5Cfrac%7B1%7D%7B3%7D%20%2B%20%5Cfrac%7Bc%7D%7Be%5E%7B(0)%5E3%7D%7D%20%5C%5C%0A%26%20%3D%20%5Cfrac%7B1%7D%7B3%7D%20%2B%20%5Cfrac%7Bc%7D%7Be%5E%7B0%7D%7D%20%5C%5C%0A%26%20%3D%20%5Cfrac%7B1%7D%7B3%7D%20%2B%20%5Cfrac%7Bc%7D%7B1%7D%20%5C%5C%0A%26%20%3D%20%5Cfrac%7B1%7D%7B3%7D%20%2B%20c%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+y(0) &amp; = \frac{1}{3} + \frac{c}{e^{(0)^3}} \\
+&amp; = \frac{1}{3} + \frac{c}{e^{0}} \\
+&amp; = \frac{1}{3} + \frac{c}{1} \\
+&amp; = \frac{1}{3} + c
+\end{align*}" /></p>
+<p>La condizione ci dice che questa quantità deve essere uguale a <img src="https://tex.s2cms.ru/svg/%5Cfrac%7B4%7D%7B3%7D" alt="\frac{4}{3}" />:</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A%5Cfrac%7B1%7D%7B3%7D%20%2B%20c%20%26%20%3D%20%5Cfrac%7B4%7D%7B3%7D%20%5C%5C%0Ac%20%26%20%3D%20%5Cfrac%7B4%7D%7B3%7D%20-%20%5Cfrac%7B1%7D%7B3%7D%20%5C%5C%0Ac%20%26%20%3D%20%5Cfrac%7B4-1%7D%7B3%7D%20%5C%5C%0Ac%20%26%20%3D%20%5Cfrac%7B3%7D%7B3%7D%20%5C%5C%0Ac%20%26%20%3D%201%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\frac{1}{3} + c &amp; = \frac{4}{3} \\
+c &amp; = \frac{4}{3} - \frac{1}{3} \\
+c &amp; = \frac{4-1}{3} \\
+c &amp; = \frac{3}{3} \\
+c &amp; = 1
+\end{align*}" /></p>
+<p>Ora che abbiamo trovato <img src="https://tex.s2cms.ru/svg/c" alt="c" /> possiamo scrivere la rispettiva soluzione con questo valore:</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/y%20%3D%20%5Cfrac%7B1%7D%7B3%7D%20%2B%20%5Cfrac%7B1%7D%7Be%5E%7Bx%5E3%7D%7D" alt="y = \frac{1}{3} + \frac{1}{e^{x^3}}" /></p>
+<p>che è la soluzione del nostro problema.</p>
+
+
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" id="btnes3" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" aria-expanded="false" aria-controls="es3" data-target="#es3" onclick="changeTitle('btnes3')">Mostra Soluzione</button>
+                </div>
+                <!--<small class="text-muted">1 Marzo 2020</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- NUOVO ESERCIZIO-->
        
       </div>
     </div>
