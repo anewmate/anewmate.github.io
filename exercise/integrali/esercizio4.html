@@ -1,0 +1,47 @@
+﻿<h1>INTEGRALI</h1>
+<!--Upmath extremely simplifies this task by using Markdown and LaTeX. It converts the Markdown syntax extended with LaTeX equations support into HTML code you can publish anywhere on the web.-->
+<!--![Paper written in LaTeX](/i/latex.jpg)-->
+<h2></h2>
+<p>Esercizio 4:</p>
+<blockquote>
+<p>Calcola il seguente integrale</p>
+</blockquote>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cint%20%5Cfrac%7Bx%2B3%7D%7B%5Csqrt%7Bx%2B2%7D%7Ddx" alt="\int \frac{x+3}{\sqrt{x+2}}dx" /></p>
+<h2>Soluzione:</h2>
+<p>Come prima cosa notiamo che a numeratore della frazione non abbiamo la derivata del denominatore. Quindi <strong>non</strong> siamo nel caso degli integrali del tipo</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cint%20%5Cfrac%7Bf%5E%7B'%7D(x)%7D%7Bf(x)%7Ddx" alt="\int \frac{f^{'}(x)}{f(x)}dx" /></p>
+<p>Possiamo quindi procedere a risolvere l’integrale o utilizzando la formula per parti o per sostituzione.</p>
+<p>Ricordo che la formula per parti mi dice che</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cint%20f%5E%7B'%7D(x)g(x)dx%20%3D%20f(x)g(x)%20-%20%5Cint%20f(x)g%5E%7B'%7D(x)dx" alt="\int f^{'}(x)g(x)dx = f(x)g(x) - \int f(x)g^{'}(x)dx" /></p>
+<p>In questo caso questo metodo di risoluzione non va bene: se volessi infatti utilizzare questo, dovrei porre <img src="https://tex.s2cms.ru/svg/f%5E%7B'%7D(x)%20%3D%20x%2B3" alt="f^{'}(x) = x+3" /> e <img src="https://tex.s2cms.ru/svg/g(x)%20%3D%20%5Cfrac%7B1%7D%7B%5Csqrt%7Bx%2B2%7D%7D" alt="g(x) = \frac{1}{\sqrt{x+2}}" />. Con questa scelta però, applicando la formula, nel nuovo integrale avrei <img src="https://tex.s2cms.ru/svg/g%5E%7B'%7D(x)%20%3D%20%5Cfrac%7B-%5Cfrac%7B1%7D%7B2%5Csqrt%7Bx%2B2%7D%7D%7D%7Bx%2B2%7D%20%3D%20-%5Cfrac%7B1%7D%7B2(x%2B2)%5Csqrt%7Bx%2B2%7D%7D" alt="g^{'}(x) = \frac{-\frac{1}{2\sqrt{x+2}}}{x+2} = -\frac{1}{2(x+2)\sqrt{x+2}}" />. Ossia non ottengo un integrale più facile rispetto a quello di partenza.</p>
+<p>Procediamo quindi per sostituzione. Come in quasi tutti i casi, sostituisco ciò che &quot;mi dà fastidio&quot;, nel senso di quello che mi rende &quot;difficile&quot; l’integrale, ossia la radice: pongo</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Csqrt%7Bx%2B2%7D%20%3D%20t" alt="\sqrt{x+2} = t" /></p>
+<p>Una volta individuata la sostituzione, la prima cosa da fare è trovare <img src="https://tex.s2cms.ru/svg/x" alt="x" /> in funzione di <img src="https://tex.s2cms.ru/svg/t" alt="t" />:</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A%5Csqrt%7Bx%2B2%7D%20%26%20%3D%20t%20%5C%5C%0A(%5Csqrt%7Bx%2B2%7D)%5E2%20%26%20%3D%20(t)%5E2%20%5C%5C%0Ax%2B2%20%26%20%3D%20t%5E2%20%5C%5C%0Ax%20%26%20%3D%20t%5E2-2%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\sqrt{x+2} &amp; = t \\
+(\sqrt{x+2})^2 &amp; = (t)^2 \\
+x+2 &amp; = t^2 \\
+x &amp; = t^2-2
+\end{align*}" /></p>
+<p>A questo punto, la seconda cosa da fare è calcolare <img src="https://tex.s2cms.ru/svg/dx" alt="dx" />: data in generale la relazione <img src="https://tex.s2cms.ru/svg/x%20%3D%20%5Cstar(t)" alt="x = \star(t)" />, <img src="https://tex.s2cms.ru/svg/dx" alt="dx" /> sarà uguale alla derivata di <img src="https://tex.s2cms.ru/svg/%5Cstar(t)" alt="\star(t)" /> rispetto a <img src="https://tex.s2cms.ru/svg/t" alt="t" /> moltiplicata per <img src="https://tex.s2cms.ru/svg/dt" alt="dt" />.</p>
+<p>Nel nostro caso, <img src="https://tex.s2cms.ru/svg/%5Cstar(t)%20%3D%20t%5E2-2" alt="\star(t) = t^2-2" />. La sua derivata è <img src="https://tex.s2cms.ru/svg/D(t%5E2-2)%20%3D%202t" alt="D(t^2-2) = 2t" />. Quindi</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/dx%20%3D%20D(t%5E2-2)dt%20%3D%202tdt" alt="dx = D(t^2-2)dt = 2tdt" /></p>
+<p>Abbiamo ora tutti gli elementi che ci servono per fare la sostituzione.</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A%5Cint%20%5Cfrac%7Bx%2B3%7D%7B%5Csqrt%7Bx%2B2%7D%7Ddx%20%26%20%3D%20%5Cint%20%5Cfrac%7Bt%5E2-2%2B3%7D%7Bt%7D%5Ccdot%202tdt%20%5C%5C%0A%26%20%3D%20%5Cint%20%5Cfrac%7B2t(t%5E2%2B1)%7D%7Bt%7Ddt%20%5C%5C%0A%26%20%3D%20%5Cint%202(t%5E2%2B1)dt%20%5C%5C%0A%26%20%3D%202%20%5Cint%20(t%5E2%2B1)dt%20%5C%5C%0A%26%20%3D%202%20%5Cleft%5B%5Cint%20t%5E2dt%20%2B%20%5Cint%20dt%5Cright%5D%20%5C%5C%0A%26%20%3D%202%20%5Cleft%5B%5Cfrac%7Bt%5E3%7D%7B3%7D%20%2B%20t%20%5Cright%5D%20%5C%5C%0A%26%20%3D%202t%5Cleft%5B%5Cfrac%7Bt%5E2%7D%7B3%7D%2B1%5Cright%5D%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\int \frac{x+3}{\sqrt{x+2}}dx &amp; = \int \frac{t^2-2+3}{t}\cdot 2tdt \\
+&amp; = \int \frac{2t(t^2+1)}{t}dt \\
+&amp; = \int 2(t^2+1)dt \\
+&amp; = 2 \int (t^2+1)dt \\
+&amp; = 2 \left[\int t^2dt + \int dt\right] \\
+&amp; = 2 \left[\frac{t^3}{3} + t \right] \\
+&amp; = 2t\left[\frac{t^2}{3}+1\right]
+\end{align*}" /></p>
+<p>Una volta che abbiamo risolto l’integrale in <img src="https://tex.s2cms.ru/svg/t" alt="t" />, dobbiamo risostituire e riscrivere tutto in <img src="https://tex.s2cms.ru/svg/x" alt="x" />:</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A2t%5Cleft%5B%5Cfrac%7Bt%5E2%7D%7B3%7D%2B1%5Cright%5D%20%26%20%3D%202(%5Csqrt%7Bx%2B2%7D)%5Cleft%5B%5Cfrac%7B(%5Csqrt%7Bx%2B2%7D)%5E2%7D%7B3%7D%2B1%5Cright%5D%20%5C%5C%0A%26%20%3D%202%5Csqrt%7Bx%2B2%7D%5Cleft%5B%5Cfrac%7Bx%2B2%7D%7B3%7D%2B1%5Cright%5D%20%5C%5C%0A%26%20%3D%202%5Csqrt%7Bx%2B2%7D%20%5Cleft%5B%5Cfrac%7Bx%2B2%2B3%7D%7B3%7D%5Cright%5D%20%5C%5C%0A%26%20%3D%20%5Cfrac%7B2%7D%7B3%7D%5Csqrt%7Bx%2B2%7D(x%2B5)%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+2t\left[\frac{t^2}{3}+1\right] &amp; = 2(\sqrt{x+2})\left[\frac{(\sqrt{x+2})^2}{3}+1\right] \\
+&amp; = 2\sqrt{x+2}\left[\frac{x+2}{3}+1\right] \\
+&amp; = 2\sqrt{x+2} \left[\frac{x+2+3}{3}\right] \\
+&amp; = \frac{2}{3}\sqrt{x+2}(x+5)
+\end{align*}" /></p>
+<p>Poichè l’integrale è indefinito, dobbiamo sempre aggiungere una costante <img src="https://tex.s2cms.ru/svg/c" alt="c" /> alla fine. La soluzione è quindi</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cint%20%5Cfrac%7Bx%2B3%7D%7B%5Csqrt%7Bx%2B2%7D%7Ddx%20%3D%20%5Cfrac%7B2%7D%7B3%7D%5Csqrt%7Bx%2B2%7D(x%2B5)%20%2Bc" alt="\int \frac{x+3}{\sqrt{x+2}}dx = \frac{2}{3}\sqrt{x+2}(x+5) +c" /></p>
