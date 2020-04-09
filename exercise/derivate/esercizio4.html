@@ -1,0 +1,73 @@
+﻿<h1>DERIVATE</h1>
+<!--Upmath extremely simplifies this task by using Markdown and LaTeX. It converts the Markdown syntax extended with LaTeX equations support into HTML code you can publish anywhere on the web.-->
+<!--![Paper written in LaTeX](/i/latex.jpg)-->
+<h2></h2>
+<p>Esercizio 4:</p>
+<blockquote>
+<p>Data la seguente funzione, verifica se nell’intervallo indicato a fianco valgono le ipotesi del teorema di Lagrange e
+trova il punto (o i punti) la cui esistenza è assicurata dal teorema:</p>
+</blockquote>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/f(x)%20%3D%20%7Cx%5E2-1%7C%20%5Cqquad%20%5B2%2C3%5D" alt="f(x) = |x^2-1| \qquad [2,3]" /></p>
+<h2>Soluzione:</h2>
+<p>Come prima cosa ricordiamo l’enunciato del teorema di Lagrange:</p>
+<p>Se una funzione <img src="https://tex.s2cms.ru/svg/f(x)" alt="f(x)" /> è:</p>
+<ul>
+<li>continua in un intervallo limitato e chiuso <img src="https://tex.s2cms.ru/svg/%5Ba%2Cb%5D" alt="[a,b]" />,</li>
+<li>derivabile in ogni punto interno a esso,</li>
+</ul>
+<p>allora esiste almeno un punto <img src="https://tex.s2cms.ru/svg/c" alt="c" />, interno all’intervallo,
+per cui vale la relazione</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/f%5E%7B'%7D(c)%20%3D%20%5Cfrac%7Bf(b)-f(a)%7D%7Bb-a%7D" alt="f^{'}(c) = \frac{f(b)-f(a)}{b-a}" /></p>
+<p>Per capire se questo teorema è applicabile nel nostro caso, dobbiamo andare a vedere se le due ipotesi sono vere per la <img src="https://tex.s2cms.ru/svg/f(x)" alt="f(x)" /> che abbiamo.</p>
+<p>Prima cosa da verificare: <img src="https://tex.s2cms.ru/svg/f(x)" alt="f(x)" /> continua in <img src="https://tex.s2cms.ru/svg/%5B2%2C3%5D" alt="[2,3]" /></p>
+<p>Ricordiamo che il valore assoluto è una funzione continua: se l’argomento del valore assoluto è continuo, allora lo è anche il valore assoluto. Tradotto nel nostro caso: se <img src="https://tex.s2cms.ru/svg/x%5E2-1" alt="x^2-1" /> è una funzione continua, allora anche <img src="https://tex.s2cms.ru/svg/%7Cx%5E2-1%7C" alt="|x^2-1|" /> è una funzione continua. La funzione <img src="https://tex.s2cms.ru/svg/x%5E2-1" alt="x^2-1" /> è una funzione polinomiale (in particolare è una parabola essendo di secondo grado), quindi è continua su tutto <img src="https://tex.s2cms.ru/svg/%5Cmathbb%7BR%7D" alt="\mathbb{R}" />. Essendo continua su tutto <img src="https://tex.s2cms.ru/svg/%5Cmathbb%7BR%7D" alt="\mathbb{R}" />, in particolare lo è su <img src="https://tex.s2cms.ru/svg/%5B2%2C3%5D" alt="[2,3]" />. Quindi anche <img src="https://tex.s2cms.ru/svg/%7Cx%5E2-1%7C" alt="|x^2-1|" /> è continua su <img src="https://tex.s2cms.ru/svg/%5B2%2C3%5D" alt="[2,3]" /> e la prima ipotesi è verificata.</p>
+<p>Seconda cosa da verificare: <img src="https://tex.s2cms.ru/svg/f(x)" alt="f(x)" /> derivabile in <img src="https://tex.s2cms.ru/svg/(2%2C3)" alt="(2,3)" /></p>
+<p>Ricordiamo che il valore assoluto non è derivabile solo nei punti in cui il suo argomento si annulla. Nel nostro caso quindi, la funzione non è derivabile nei punti <img src="https://tex.s2cms.ru/svg/x" alt="x" /> tali che</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/x%5E2-1%20%3D%200" alt="x^2-1 = 0" /></p>
+<p>Risolvendo quest’equazione abbiamo</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0Ax%5E2-1%20%26%20%3D%200%20%5C%5C%0Ax%5E2%20%26%20%3D%201%20%5C%5C%0Ax%20%26%20%3D%20%5Cpm%201%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+x^2-1 &amp; = 0 \\
+x^2 &amp; = 1 \\
+x &amp; = \pm 1
+\end{align*}" /></p>
+<p>La funzione quindi non è derivabile in <img src="https://tex.s2cms.ru/svg/x%3D-1" alt="x=-1" /> e <img src="https://tex.s2cms.ru/svg/x%3D1" alt="x=1" />. Lo è in tutti gli altri punti.</p>
+<p>A noi interessa che sia derivabile nell’intervallo <img src="https://tex.s2cms.ru/svg/(2%2C3)" alt="(2,3)" />: poichè in questo intervallo non è compreso nè <img src="https://tex.s2cms.ru/svg/x%3D-1" alt="x=-1" /> nè <img src="https://tex.s2cms.ru/svg/x%3D1" alt="x=1" />, la funzione in questo intervallo è derivabile. Quindi, è soddisfatta anche la seconda ipotesi del teorema.</p>
+<p>Posso quindi applicare il teorema: esso mi dice che esiste un punto <img src="https://tex.s2cms.ru/svg/c" alt="c" /> tale che</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/f%5E%7B'%7D(c)%20%3D%20%5Cfrac%7Bf(3)-f(2)%7D%7B3-2%7D" alt="f^{'}(c) = \frac{f(3)-f(2)}{3-2}" /></p>
+<p>A destra dell’uguaglianza ottengo:</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0Af(2)%20%26%20%3D%20%7C(2)%5E2-1%7C%20%5C%5C%0A%26%20%3D%20%7C4-1%7C%20%5C%5C%0A%26%20%3D%20%7C3%7C%20%5C%5C%0A%26%20%3D%203%20%5C%5C%0Af(3)%20%26%20%3D%20%7C(3)%5E2-1%7C%20%5C%5C%0A%26%20%3D%20%7C9-1%7C%20%5C%5C%0A%26%20%3D%20%7C8%7C%20%5C%5C%0A%26%20%3D%208%20%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+f(2) &amp; = |(2)^2-1| \\
+&amp; = |4-1| \\
+&amp; = |3| \\
+&amp; = 3 \\
+f(3) &amp; = |(3)^2-1| \\
+&amp; = |9-1| \\
+&amp; = |8| \\
+&amp; = 8 
+\end{align*}" /></p>
+<p>Quindi</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cfrac%7Bf(3)-f(2)%7D%7B3-2%7D%20%3D%20%5Cfrac%7B8-3%7D%7B1%7D%20%3D%205" alt="\frac{f(3)-f(2)}{3-2} = \frac{8-3}{1} = 5" /></p>
+<p>A sinistra dell’uguale invece, prima di calcolare la derivata noto che, usando la definizione di valore assoluto ho</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0Af(x)%20%3D%20%7Cx%5E2-1%7C%20%26%20%3D%20%5Cbegin%7Bcases%7D%0Ax%5E2-1%20%26%20%5Ctext%7Bse%7D%20%5C%3B%20x%5E2-1%20%5Cgeq%200%20%5C%5C%0A-x%5E2%2B1%20%26%20%5Ctext%7Bse%7D%20%5C%3B%20x%5E2-1%20%3C%200%0A%5Cend%7Bcases%7D%20%5C%5C%0A%26%20%3D%20%5Cbegin%7Bcases%7D%0Ax%5E2-1%20%26%20%5Ctext%7Bse%7D%20%5C%3B%20x%20%5Cleq%20-1%20%5Ccup%20x%20%5Cgeq%201%5C%5C%0A-x%5E2%2B1%20%26%20%5Ctext%7Bse%7D%20%5C%3B%20-1%20%3C%20x%20%3C%201%0A%5Cend%7Bcases%7D%20%5C%5C%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+f(x) = |x^2-1| &amp; = \begin{cases}
+x^2-1 &amp; \text{se} \; x^2-1 \geq 0 \\
+-x^2+1 &amp; \text{se} \; x^2-1 &lt; 0
+\end{cases} \\
+&amp; = \begin{cases}
+x^2-1 &amp; \text{se} \; x \leq -1 \cup x \geq 1\\
+-x^2+1 &amp; \text{se} \; -1 &lt; x &lt; 1
+\end{cases} \\
+\end{align*}" /></p>
+<p>Poichè stiamo considerando l’intervallo <img src="https://tex.s2cms.ru/svg/%5B2%2C3%5D" alt="[2,3]" />, siamo nel primo caso della funzione (ossia negli <img src="https://tex.s2cms.ru/svg/x%20%5Cgeq%201" alt="x \geq 1" />), ossia <img src="https://tex.s2cms.ru/svg/f(x)%20%3D%20x%5E2-1" alt="f(x) = x^2-1" />. Quello che voglio dire è che, nell’intervallo <img src="https://tex.s2cms.ru/svg/%5B2%2C3%5D" alt="[2,3]" /> la funzione è <img src="https://tex.s2cms.ru/svg/f(x)%20%3D%20x%5E2-1" alt="f(x) = x^2-1" />. Dobbiamo quindi calcolare la derivata di questa funzione.</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/f%5E%7B'%7D(x)%20%3D%20D(x%5E2-1)%20%3D%202x" alt="f^{'}(x) = D(x^2-1) = 2x" /></p>
+<p>Quindi, la derivata calcolata in <img src="https://tex.s2cms.ru/svg/x%3Dc" alt="x=c" /> è</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/f%5E%7B'%7D(c)%20%3D%202c" alt="f^{'}(c) = 2c" /></p>
+<p>Mettendo insieme tutti i pezzi, ho quindi che</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0Af%5E%7B'%7D(c)%20%26%20%3D%20%5Cfrac%7Bf(3)-f(2)%7D%7B3-2%7D%20%5C%5C%0A2c%20%26%20%3D%205%20%5C%5C%0A%5Cfrac%7B2c%7D%7B2%7D%20%26%20%3D%20%5Cfrac%7B5%7D%7B2%7D%20%5C%5C%0Ac%20%26%20%3D%20%5Cfrac%7B5%7D%7B2%7D%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+f^{'}(c) &amp; = \frac{f(3)-f(2)}{3-2} \\
+2c &amp; = 5 \\
+\frac{2c}{2} &amp; = \frac{5}{2} \\
+c &amp; = \frac{5}{2}
+\end{align*}" /></p>
+<p>Il punto <img src="https://tex.s2cms.ru/svg/c" alt="c" /> che il teorema mi assicura esistere è quindi</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/c%20%3D%20%5Cfrac%7B5%7D%7B2%7D" alt="c = \frac{5}{2}" /></p>
