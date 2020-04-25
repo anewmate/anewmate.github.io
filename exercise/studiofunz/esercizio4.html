@@ -1,0 +1,376 @@
+﻿<h1>STUDIO DI FUNZIONE</h1>
+<!--Upmath extremely simplifies this task by using Markdown and LaTeX. It converts the Markdown syntax extended with LaTeX equations support into HTML code you can publish anywhere on the web.-->
+<!--![Paper written in LaTeX](/i/latex.jpg)-->
+<h2></h2>
+<p>Esercizio 4:</p>
+<blockquote>
+<p>Studia e rappresenta graficamente la seguente funzione</p>
+</blockquote>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/y%20%3D%20x%5E4-5x%5E2%2B4" alt="y = x^4-5x^2+4" /></p>
+<h2>Soluzione:</h2>
+<p>Come prima cosa ricordo a grandi linee gli step necessari per studiare una funzione</p>
+<ol>
+<li>trovare le condizioni di esistenza (C.E.)</li>
+<li>vedere se la funzione è simmetrica</li>
+<li>stabilire il segno della funzione, ossia guardare quando la funzione è maggiore o uguale a zero</li>
+<li>limiti agli estremi e nei punti di discontinuità (se ci sono)</li>
+<li>studio della derivata prima per trovare massimi e minimi</li>
+<li>studio della derivata seconda per trovare punti di flesso</li>
+</ol>
+<p>Il primo consiglio che darei è quello di disegnare SUBITO ogni cosa che trovo in ogni step, così non si perdono dati per strada.</p>
+<h3>Step 1</h3>
+<p>In questo caso non ci sono condizioni di esistenza, ossia la funzione è ben definita in tutto <img src="https://tex.s2cms.ru/svg/%5Cmathbb%7BR%7D" alt="\mathbb{R}" />. Infatti, la funzione è un polinomio di quarto grado, quindi sappiamo già che ha come dominio <img src="https://tex.s2cms.ru/svg/%5Cmathbb%7BR%7D" alt="\mathbb{R}" /> e non ha punti di discontinuità.</p>
+<h3>STEP 2</h3>
+<p>Vedere se la funzione è simmetrica significa vedere se è pari o dispari. Ricordiamo che una funzione <img src="https://tex.s2cms.ru/svg/f" alt="f" /> è pari se</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/f(-x)%20%3D%20f(x)" alt="f(-x) = f(x)" /></p>
+<p>mentre è dispari se</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/f(-x)%20%3D%20-f(x)" alt="f(-x) = -f(x)" /></p>
+<p>Andiamo quindi a calcolare nel nostro caso <img src="https://tex.s2cms.ru/svg/f(-x)" alt="f(-x)" />:</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0Af(-x)%20%26%20%3D%20(-x)%5E4-5(-x)%5E2%2B4%20%5C%5C%0A%26%20%3D%20x%5E4-5x%5E2%2B4%20%5C%5C%0A%26%20%3D%20f(x)%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+f(-x) &amp; = (-x)^4-5(-x)^2+4 \\
+&amp; = x^4-5x^2+4 \\
+&amp; = f(x)
+\end{align*}" /></p>
+<p>La funzione è quindi pari: questo significa che il grafico sarà simmetrico rispetto all’asse <img src="https://tex.s2cms.ru/svg/y" alt="y" />.</p>
+<h3>STEP 3</h3>
+<p>Andiamo ora a vedere quando <img src="https://tex.s2cms.ru/svg/y%20%3D%20f(x)%20%3D%20x%5E4-5x%5E2%2B4%20%5Cgeq%200" alt="y = f(x) = x^4-5x^2+4 \geq 0" />.</p>
+<p>Per risolvere questa disequazione introduciamo una variabile ausiliaria: poniamo <img src="https://tex.s2cms.ru/svg/t%20%3D%20x%5E2" alt="t = x^2" />. Così facendo, la disequazione diventa</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/t%5E2-5t%2B4%20%5Cgeq%200" alt="t^2-5t+4 \geq 0" /></p>
+<p>Abbiamo quindi trasformato una disequazione di quarto grado in una disequazione di secondo grado, che sappiamo risolvere.</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0At%5E2-5t%2B4%20%26%20%5Cgeq%200%20%5C%5C%0A%26%20%5Cdownarrow%20%5C%5C%0A%5Ctext%7Bequazione%7D%20%26%20%5C%3B%20%5Ctext%7Bassociata%7D%20%5C%5C%0At%5E2-5t%2B4%20%26%20%3D%200%20%5C%5C%0At_%7B1%2F2%7D%20%26%20%3D%20%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D%20%5C%5C%0A%26%20%3D%20%5Cfrac%7B-(-5)%5Cpm%5Csqrt%7B(-5)%5E2-4(1)(4)%7D%7D%7B2(1)%7D%20%5C%5C%0A%26%20%3D%20%5Cfrac%7B%2B5%5Cpm%5Csqrt%7B25-16%7D%7D%7B2%7D%20%5C%5C%0A%26%20%3D%20%5Cfrac%7B5%20%5Cpm%203%7D%7B2%7D%20%5C%5C%0A%26%20%3D%20%5Cbegin%7Bcases%7D%0A4%20%5C%5C%0A1%0A%5Cend%7Bcases%7D%20%5C%5C%0A%26%20%5Cdownarrow%20%5C%5C%0A%5Ctext%7Bpoich%C3%A8%20avevo%7D%20%5Cgeq%20%26%20%5CRightarrow%20%5Ctext%7Bintervalli%20esterni%3A%7D%20%5C%5C%0At%20%5Cleq%201%20%5C%3B%20%5C%3B%20%26%20%5Cvee%20%5C%3B%20%5C%3B%20t%20%5Cgeq%204%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+t^2-5t+4 &amp; \geq 0 \\
+&amp; \downarrow \\
+\text{equazione} &amp; \; \text{associata} \\
+t^2-5t+4 &amp; = 0 \\
+t_{1/2} &amp; = \frac{-b\pm\sqrt{b^2-4ac}}{2a} \\
+&amp; = \frac{-(-5)\pm\sqrt{(-5)^2-4(1)(4)}}{2(1)} \\
+&amp; = \frac{+5\pm\sqrt{25-16}}{2} \\
+&amp; = \frac{5 \pm 3}{2} \\
+&amp; = \begin{cases}
+4 \\
+1
+\end{cases} \\
+&amp; \downarrow \\
+\text{poichè avevo} \geq &amp; \Rightarrow \text{intervalli esterni:} \\
+t \leq 1 \; \; &amp; \vee \; \; t \geq 4
+\end{align*}" /></p>
+<p>Ora che ho trovato la soluzione in <img src="https://tex.s2cms.ru/svg/t" alt="t" />, devo tornare indietro e sostituire <img src="https://tex.s2cms.ru/svg/t%3Dx%5E2" alt="t=x^2" /> per trovare le soluzioni in <img src="https://tex.s2cms.ru/svg/x" alt="x" />.</p>
+<p>Dalla prima disuguaglianza <img src="https://tex.s2cms.ru/svg/t%20%5Cleq%201" alt="t \leq 1" /> ottengo</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0At%20%26%20%5Cleq%201%20%5C%5C%0Ax%5E2%20%26%20%5Cleq%201%20%5C%5C%0A%26%20%5Cdownarrow%20%5C%5C%0A%5Ctext%7Bequazione%7D%20%26%20%5C%3B%20%5Ctext%7Bassociata%7D%20%5C%5C%0Ax%5E2%20%26%20%3D%201%20%5C%5C%0Ax%20%26%20%3D%20%5Cpm%201%20%5C%5C%0A%26%20%5Cdownarrow%20%5C%5C%0A%5Ctext%7Bpoich%C3%A8%20avevo%7D%20%5Cleq%20%26%20%5CRightarrow%20%5Ctext%7Bintervalli%20interni%3A%7D%20%5C%5C%0A-1%20%5Cleq%20%5C%3B%20%26%20x%20%5Cleq%201%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+t &amp; \leq 1 \\
+x^2 &amp; \leq 1 \\
+&amp; \downarrow \\
+\text{equazione} &amp; \; \text{associata} \\
+x^2 &amp; = 1 \\
+x &amp; = \pm 1 \\
+&amp; \downarrow \\
+\text{poichè avevo} \leq &amp; \Rightarrow \text{intervalli interni:} \\
+-1 \leq \; &amp; x \leq 1
+\end{align*}" /></p>
+<p>Dalla seconda disuguaglianza <img src="https://tex.s2cms.ru/svg/t%20%5Cgeq%204" alt="t \geq 4" /> ottengo</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0At%20%26%20%5Cgeq%204%20%5C%5C%0Ax%5E2%20%26%20%5Cgeq%204%20%5C%5C%0A%26%20%5Cdownarrow%20%5C%5C%0A%5Ctext%7Bequazione%7D%20%26%20%5C%3B%20%5Ctext%7Bassociata%7D%20%5C%5C%0Ax%5E2%20%26%20%3D%204%20%5C%5C%0Ax%20%26%20%3D%20%5Cpm%202%20%5C%5C%0A%26%20%5Cdownarrow%20%5C%5C%0A%5Ctext%7Bpoich%C3%A8%20avevo%7D%20%5Cgeq%20%26%20%5CRightarrow%20%5Ctext%7Bintervalli%20esterni%3A%7D%20%5C%5C%0Ax%20%5Cleq%20-2%20%5C%3B%20%5C%3B%20%26%20%5Cvee%20%5C%3B%20%5C%3B%20x%20%5Cgeq%202%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+t &amp; \geq 4 \\
+x^2 &amp; \geq 4 \\
+&amp; \downarrow \\
+\text{equazione} &amp; \; \text{associata} \\
+x^2 &amp; = 4 \\
+x &amp; = \pm 2 \\
+&amp; \downarrow \\
+\text{poichè avevo} \geq &amp; \Rightarrow \text{intervalli esterni:} \\
+x \leq -2 \; \; &amp; \vee \; \; x \geq 2
+\end{align*}" /></p>
+<p>Mettendo tutto insieme, abbiamo scoperto che la funzione è positiva in</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/x%20%5Cleq%20-2%20%5Cvee%20-1%20%5Cleq%20x%20%5Cleq%201%20%5Cvee%20x%20%5Cgeq%202" alt="x \leq -2 \vee -1 \leq x \leq 1 \vee x \geq 2" /></p>
+<p>Riportiamo queste informazioni sul grafico. Indico con il grigio le zone in cui la funzione &quot;non c’è&quot;; i pallini rossi sull’asse delle <img src="https://tex.s2cms.ru/svg/x" alt="x" /> indicano le intersezioni (i punti in cui la funzione è zero), ossia i punti <img src="https://tex.s2cms.ru/svg/x%20%3D%20%5Cpm%202%2C%20x%20%3D%20%5Cpm%201" alt="x = \pm 2, x = \pm 1" /> nel nostro caso.</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Btikzpicture%7D%5Bscale%3D1.0544%5D%5Csmall%0A%5Cbegin%7Baxis%7D%5Baxis%20line%20style%3Dgray%2C%0A%09samples%3D120%2C%0A%09width%3D9.0cm%2Cheight%3D6.4cm%2C%0A%09xmin%3D-3%2C%20xmax%3D3%2C%0A%09ymin%3D-3%2C%20ymax%3D8%2C%0A%09restrict%20y%20to%20domain%3D-3%3A8%2C%0A%09ytick%3Dnone%2C%0A%09xtick%3Dnone%0A%09axis%20equal%2C%0A%09axis%20x%20line%3Dcenter%2C%0A%09axis%20y%20line%3Dcenter%2C%0A%09xlabel%3D%24x%24%2Cylabel%3D%24y%24%5D%0A%25%5Caddplot%5Bred%2Cdomain%3D-6%3A6%2Csemithick%5D%7Bexp(x)%7D%3B%0A%25%5Caddplot%5Bblack%5D%7Bx%2B1%7D%3B%0A%5Cfill%5Bgrey!10%5D%0A(axis%20cs%3A-3%2C-3)%20--%0A(axis%20cs%3A-2%2C-3)%20--%0A(axis%20cs%3A-2%2C0)%20--%0A(axis%20cs%3A-3%2C0)%20--%0Acycle%3B%0A%5Cfill%5Bgrey!10%5D%0A(axis%20cs%3A-2%2C0)%20--%0A(axis%20cs%3A-1%2C0)%20--%0A(axis%20cs%3A-1%2C8)%20--%0A(axis%20cs%3A-2%2C8)%20--%0Acycle%3B%0A%5Cfill%5Bgrey!10%5D%0A(axis%20cs%3A-1%2C0)%20--%0A(axis%20cs%3A-1%2C-3)%20--%0A(axis%20cs%3A1%2C-3)%20--%0A(axis%20cs%3A1%2C0)%20--%0Acycle%3B%0A%5Cfill%5Bgrey!10%5D%0A(axis%20cs%3A1%2C0)%20--%0A(axis%20cs%3A2%2C0)%20--%0A(axis%20cs%3A2%2C8)%20--%0A(axis%20cs%3A1%2C8)%20--%0Acycle%3B%0A%5Cfill%5Bgrey!10%5D%0A(axis%20cs%3A2%2C0)%20--%0A(axis%20cs%3A3%2C0)%20--%0A(axis%20cs%3A3%2C-3)%20--%0A(axis%20cs%3A2%2C-3)%20--%0Acycle%3B%0A%5Caddplot%5Bred%2C%20mark%3D*%2C%20only%20marks%5D%20coordinates%20%7B(-1%2C0)%20(1%2C0)%20(-2%2C0)%20(2%2C0)%7D%3B%0A%5Caddplot%5B%5D%20coordinates%20%7B(1%2C-0.5)%7D%20node%7B%5Csmall%20%241%24%7D%3B%0A%5Caddplot%5B%5D%20coordinates%20%7B(2%2C-0.5)%7D%20node%7B%5Csmall%20%242%24%7D%3B%0A%5Caddplot%5B%5D%20coordinates%20%7B(-1%2C-0.5)%7D%20node%7B%5Csmall%20%24-1%24%7D%3B%0A%5Caddplot%5B%5D%20coordinates%20%7B(-2%2C-0.5)%7D%20node%7B%5Csmall%20%24-2%24%7D%3B%0A%25%5Caddplot%5Bred%5D%20coordinates%20%7B(-1%2C0.6)%7D%20node%7B%24y%3De%5Ex%24%7D%3B%0A%5Cpath%20(axis%20cs%3A0%2C0)%20node%20%5Banchor%3Dnorth%20west%2Cyshift%3D-0.07cm%5D%20%7B0%7D%3B%0A%5Cend%7Baxis%7D%0A%5Cend%7Btikzpicture%7D" alt="\begin{tikzpicture}[scale=1.0544]\small
+\begin{axis}[axis line style=gray,
+	samples=120,
+	width=9.0cm,height=6.4cm,
+	xmin=-3, xmax=3,
+	ymin=-3, ymax=8,
+	restrict y to domain=-3:8,
+	ytick=none,
+	xtick=none
+	axis equal,
+	axis x line=center,
+	axis y line=center,
+	xlabel=$x$,ylabel=$y$]
+%\addplot[red,domain=-6:6,semithick]{exp(x)};
+%\addplot[black]{x+1};
+\fill[grey!10]
+(axis cs:-3,-3) --
+(axis cs:-2,-3) --
+(axis cs:-2,0) --
+(axis cs:-3,0) --
+cycle;
+\fill[grey!10]
+(axis cs:-2,0) --
+(axis cs:-1,0) --
+(axis cs:-1,8) --
+(axis cs:-2,8) --
+cycle;
+\fill[grey!10]
+(axis cs:-1,0) --
+(axis cs:-1,-3) --
+(axis cs:1,-3) --
+(axis cs:1,0) --
+cycle;
+\fill[grey!10]
+(axis cs:1,0) --
+(axis cs:2,0) --
+(axis cs:2,8) --
+(axis cs:1,8) --
+cycle;
+\fill[grey!10]
+(axis cs:2,0) --
+(axis cs:3,0) --
+(axis cs:3,-3) --
+(axis cs:2,-3) --
+cycle;
+\addplot[red, mark=*, only marks] coordinates {(-1,0) (1,0) (-2,0) (2,0)};
+\addplot[] coordinates {(1,-0.5)} node{\small $1$};
+\addplot[] coordinates {(2,-0.5)} node{\small $2$};
+\addplot[] coordinates {(-1,-0.5)} node{\small $-1$};
+\addplot[] coordinates {(-2,-0.5)} node{\small $-2$};
+%\addplot[red] coordinates {(-1,0.6)} node{$y=e^x$};
+\path (axis cs:0,0) node [anchor=north west,yshift=-0.07cm] {0};
+\end{axis}
+\end{tikzpicture}" /></p>
+<h3>STEP 4</h3>
+<p>Andiamo a vedere i limiti agli estremi del nostro dominio.</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Clim_%7Bx%20%5Crightarrow%20%2B%5Cinfty%7D%20x%5E4-5x%5E2%2B4%20%3D%20%22%2B%5Cinfty-%5Cinfty%22" alt="\lim_{x \rightarrow +\infty} x^4-5x^2+4 = &quot;+\infty-\infty&quot;" /></p>
+<p>Per risolvere la forma indeterminata basta semplicemente raccogliere il termine di grado maggiore, ossia <img src="https://tex.s2cms.ru/svg/x%5E4" alt="x^4" />.</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A%5Clim_%7Bx%20%5Crightarrow%20%2B%5Cinfty%7D%20x%5E4-5x%5E2%2B4%20%26%20%3D%20%5Clim_%7Bx%20%5Crightarrow%20%2B%5Cinfty%7D%20x%5E4%5Cleft(1-%5Cfrac%7B5%7D%7Bx%5E2%7D%2B%5Cfrac%7B4%7D%7Bx%5E4%7D%5Cright)%20%5C%5C%0A%26%20%3D%20%2B%5Cinfty%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\lim_{x \rightarrow +\infty} x^4-5x^2+4 &amp; = \lim_{x \rightarrow +\infty} x^4\left(1-\frac{5}{x^2}+\frac{4}{x^4}\right) \\
+&amp; = +\infty
+\end{align*}" /></p>
+<p>perchè le due frazioni fra parentesi tendono a zero.</p>
+<p>Abbiamo quindi ottenuto che la funzione va a <img src="https://tex.s2cms.ru/svg/%2B%5Cinfty" alt="+\infty" /> per <img src="https://tex.s2cms.ru/svg/x%5Crightarrow%20%2B%20%5Cinfty" alt="x\rightarrow + \infty" />. Poichè abbiamo stabilito che la funzione è pari, ossia simmetrica rispetto l’asse <img src="https://tex.s2cms.ru/svg/y" alt="y" /> ho che anche il limite per <img src="https://tex.s2cms.ru/svg/x%20%5Crightarrow%20-%5Cinfty" alt="x \rightarrow -\infty" /> è <img src="https://tex.s2cms.ru/svg/%2B%5Cinfty" alt="+\infty" />.</p>
+<p>Siamo ufficialmente nel caso in cui potrebbero esserci degli asintoti obliqui. Dobbiamo andare a verificare se esiste un asintoto obliquo, ossia se la funzione tende a una retta del tipo <img src="https://tex.s2cms.ru/svg/y%20%3D%20mx%20%2B%20q" alt="y = mx + q" /> quando <img src="https://tex.s2cms.ru/svg/x%5Crightarrow%20%2B%20%5Cinfty" alt="x\rightarrow + \infty" />. Ricordo che in generale il primo step è calcolare</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Clim_%7Bx%5Crightarrow%20%2B%5Cinfty%7D%20%5Cfrac%7Bf(x)%7D%7Bx%7D%20%3D%20m" alt="\lim_{x\rightarrow +\infty} \frac{f(x)}{x} = m" /></p>
+<p>Se il limite di <img src="https://tex.s2cms.ru/svg/%5Cfrac%7Bf(x)%7D%7Bx%7D" alt="\frac{f(x)}{x}" /> esiste finito, allora quel limite sarà il coefficiente di <img src="https://tex.s2cms.ru/svg/x" alt="x" /> nella formula della retta. Il secondo step è calcolare</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Clim_%7Bx%5Crightarrow%20%2B%5Cinfty%7D%20f(x)%20-mx%20%3D%20q" alt="\lim_{x\rightarrow +\infty} f(x) -mx = q" /></p>
+<p>Se il limite di <img src="https://tex.s2cms.ru/svg/f(x)%20-mx" alt="f(x) -mx" /> esiste finito, allora quel limite sarà il termine noto nella formula della retta.</p>
+<p>Andiamo quindi a calcolare</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Clim_%7Bx%5Crightarrow%20%2B%5Cinfty%7D%20%5Cfrac%7Bf(x)%7D%7Bx%7D" alt="\lim_{x\rightarrow +\infty} \frac{f(x)}{x}" /></p>
+<p>Nel nostro caso diventa</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Clim_%7Bx%5Crightarrow%20%2B%5Cinfty%7D%20%5Cfrac%7Bx%5E4-5x%5E2%2B4%7D%7Bx%7D" alt="\lim_{x\rightarrow +\infty} \frac{x^4-5x^2+4}{x}" /></p>
+<p>Come prima, raccogliamo il termine di grado maggiore a numeratore:</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A%5Clim_%7Bx%20%5Crightarrow%20%2B%5Cinfty%7D%20%5Cfrac%7Bx%5E4-5x%5E2%2B4%7D%7Bx%7D%20%26%20%3D%20%5Clim_%7Bx%20%5Crightarrow%20%2B%5Cinfty%7D%20%5Cfrac%7Bx%5E4%5Cleft(1-%5Cfrac%7B5%7D%7Bx%5E2%7D%2B%5Cfrac%7B4%7D%7Bx%5E4%7D%5Cright)%7D%7Bx%7D%20%5C%5C%0A%26%20%3D%20%5Clim_%7Bx%20%5Crightarrow%20%2B%5Cinfty%7D%20%5Cfrac%7Bx%5E3%5Cleft(1-%5Cfrac%7B5%7D%7Bx%5E2%7D%2B%5Cfrac%7B4%7D%7Bx%5E4%7D%5Cright)%7D%7B1%7D%20%5C%5C%0A%26%20%3D%20%2B%5Cinfty%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\lim_{x \rightarrow +\infty} \frac{x^4-5x^2+4}{x} &amp; = \lim_{x \rightarrow +\infty} \frac{x^4\left(1-\frac{5}{x^2}+\frac{4}{x^4}\right)}{x} \\
+&amp; = \lim_{x \rightarrow +\infty} \frac{x^3\left(1-\frac{5}{x^2}+\frac{4}{x^4}\right)}{1} \\
+&amp; = +\infty
+\end{align*}" /></p>
+<p>Dal momento che non abbiamo trovato un limite finito, la funzione non ha asintoti obliqui nè a <img src="https://tex.s2cms.ru/svg/%2B%5Cinfty" alt="+\infty" /> nè a <img src="https://tex.s2cms.ru/svg/-%5Cinfty" alt="-\infty" /> visto che è una funzione simmetrica rispetto l’asse <img src="https://tex.s2cms.ru/svg/y" alt="y" />.</p>
+<p>Riportiamo sul grafico quello che abbiamo trovato. Disegno in rosso la funzione.</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Btikzpicture%7D%5Bscale%3D1.0544%5D%5Csmall%0A%5Cbegin%7Baxis%7D%5Baxis%20line%20style%3Dgray%2C%0A%09samples%3D120%2C%0A%09width%3D9.0cm%2Cheight%3D6.4cm%2C%0A%09xmin%3D-3%2C%20xmax%3D3%2C%0A%09ymin%3D-3%2C%20ymax%3D8%2C%0A%09restrict%20y%20to%20domain%3D-3%3A8%2C%0A%09ytick%3Dnone%2C%0A%09xtick%3Dnone%0A%09axis%20equal%2C%0A%09axis%20x%20line%3Dcenter%2C%0A%09axis%20y%20line%3Dcenter%2C%0A%09xlabel%3D%24x%24%2Cylabel%3D%24y%24%5D%0A%5Cfill%5Bgrey!10%5D%0A(axis%20cs%3A-3%2C-3)%20--%0A(axis%20cs%3A-2%2C-3)%20--%0A(axis%20cs%3A-2%2C0)%20--%0A(axis%20cs%3A-3%2C0)%20--%0Acycle%3B%0A%5Cfill%5Bgrey!10%5D%0A(axis%20cs%3A-2%2C0)%20--%0A(axis%20cs%3A-1%2C0)%20--%0A(axis%20cs%3A-1%2C8)%20--%0A(axis%20cs%3A-2%2C8)%20--%0Acycle%3B%0A%5Cfill%5Bgrey!10%5D%0A(axis%20cs%3A-1%2C0)%20--%0A(axis%20cs%3A-1%2C-3)%20--%0A(axis%20cs%3A1%2C-3)%20--%0A(axis%20cs%3A1%2C0)%20--%0Acycle%3B%0A%5Cfill%5Bgrey!10%5D%0A(axis%20cs%3A1%2C0)%20--%0A(axis%20cs%3A2%2C0)%20--%0A(axis%20cs%3A2%2C8)%20--%0A(axis%20cs%3A1%2C8)%20--%0Acycle%3B%0A%5Cfill%5Bgrey!10%5D%0A(axis%20cs%3A2%2C0)%20--%0A(axis%20cs%3A3%2C0)%20--%0A(axis%20cs%3A3%2C-3)%20--%0A(axis%20cs%3A2%2C-3)%20--%0Acycle%3B%0A%5Caddplot%5Bred%2C%20mark%3D*%2C%20only%20marks%5D%20coordinates%20%7B(-1%2C0)%20(1%2C0)%20(-2%2C0)%20(2%2C0)%7D%3B%0A%5Caddplot%5B%5D%20coordinates%20%7B(1%2C-0.5)%7D%20node%7B%5Csmall%20%241%24%7D%3B%0A%5Caddplot%5B%5D%20coordinates%20%7B(2%2C-0.5)%7D%20node%7B%5Csmall%20%242%24%7D%3B%0A%5Caddplot%5B%5D%20coordinates%20%7B(-1%2C-0.5)%7D%20node%7B%5Csmall%20%24-1%24%7D%3B%0A%5Caddplot%5B%5D%20coordinates%20%7B(-2%2C-0.5)%7D%20node%7B%5Csmall%20%24-2%24%7D%3B%0A%5Caddplot%5Bred%2Cdomain%3D-3%3A-2.35%2Csemithick%5D%7Bx%5E4-5*x%5E2%2B4%7D%3B%0A%5Caddplot%5Bred%2Cdomain%3D3%3A2.35%2Csemithick%5D%7Bx%5E4-5*x%5E2%2B4%7D%3B%0A%5Cpath%20(axis%20cs%3A0%2C0)%20node%20%5Banchor%3Dnorth%20west%2Cyshift%3D-0.07cm%5D%20%7B0%7D%3B%0A%5Cend%7Baxis%7D%0A%5Cend%7Btikzpicture%7D" alt="\begin{tikzpicture}[scale=1.0544]\small
+\begin{axis}[axis line style=gray,
+	samples=120,
+	width=9.0cm,height=6.4cm,
+	xmin=-3, xmax=3,
+	ymin=-3, ymax=8,
+	restrict y to domain=-3:8,
+	ytick=none,
+	xtick=none
+	axis equal,
+	axis x line=center,
+	axis y line=center,
+	xlabel=$x$,ylabel=$y$]
+\fill[grey!10]
+(axis cs:-3,-3) --
+(axis cs:-2,-3) --
+(axis cs:-2,0) --
+(axis cs:-3,0) --
+cycle;
+\fill[grey!10]
+(axis cs:-2,0) --
+(axis cs:-1,0) --
+(axis cs:-1,8) --
+(axis cs:-2,8) --
+cycle;
+\fill[grey!10]
+(axis cs:-1,0) --
+(axis cs:-1,-3) --
+(axis cs:1,-3) --
+(axis cs:1,0) --
+cycle;
+\fill[grey!10]
+(axis cs:1,0) --
+(axis cs:2,0) --
+(axis cs:2,8) --
+(axis cs:1,8) --
+cycle;
+\fill[grey!10]
+(axis cs:2,0) --
+(axis cs:3,0) --
+(axis cs:3,-3) --
+(axis cs:2,-3) --
+cycle;
+\addplot[red, mark=*, only marks] coordinates {(-1,0) (1,0) (-2,0) (2,0)};
+\addplot[] coordinates {(1,-0.5)} node{\small $1$};
+\addplot[] coordinates {(2,-0.5)} node{\small $2$};
+\addplot[] coordinates {(-1,-0.5)} node{\small $-1$};
+\addplot[] coordinates {(-2,-0.5)} node{\small $-2$};
+\addplot[red,domain=-3:-2.35,semithick]{x^4-5*x^2+4};
+\addplot[red,domain=3:2.35,semithick]{x^4-5*x^2+4};
+\path (axis cs:0,0) node [anchor=north west,yshift=-0.07cm] {0};
+\end{axis}
+\end{tikzpicture}" /></p>
+<h3>STEP 5</h3>
+<p>Calcoliamo la derivata prima: indico con <img src="https://tex.s2cms.ru/svg/D" alt="D" /> o <img src="https://tex.s2cms.ru/svg/'" alt="'" /> il simbolo di derivata.</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0Ay%5E%7B'%7D%20%26%20%3D%20D(x%5E4-5x%5E2%2B4)%20%5C%5C%0A%26%20%3D%20D(x%5E4)-5D(x%5E2)%2BD(4)%20%5C%5C%0A%26%20%3D%204x%5E3-5(2x)%2B0%20%5C%5C%0A%26%20%3D%204x%5E3-10x%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+y^{'} &amp; = D(x^4-5x^2+4) \\
+&amp; = D(x^4)-5D(x^2)+D(4) \\
+&amp; = 4x^3-5(2x)+0 \\
+&amp; = 4x^3-10x
+\end{align*}" /></p>
+<p>Devo ora studiare il segno della derivata prima, ossia quando <img src="https://tex.s2cms.ru/svg/y%5E%7B'%7D%20%5Cgeq%200%20" alt="y^{'} \geq 0 " />. Nel nostro caso</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/4x%5E3-10x%20%5Cgeq%200" alt="4x^3-10x \geq 0" /></p>
+<p>Raccolgo <img src="https://tex.s2cms.ru/svg/2x" alt="2x" /> e ottengo</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/2x(2x%5E2-5)%20%5Cgeq%200" alt="2x(2x^2-5) \geq 0" /></p>
+<p>Visto che ho un prodotto, studio singolarmente i due fattori.</p>
+<p>Fattore 1: <img src="https://tex.s2cms.ru/svg/2x%20%5Cgeq%200%20%5CRightarrow%20x%20%5Cgeq%200" alt="2x \geq 0 \Rightarrow x \geq 0" /></p>
+<p>Fattore 2: <img src="https://tex.s2cms.ru/svg/2x%5E2-5%20%5Cgeq%200%20%5CRightarrow%20x%5E2%20%5Cgeq%20%5Cfrac%7B5%7D%7B2%7D%20%5CRightarrow%20x%20%5Cleq%20-%5Csqrt%7B%5Cfrac%7B5%7D%7B2%7D%7D%20%5Cvee%20x%20%5Cgeq%20%5Csqrt%7B%5Cfrac%7B5%7D%7B2%7D%7D" alt="2x^2-5 \geq 0 \Rightarrow x^2 \geq \frac{5}{2} \Rightarrow x \leq -\sqrt{\frac{5}{2}} \vee x \geq \sqrt{\frac{5}{2}}" /></p>
+<p>Costruisco quindi il castello dei segni per stabilire il segno del prodotto</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Btikzpicture%7D%0A%5Cdraw%20(-2.5%2C0)%20--%20(2.5%2C0)%3B%0A%5Cdraw%20(0%2C3)%20--%20(0%2C-0.2)%3B%0A%5Cdraw%20(-1.5%2C3)%20--%20(-1.5%2C-0.2)%3B%0A%5Cdraw%20(1.5%2C3)%20--%20(1.5%2C-0.2)%3B%0A%5Cnode%20at%20(0%2C-0.5)%20%7B%240%24%7D%3B%0A%5Cnode%20at%20(-1.5%2C-0.5)%20%7B%24-%5Csqrt%7B%5Cfrac%7B5%7D%7B2%7D%7D%24%7D%3B%0A%5Cnode%20at%20(1.5%2C-0.5)%20%7B%24%5Csqrt%7B%5Cfrac%7B5%7D%7B2%7D%7D%24%7D%3B%0A%5Cdraw%20(-2.5%2C2)%20--%20(2.5%2C2)%3B%0A%5Cdraw%20(-2.5%2C1)%20--%20(2.5%2C1)%3B%0A%25Numeratore%0A%5Cnode%20at%20(-3.5%2C2.5)%20%7B%5Cscriptsize%20Fattore%201%3A%7D%3B%0A%5Cnode%20at%20(-0.75%2C2.5)%20%7B%24-%24%7D%3B%0A%5Cnode%20at%20(-2%2C2.5)%20%7B%24-%24%7D%3B%0A%5Cnode%20at%20(0.75%2C2.5)%20%7B%24%2B%24%7D%3B%0A%5Cnode%20at%20(2%2C2.5)%20%7B%24%2B%24%7D%3B%0A%5Cdraw%20%5Bfill%20%3D%20black%5D(0%2C2.5)%20circle%20(0.07cm)%3B%0A%25Denominatore%0A%5Cnode%20at%20(-3.5%2C1.5)%20%7B%5Cscriptsize%20Fattore%202%3A%7D%3B%0A%5Cnode%20at%20(-0.75%2C1.5)%20%7B%24-%24%7D%3B%0A%5Cnode%20at%20(-2%2C1.5)%20%7B%24%2B%24%7D%3B%0A%5Cnode%20at%20(0.75%2C1.5)%20%7B%24-%24%7D%3B%0A%5Cnode%20at%20(2%2C1.5)%20%7B%24%2B%24%7D%3B%0A%5Cdraw%20%5Bfill%20%3D%20black%5D(-1.5%2C1.5)%20circle%20(0.07cm)%3B%0A%5Cdraw%20%5Bfill%20%3D%20black%5D(1.5%2C1.5)%20circle%20(0.07cm)%3B%0A%25Frazione%0A%5Cnode%20at%20(-3.5%2C0.5)%20%7B%5Cscriptsize%20Prodotto%3A%7D%3B%0A%5Cnode%20at%20(-0.75%2C0.5)%20%7B%24%2B%24%7D%3B%0A%5Cnode%20at%20(-2%2C0.5)%20%7B%24-%24%7D%3B%0A%5Cnode%20at%20(0.75%2C0.5)%20%7B%24-%24%7D%3B%0A%5Cnode%20at%20(2%2C0.5)%20%7B%24%2B%24%7D%3B%0A%5Cdraw%20%5Bfill%20%3D%20black%5D(-1.5%2C0.5)%20circle%20(0.07cm)%3B%0A%5Cdraw%20%5Bfill%20%3D%20black%5D(1.5%2C0.5)%20circle%20(0.07cm)%3B%0A%5Cdraw%20%5Bfill%20%3D%20black%5D(0%2C0.5)%20circle%20(0.07cm)%3B%0A%5Cdraw%5B-%3E%5D%20(-2.5%2C-1)%20--%20(-1.5%2C-2)%3B%0A%5Cdraw%5B-%3E%5D%20(-1.4%2C-2)--(0%2C-1)%3B%0A%5Cdraw%5B-%3E%5D%20(0.1%2C-1)%20--%20(1.5%2C-2)%3B%0A%5Cdraw%5B-%3E%5D%20(1.6%2C-2)--(2.5%2C-1)%3B%0A%5Cend%7Btikzpicture%7D" alt="\begin{tikzpicture}
+\draw (-2.5,0) -- (2.5,0);
+\draw (0,3) -- (0,-0.2);
+\draw (-1.5,3) -- (-1.5,-0.2);
+\draw (1.5,3) -- (1.5,-0.2);
+\node at (0,-0.5) {$0$};
+\node at (-1.5,-0.5) {$-\sqrt{\frac{5}{2}}$};
+\node at (1.5,-0.5) {$\sqrt{\frac{5}{2}}$};
+\draw (-2.5,2) -- (2.5,2);
+\draw (-2.5,1) -- (2.5,1);
+%Numeratore
+\node at (-3.5,2.5) {\scriptsize Fattore 1:};
+\node at (-0.75,2.5) {$-$};
+\node at (-2,2.5) {$-$};
+\node at (0.75,2.5) {$+$};
+\node at (2,2.5) {$+$};
+\draw [fill = black](0,2.5) circle (0.07cm);
+%Denominatore
+\node at (-3.5,1.5) {\scriptsize Fattore 2:};
+\node at (-0.75,1.5) {$-$};
+\node at (-2,1.5) {$+$};
+\node at (0.75,1.5) {$-$};
+\node at (2,1.5) {$+$};
+\draw [fill = black](-1.5,1.5) circle (0.07cm);
+\draw [fill = black](1.5,1.5) circle (0.07cm);
+%Frazione
+\node at (-3.5,0.5) {\scriptsize Prodotto:};
+\node at (-0.75,0.5) {$+$};
+\node at (-2,0.5) {$-$};
+\node at (0.75,0.5) {$-$};
+\node at (2,0.5) {$+$};
+\draw [fill = black](-1.5,0.5) circle (0.07cm);
+\draw [fill = black](1.5,0.5) circle (0.07cm);
+\draw [fill = black](0,0.5) circle (0.07cm);
+\draw[-&gt;] (-2.5,-1) -- (-1.5,-2);
+\draw[-&gt;] (-1.4,-2)--(0,-1);
+\draw[-&gt;] (0.1,-1) -- (1.5,-2);
+\draw[-&gt;] (1.6,-2)--(2.5,-1);
+\end{tikzpicture}" /></p>
+<p>La funzione è quindi decrescente negli intervalli <img src="https://tex.s2cms.ru/svg/%5Cleft(-%5Cinfty%2C-%5Csqrt%7B%5Cfrac%7B5%7D%7B2%7D%7D%5Cright)" alt="\left(-\infty,-\sqrt{\frac{5}{2}}\right)" /> e <img src="https://tex.s2cms.ru/svg/%5Cleft(0%2C%20%5Csqrt%7B%5Cfrac%7B5%7D%7B2%7D%7D%5Cright)" alt="\left(0, \sqrt{\frac{5}{2}}\right)" /> mentre è crescente in <img src="https://tex.s2cms.ru/svg/%5Cleft(-%5Csqrt%7B%5Cfrac%7B5%7D%7B2%7D%7D%2C0%5Cright)" alt="\left(-\sqrt{\frac{5}{2}},0\right)" /> e <img src="https://tex.s2cms.ru/svg/%5Cleft(%5Csqrt%7B%5Cfrac%7B5%7D%7B2%7D%7D%2C%2B%5Cinfty%5Cright)" alt="\left(\sqrt{\frac{5}{2}},+\infty\right)" />.
+Abbiamo quindi che zero è un massimo relativo della funzione (relativo perchè la funzione tende a infinito agli estremi), mentre <img src="https://tex.s2cms.ru/svg/%5Cpm%20%5Csqrt%7B%5Cfrac%7B5%7D%7B2%7D%7D" alt="\pm \sqrt{\frac{5}{2}}" /> sono minimi assoluti.</p>
+<h3>STEP 6</h3>
+<p>Calcoliamo la derivata seconda.</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0Ay%5E%7B''%7D%20%26%20%3D%20D(4x%5E3-10x)%20%5C%5C%0A%26%20%3D%204D(x%5E3)-10D(x)%20%5C%5C%0A%26%20%3D%204(3x%5E2)-10(1)%20%5C%5C%0A%26%20%3D%2012x%5E2-10%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+y^{''} &amp; = D(4x^3-10x) \\
+&amp; = 4D(x^3)-10D(x) \\
+&amp; = 4(3x^2)-10(1) \\
+&amp; = 12x^2-10
+\end{align*}" /></p>
+<p>Devo ora studiare il segno della derivata seconda, ossia quando <img src="https://tex.s2cms.ru/svg/y%5E%7B''%7D%20%5Cgeq%200%20" alt="y^{''} \geq 0 " />. Nel nostro caso</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Balign*%7D%0A12x%5E2-10%20%26%20%5Cgeq%200%20%5C%5C%0A12x%5E2%20%26%20%5Cgeq%2010%20%5C%5C%0Ax%5E2%20%26%20%5Cgeq%20%5Cfrac%7B10%7D%7B12%7D%20%5C%5C%0Ax%5E2%20%26%20%5Cgeq%20%5Cfrac%7B5%7D%7B6%7D%20%5C%5C%0A%26%20%5Cdownarrow%20%5C%5C%0A%5Ctext%7Bequazione%7D%20%5C%3B%20%26%20%5C%3B%20%5Ctext%7Bassociata%7D%20%5C%5C%0Ax%5E2%20%26%20%3D%20%5Cfrac%7B5%7D%7B6%7D%20%5C%5C%0Ax%20%26%20%3D%20%5Cpm%20%5Csqrt%7B%5Cfrac%7B5%7D%7B6%7D%7D%5C%5C%0A%26%20%5Cdownarrow%20%5C%5C%0A%5Ctext%7Bpoich%C3%A8%20avevo%7D%20%5Cgeq%20%26%20%5CRightarrow%20%5Ctext%7Bintervalli%20esterni%3A%7D%20%5C%5C%0Ax%20%5Cleq%20-%5Csqrt%7B%5Cfrac%7B5%7D%7B6%7D%7D%20%5C%3B%20%5C%3B%20%26%20%5Cvee%20%5C%3B%20%5C%3B%20x%20%5Cgeq%20%5Csqrt%7B%5Cfrac%7B5%7D%7B6%7D%7D%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+12x^2-10 &amp; \geq 0 \\
+12x^2 &amp; \geq 10 \\
+x^2 &amp; \geq \frac{10}{12} \\
+x^2 &amp; \geq \frac{5}{6} \\
+&amp; \downarrow \\
+\text{equazione} \; &amp; \; \text{associata} \\
+x^2 &amp; = \frac{5}{6} \\
+x &amp; = \pm \sqrt{\frac{5}{6}}\\
+&amp; \downarrow \\
+\text{poichè avevo} \geq &amp; \Rightarrow \text{intervalli esterni:} \\
+x \leq -\sqrt{\frac{5}{6}} \; \; &amp; \vee \; \; x \geq \sqrt{\frac{5}{6}}
+\end{align*}" /></p>
+<p>Dallo studio della derivata seconda possiamo quindi dire che esistono due punti di flesso: <img src="https://tex.s2cms.ru/svg/x%3D%5Cpm%20%5Csqrt%7B%5Cfrac%7B5%7D%7B6%7D%7D" alt="x=\pm \sqrt{\frac{5}{6}}" />.</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Btikzpicture%7D%0A%5Cdraw%20(-2%2C0)--(2%2C0)%3B%0A%5Cdraw%20(-1%2C-0.2)--(-1%2C1)%3B%0A%5Cdraw%20(1%2C-0.2)--(1%2C1)%3B%0A%5Cnode%20at%20(-3%2C0.5)%20%7B%24y%5E%7B''%7D%5Cgeq%200%24%7D%3B%0A%5Cnode%20at%20(-1%2C-0.5)%20%7B%24-%5Csqrt%7B%5Cfrac%7B5%7D%7B6%7D%7D%24%7D%3B%0A%5Cnode%20at%20(1%2C-0.5)%20%7B%24%5Csqrt%7B%5Cfrac%7B5%7D%7B6%7D%7D%24%7D%3B%0A%5Cnode%20at%20(-1.5%2C0.5)%20%7B%24%2B%24%7D%3B%0A%5Cnode%20at%20(1.5%2C0.5)%20%7B%24%2B%24%7D%3B%0A%5Cnode%20at%20(0%2C0.5)%20%7B%24-%24%7D%3B%0A%5Cdraw%20(-2%2C-1)%20arc%20(-180%3A0%3A0.4)%3B%0A%5Cdraw%20(-0.4%2C-1.4)%20arc%20(180%3A0%3A0.4)%3B%0A%5Cdraw%20(1.5%2C-1)%20arc%20(-180%3A0%3A0.4)%3B%0A%5Cend%7Btikzpicture%7D" alt="\begin{tikzpicture}
+\draw (-2,0)--(2,0);
+\draw (-1,-0.2)--(-1,1);
+\draw (1,-0.2)--(1,1);
+\node at (-3,0.5) {$y^{''}\geq 0$};
+\node at (-1,-0.5) {$-\sqrt{\frac{5}{6}}$};
+\node at (1,-0.5) {$\sqrt{\frac{5}{6}}$};
+\node at (-1.5,0.5) {$+$};
+\node at (1.5,0.5) {$+$};
+\node at (0,0.5) {$-$};
+\draw (-2,-1) arc (-180:0:0.4);
+\draw (-0.4,-1.4) arc (180:0:0.4);
+\draw (1.5,-1) arc (-180:0:0.4);
+\end{tikzpicture}" /></p>
+<p>La funzione è quindi convessa <img src="https://tex.s2cms.ru/svg/(y%5E%7B''%7D%20%3E%200)" alt="(y^{''} &gt; 0)" /> in <img src="https://tex.s2cms.ru/svg/%5Cleft(-%5Cinfty%2C%20-%5Csqrt%7B%5Cfrac%7B5%7D%7B6%7D%7D%5Cright)%20%5Ccup%20%5Cleft(%5Csqrt%7B%5Cfrac%7B5%7D%7B6%7D%7D%2C%2B%5Cinfty%5Cright)" alt="\left(-\infty, -\sqrt{\frac{5}{6}}\right) \cup \left(\sqrt{\frac{5}{6}},+\infty\right)" /> mentre è concava <img src="https://tex.s2cms.ru/svg/(y%5E%7B''%7D%20%3C%200)" alt="(y^{''} &lt; 0)" /> in <img src="https://tex.s2cms.ru/svg/%5Cleft(-%5Csqrt%7B%5Cfrac%7B5%7D%7B6%7D%7D%2C%20%5Csqrt%7B%5Cfrac%7B5%7D%7B6%7D%7D%5Cright)" alt="\left(-\sqrt{\frac{5}{6}}, \sqrt{\frac{5}{6}}\right)" />.</p>
+<p>Il grafico finale della funzione è quindi</p>
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Btikzpicture%7D%5Bscale%3D1.0544%5D%5Csmall%0A%5Cbegin%7Baxis%7D%5Baxis%20line%20style%3Dgray%2C%0A%09samples%3D120%2C%0A%09width%3D9.0cm%2Cheight%3D6.4cm%2C%0A%09xmin%3D-3%2C%20xmax%3D3%2C%0A%09ymin%3D-3%2C%20ymax%3D8%2C%0A%09restrict%20y%20to%20domain%3D-3%3A8%2C%0A%09ytick%3Dnone%2C%0A%09xtick%3Dnone%0A%09axis%20equal%2C%0A%09axis%20x%20line%3Dcenter%2C%0A%09axis%20y%20line%3Dcenter%2C%0A%09xlabel%3D%24x%24%2Cylabel%3D%24y%24%5D%0A%5Cfill%5Bgrey!10%5D%0A(axis%20cs%3A-3%2C-3)%20--%0A(axis%20cs%3A-2%2C-3)%20--%0A(axis%20cs%3A-2%2C0)%20--%0A(axis%20cs%3A-3%2C0)%20--%0Acycle%3B%0A%5Cfill%5Bgrey!10%5D%0A(axis%20cs%3A-2%2C0)%20--%0A(axis%20cs%3A-1%2C0)%20--%0A(axis%20cs%3A-1%2C8)%20--%0A(axis%20cs%3A-2%2C8)%20--%0Acycle%3B%0A%5Cfill%5Bgrey!10%5D%0A(axis%20cs%3A-1%2C0)%20--%0A(axis%20cs%3A-1%2C-3)%20--%0A(axis%20cs%3A1%2C-3)%20--%0A(axis%20cs%3A1%2C0)%20--%0Acycle%3B%0A%5Cfill%5Bgrey!10%5D%0A(axis%20cs%3A1%2C0)%20--%0A(axis%20cs%3A2%2C0)%20--%0A(axis%20cs%3A2%2C8)%20--%0A(axis%20cs%3A1%2C8)%20--%0Acycle%3B%0A%5Cfill%5Bgrey!10%5D%0A(axis%20cs%3A2%2C0)%20--%0A(axis%20cs%3A3%2C0)%20--%0A(axis%20cs%3A3%2C-3)%20--%0A(axis%20cs%3A2%2C-3)%20--%0Acycle%3B%0A%5Caddplot%5Bred%2C%20mark%3D*%2C%20only%20marks%5D%20coordinates%20%7B(-1%2C0)%20(1%2C0)%20(-2%2C0)%20(2%2C0)%7D%3B%0A%5Caddplot%5Bblack%2Cdashed%5D%20coordinates%20%7B%0A((5%2F2)%5E(1%2F2)%2C-9%2F4)%0A((5%2F2)%5E(1%2F2)%2C0)%0A%7D%3B%0A%5Caddplot%5Bblack%2Cdashed%5D%20coordinates%20%7B%0A(-(5%2F2)%5E(1%2F2)%2C-9%2F4)%0A(-(5%2F2)%5E(1%2F2)%2C0)%0A%7D%3B%0A%5Caddplot%5B%5D%20coordinates%20%7B(1%2C-0.5)%7D%20node%7B%5Csmall%20%241%24%7D%3B%0A%5Caddplot%5B%5D%20coordinates%20%7B(2%2C-0.5)%7D%20node%7B%5Csmall%20%242%24%7D%3B%0A%5Caddplot%5B%5D%20coordinates%20%7B(-1%2C-0.5)%7D%20node%7B%5Csmall%20%24-1%24%7D%3B%0A%5Caddplot%5B%5D%20coordinates%20%7B(-2%2C-0.5)%7D%20node%7B%5Csmall%20%24-2%24%7D%3B%0A%5Caddplot%5B%5D%20coordinates%20%7B((5%2F2)%5E(1%2F2)%2C0.6)%7D%20node%7B%5Ctiny%20%24%5Csqrt%7B%5Cfrac%7B5%7D%7B2%7D%7D%24%7D%3B%0A%5Caddplot%5B%5D%20coordinates%20%7B(-(5%2F2)%5E(1%2F2)%2C0.6)%7D%20node%7B%5Ctiny%20%24-%5Csqrt%7B%5Cfrac%7B5%7D%7B2%7D%7D%24%7D%3B%0A%5Caddplot%5Bred%2Cdomain%3D-2.7%3A2.7%2Csemithick%5D%7Bx%5E4-5*x%5E2%2B4%7D%3B%0A%5Cpath%20(axis%20cs%3A0%2C0)%20node%20%5Banchor%3Dnorth%20west%2Cyshift%3D-0.07cm%5D%20%7B0%7D%3B%0A%5Cend%7Baxis%7D%0A%5Cend%7Btikzpicture%7D" alt="\begin{tikzpicture}[scale=1.0544]\small
+\begin{axis}[axis line style=gray,
+	samples=120,
+	width=9.0cm,height=6.4cm,
+	xmin=-3, xmax=3,
+	ymin=-3, ymax=8,
+	restrict y to domain=-3:8,
+	ytick=none,
+	xtick=none
+	axis equal,
+	axis x line=center,
+	axis y line=center,
+	xlabel=$x$,ylabel=$y$]
+\fill[grey!10]
+(axis cs:-3,-3) --
+(axis cs:-2,-3) --
+(axis cs:-2,0) --
+(axis cs:-3,0) --
+cycle;
+\fill[grey!10]
+(axis cs:-2,0) --
+(axis cs:-1,0) --
+(axis cs:-1,8) --
+(axis cs:-2,8) --
+cycle;
+\fill[grey!10]
+(axis cs:-1,0) --
+(axis cs:-1,-3) --
+(axis cs:1,-3) --
+(axis cs:1,0) --
+cycle;
+\fill[grey!10]
+(axis cs:1,0) --
+(axis cs:2,0) --
+(axis cs:2,8) --
+(axis cs:1,8) --
+cycle;
+\fill[grey!10]
+(axis cs:2,0) --
+(axis cs:3,0) --
+(axis cs:3,-3) --
+(axis cs:2,-3) --
+cycle;
+\addplot[red, mark=*, only marks] coordinates {(-1,0) (1,0) (-2,0) (2,0)};
+\addplot[black,dashed] coordinates {
+((5/2)^(1/2),-9/4)
+((5/2)^(1/2),0)
+};
+\addplot[black,dashed] coordinates {
+(-(5/2)^(1/2),-9/4)
+(-(5/2)^(1/2),0)
+};
+\addplot[] coordinates {(1,-0.5)} node{\small $1$};
+\addplot[] coordinates {(2,-0.5)} node{\small $2$};
+\addplot[] coordinates {(-1,-0.5)} node{\small $-1$};
+\addplot[] coordinates {(-2,-0.5)} node{\small $-2$};
+\addplot[] coordinates {((5/2)^(1/2),0.6)} node{\tiny $\sqrt{\frac{5}{2}}$};
+\addplot[] coordinates {(-(5/2)^(1/2),0.6)} node{\tiny $-\sqrt{\frac{5}{2}}$};
+\addplot[red,domain=-2.7:2.7,semithick]{x^4-5*x^2+4};
+\path (axis cs:0,0) node [anchor=north west,yshift=-0.07cm] {0};
+\end{axis}
+\end{tikzpicture}" /></p>
