@@ -653,6 +653,86 @@ V &amp; = \pi \int_{-5}^{-4} \left(\sqrt{\frac{x+4}{x}}\right)^2 dx \\
           </div>
         </div>
         <!-- NUOVO ESERCIZIO-->
+
+        
+        <div class="col-12">
+          <div class="card mb-12 shadow-sm exercise-card">
+            <div class="card-body">
+              <h4 class="card-title">Esercizio 7</h4>
+              
+              <blockquote>
+                <p>Calcola il seguente integrale</p>
+                </blockquote>
+                <p align="center"><img align="center" src="https://i.upmath.me/svg/%5Cint%20%5Cfrac%7Bx%5E2%2B4x%2B1%7D%7B2x%7D%20dx%20" alt="\int \frac{x^2+4x+1}{2x} dx " /></p>
+                
+
+              <p class="card-text"></p>
+              
+              <div class="collapse" id="es7">
+                  <blockquote>
+                  <div class="row">
+                    <div class="col-lg-11">
+                      <h5>Soluzione</h5>
+                    </div>
+                    <!-- remember to modify data-target with the righ ID and the parameter to changeTitle with the right ID of the button -->
+                    <div class="col-lg-1">
+                        <button type="button" class="close" aria-label="Close" onclick="changeTitle('btnes7')" data-toggle="collapse" data-target="#es7">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                    </div>
+                  </div>
+                  
+                  <p>Dal momento che il denominatore della frazione da integrare è composto da solo un termine, posso &quot;spezzare&quot; la frazione in frazioni più semplici:</p>
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%5Cbegin%7Balign*%7D%0A%5Cint%20%5Cfrac%7Bx%5E2%2B4x%2B1%7D%7B2x%7D%20dx%20%26%20%3D%20%5Cint%20%5Cleft(%5Cfrac%7Bx%5E2%7D%7B2x%7D%20%2B%20%5Cfrac%7B4x%7D%7B2x%7D%2B%20%5Cfrac%7B1%7D%7B2x%7D%20%5Cright)dx%20%5C%5C%0A%26%20%3D%20%5Cint%20%5Cleft(%5Cfrac%7Bx%7D%7B2%7D%20%2B%202%2B%20%5Cfrac%7B1%7D%7B2x%7D%20%5Cright)dx%20%5C%5C%20%0A%26%20%3D%20%5Cint%20%5Cfrac%7Bx%7D%7B2%7Ddx%20%20%2B%20%5Cint%202%20dx%20%2B%20%5Cint%20%5Cfrac%7B1%7D%7B2x%7Ddx%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\int \frac{x^2+4x+1}{2x} dx &amp; = \int \left(\frac{x^2}{2x} + \frac{4x}{2x}+ \frac{1}{2x} \right)dx \\
+&amp; = \int \left(\frac{x}{2} + 2+ \frac{1}{2x} \right)dx \\ 
+&amp; = \int \frac{x}{2}dx  + \int 2 dx + \int \frac{1}{2x}dx
+\end{align*}" /></p>
+<p>dove nell’ultimo passaggio ho utilizzato il fatto che l’integrale di una somma è uguale alla somma degli integrali.</p>
+<p>I tre integrali che abbiamo ottenuto sono immediati: ricordiamo la formula per risolverli.</p>
+<p><strong>Memo</strong>: <img src="https://i.upmath.me/svg/%5Cint%20x%5E%7B%5Calpha%7Ddx%20%3D%20%5Cbegin%7Bcases%7D%0A%5Cfrac%7Bx%5E%7B%5Calpha%2B1%7D%7D%7B%5Calpha%20%2B1%7D%20%2B%20c%20%26%20%5Ctext%7Bse%7D%20%5C%20%5Calpha%20%5Cneq%20-1%20%5C%5C%0A%5Cln(%7Cx%7C)%20%2B%20c%20%26%20%5Ctext%7Bse%7D%20%5C%20%5Calpha%20%3D%20-1%20%0A%5Cend%7Bcases%7D" alt="\int x^{\alpha}dx = \begin{cases}
+\frac{x^{\alpha+1}}{\alpha +1} + c &amp; \text{se} \ \alpha \neq -1 \\
+\ln(|x|) + c &amp; \text{se} \ \alpha = -1 
+\end{cases}" /></p>
+<p>Il primo integrale quindi è uguale a</p>
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%5Cbegin%7Balign*%7D%0A%5Cint%20%5Cfrac%7Bx%7D%7B2%7D%20dx%20%26%20%3D%20%5Cfrac%7B1%7D%7B2%7D%20%5Ccdot%20%5Cint%20x%20dx%20%5C%5C%0A%26%20%3D%20%20%5Cfrac%7B1%7D%7B2%7D%20%5Ccdot%20%5Cfrac%7Bx%5E%7B1%2B1%7D%7D%7B1%2B1%7D%20%2B%20c_1%20%5C%5C%0A%26%20%3D%20%5Cfrac%7B1%7D%7B2%7D%5Ccdot%20%5Cfrac%7Bx%5E%7B2%7D%7D%7B2%7D%20%2B%20c_1%20%5C%5C%0A%26%20%3D%20%20%5Cfrac%7Bx%5E%7B2%7D%7D%7B4%7D%20%2B%20c_1%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\int \frac{x}{2} dx &amp; = \frac{1}{2} \cdot \int x dx \\
+&amp; =  \frac{1}{2} \cdot \frac{x^{1+1}}{1+1} + c_1 \\
+&amp; = \frac{1}{2}\cdot \frac{x^{2}}{2} + c_1 \\
+&amp; =  \frac{x^{2}}{4} + c_1
+\end{align*}" /></p>
+<p>Il secondo integrale è uguale a</p>
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%5Cbegin%7Balign*%7D%0A%5Cint%202%20dx%20%26%20%3D%20%202%20%5Ccdot%20%5Cint%201%20dx%20%5C%5C%0A%26%20%3D%202%20%5Ccdot%20x%20%20%2B%20c_2%20%5C%5C%0A%26%20%3D%202x%20%2B%20c_2%20%5C%5C%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\int 2 dx &amp; =  2 \cdot \int 1 dx \\
+&amp; = 2 \cdot x  + c_2 \\
+&amp; = 2x + c_2 \\
+\end{align*}" /></p>
+<p>Il terzo integrale è uguale a</p>
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%5Cbegin%7Balign*%7D%0A%5Cint%20%5Cfrac%7B1%7D%7B2x%7D%20dx%20%26%20%3D%20%5Cfrac%7B1%7D%7B2%7D%20%5Ccdot%20%5Cint%20%5Cfrac%7B1%7D%7Bx%7D%20dx%20%5C%5C%0A%26%20%3D%20%5Cfrac%7B1%7D%7B2%7D%20%5Ccdot%20%5Cint%20x%5E%7B-1%7D%20dx%5C%5C%0A%26%20%3D%20%20%5Cfrac%7B1%7D%7B2%7D%20%5Ccdot%20%5Cln(%7Cx%7C)%20%2B%20c_3%20%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\int \frac{1}{2x} dx &amp; = \frac{1}{2} \cdot \int \frac{1}{x} dx \\
+&amp; = \frac{1}{2} \cdot \int x^{-1} dx\\
+&amp; =  \frac{1}{2} \cdot \ln(|x|) + c_3 
+\end{align*}" /></p>
+<p>Possiamo ora mettere insieme tutti i pezzi e calcolare l’integrale iniziale</p>
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%5Cbegin%7Balign*%7D%0A%5Cint%20%5Cfrac%7Bx%5E2%2B4x%2B1%7D%7B2x%7D%20dx%20%26%20%3D%20%5Cint%20%5Cfrac%7Bx%7D%7B2%7Ddx%20%20%2B%20%5Cint%202%20dx%20%2B%20%5Cint%20%5Cfrac%7B1%7D%7B2x%7Ddx%20%5C%5C%0A%26%20%3D%20%5Cfrac%7Bx%5E2%7D%7B4%7D%20%2B%20c_1%20%2B%202x%20%2B%20c_2%20%2B%20%5Cfrac%7B%5Cln(%7Cx%7C)%7D%7B2%7D%20%2B%20c_3%20%5C%5C%0A%26%20%3D%20%5Cfrac%7Bx%5E2%7D%7B4%7D%2B%202x%2B%20%5Cfrac%7B%5Cln(%7Cx%7C)%7D%7B2%7D%20%2B%20c%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\int \frac{x^2+4x+1}{2x} dx &amp; = \int \frac{x}{2}dx  + \int 2 dx + \int \frac{1}{2x}dx \\
+&amp; = \frac{x^2}{4} + c_1 + 2x + c_2 + \frac{\ln(|x|)}{2} + c_3 \\
+&amp; = \frac{x^2}{4}+ 2x+ \frac{\ln(|x|)}{2} + c
+\end{align*}" /></p>
+<p>dove nell’ultimo passaggio ho raggruppato assieme le costanti visto che somme e differenze di costanti rimangono costanti (<img src="https://i.upmath.me/svg/c%20%3D%20c_1%2Bc_2%2Bc_3" alt="c = c_1+c_2+c_3" />).</p>
+
+
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" id="btnes7" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" aria-expanded="false" aria-controls="es7" data-target="#es7" onclick="changeTitle('btnes7')">Mostra Soluzione</button>
+                </div>
+                <!--<small class="text-muted">1 Marzo 2020</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- NUOVO ESERCIZIO-->
       
        
         
