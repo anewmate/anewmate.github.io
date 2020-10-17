@@ -1,0 +1,48 @@
+﻿<h1>Integrali</h1>
+<!--Upmath extremely simplifies this task by using Markdown and LaTeX. It converts the Markdown syntax extended with LaTeX equations support into HTML code you can publish anywhere on the web.-->
+<!--![Paper written in LaTeX](/i/latex.jpg)-->
+<h2></h2>
+<p>Esercizio 6:</p>
+<blockquote>
+<p>Calcola il seguente integrale</p>
+</blockquote>
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%5Cint%20%5Cleft(%20%5Cfrac%7B2%7D%7Bx%5E3%7D-x%5E2-%5Cfrac%7B1%7D%7Bx%7D%5Cright)%20dx%20" alt="\int \left( \frac{2}{x^3}-x^2-\frac{1}{x}\right) dx " /></p>
+<h2>Soluzione:</h2>
+<p>Sapendo che l’integrale di una somma si può &quot;spezzare&quot; nella somma degli integrali, il primo passaggio da fare è</p>
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%5Cbegin%7Balign*%7D%0A%5Cint%20%5Cleft(%20%5Cfrac%7B2%7D%7Bx%5E3%7D-x%5E2-%5Cfrac%7B1%7D%7Bx%7D%5Cright)%20dx%20%26%20%3D%20%5Cint%20%5Cfrac%7B2%7D%7Bx%5E3%7Ddx%20-%5Cint%20x%5E2%20dx-%20%5Cint%20%5Cfrac%7B1%7D%7Bx%7D%20dx%20%5C%5C%0A%26%20%3D%202%20%5Ccdot%20%5Cint%20%5Cfrac%7B1%7D%7Bx%5E3%7Ddx%20-%5Cint%20x%5E2%20dx-%20%5Cint%20%5Cfrac%7B1%7D%7Bx%7D%20dx%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\int \left( \frac{2}{x^3}-x^2-\frac{1}{x}\right) dx &amp; = \int \frac{2}{x^3}dx -\int x^2 dx- \int \frac{1}{x} dx \\
+&amp; = 2 \cdot \int \frac{1}{x^3}dx -\int x^2 dx- \int \frac{1}{x} dx
+\end{align*}" /></p>
+<p>dove nel secondo passaggio ho utilizzato il fatto che le costanti si possono &quot;portare fuori&quot; dall’integrale.</p>
+<p>I tre integrali che abbiamo ottenuto sono immediati: ricordiamo la formula per risolverli.</p>
+<p><strong>Memo</strong>: <img src="https://i.upmath.me/svg/%5Cint%20x%5E%7B%5Calpha%7Ddx%20%3D%20%5Cbegin%7Bcases%7D%0A%5Cfrac%7Bx%5E%7B%5Calpha%2B1%7D%7D%7B%5Calpha%20%2B1%7D%20%2B%20c%20%26%20%5Ctext%7Bse%7D%20%5C%20%5Calpha%20%5Cneq%20-1%20%5C%5C%0A%5Cln(%7Cx%7C)%20%2B%20c%20%26%20%5Ctext%7Bse%7D%20%5C%20%5Calpha%20%3D%20-1%20%0A%5Cend%7Bcases%7D" alt="\int x^{\alpha}dx = \begin{cases}
+\frac{x^{\alpha+1}}{\alpha +1} + c &amp; \text{se} \ \alpha \neq -1 \\
+\ln(|x|) + c &amp; \text{se} \ \alpha = -1 
+\end{cases}" /></p>
+<p>Il primo integrale quindi è uguale a</p>
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%5Cbegin%7Balign*%7D%0A%5Cint%20%5Cfrac%7B1%7D%7Bx%5E3%7D%20dx%20%26%20%3D%20%5Cint%20x%5E%7B-3%7D%20dx%20%5C%5C%0A%26%20%3D%20%20%5Cfrac%7Bx%5E%7B-3%2B1%7D%7D%7B-3%2B1%7D%20%2B%20c_1%20%5C%5C%0A%26%20%3D%20%5Cfrac%7Bx%5E%7B-2%7D%7D%7B-2%7D%20%2B%20c_1%20%5C%5C%0A%26%20%3D%20-%20%5Cfrac%7Bx%5E%7B-2%7D%7D%7B2%7D%20%2B%20c_1%20%5C%5C%0A%26%20%3D%20-%20%5Cfrac%7B1%7D%7B2x%5E2%7D%20%2B%20c_1%20%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\int \frac{1}{x^3} dx &amp; = \int x^{-3} dx \\
+&amp; =  \frac{x^{-3+1}}{-3+1} + c_1 \\
+&amp; = \frac{x^{-2}}{-2} + c_1 \\
+&amp; = - \frac{x^{-2}}{2} + c_1 \\
+&amp; = - \frac{1}{2x^2} + c_1 
+\end{align*}" /></p>
+<p>Il secondo integrale è uguale a</p>
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%5Cbegin%7Balign*%7D%0A%5Cint%20x%5E2%20dx%20%26%20%3D%20%20%5Cfrac%7Bx%5E%7B2%2B1%7D%7D%7B2%2B1%7D%20%2B%20c_2%20%5C%5C%0A%26%20%3D%20%5Cfrac%7Bx%5E%7B3%7D%7D%7B3%7D%20%2B%20c_2%20%5C%5C%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\int x^2 dx &amp; =  \frac{x^{2+1}}{2+1} + c_2 \\
+&amp; = \frac{x^{3}}{3} + c_2 \\
+\end{align*}" /></p>
+<p>Il terzo integrale è uguale a</p>
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%5Cbegin%7Balign*%7D%0A%5Cint%20%5Cfrac%7B1%7D%7Bx%7D%20dx%20%26%20%3D%20%5Cint%20x%5E%7B-1%7D%20dx%20%5C%5C%0A%26%20%3D%20%20%5Cln(%7Cx%7C)%20%2B%20c_3%20%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\int \frac{1}{x} dx &amp; = \int x^{-1} dx \\
+&amp; =  \ln(|x|) + c_3 
+\end{align*}" /></p>
+<p>Possiamo ora mettere insieme tutti i pezzi e calcolare l’integrale iniziale</p>
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%5Cbegin%7Balign*%7D%0A%5Cint%20%5Cleft(%20%5Cfrac%7B2%7D%7Bx%5E3%7D-x%5E2-%5Cfrac%7B1%7D%7Bx%7D%5Cright)%20dx%0A%26%20%3D%202%20%5Ccdot%20%5Cint%20%5Cfrac%7B1%7D%7Bx%5E3%7Ddx%20-%5Cint%20x%5E2%20dx-%20%5Cint%20%5Cfrac%7B1%7D%7Bx%7D%20dx%20%5C%5C%0A%26%20%3D%202%20%5Ccdot%20%5Cleft(-%5Cfrac%7B1%7D%7B2x%5E2%7D%2Bc_1%5Cright)%20-%5Cleft(%5Cfrac%7Bx%5E3%7D%7B3%7D%20%2B%20c_2%20%5Cright)-%20%5Cleft(%5Cln(%7Cx%7C)%2Bc_3%5Cright)%20%5C%5C%0A%26%20%3D%20-%5Cfrac%7B1%7D%7Bx%5E2%7D%20%2B2c_1%20-%20%5Cfrac%7Bx%5E3%7D%7B3%7D%20-%20c_2%20-%5Cln(%7Cx%7C)%20-c_3%20%5C%5C%0A%26%20%3D%20-%5Cfrac%7B1%7D%7Bx%5E2%7D%20-%20%5Cfrac%7Bx%5E3%7D%7B3%7D-%5Cln(%7Cx%7C)%20%2B%20c%20%20%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\int \left( \frac{2}{x^3}-x^2-\frac{1}{x}\right) dx
+&amp; = 2 \cdot \int \frac{1}{x^3}dx -\int x^2 dx- \int \frac{1}{x} dx \\
+&amp; = 2 \cdot \left(-\frac{1}{2x^2}+c_1\right) -\left(\frac{x^3}{3} + c_2 \right)- \left(\ln(|x|)+c_3\right) \\
+&amp; = -\frac{1}{x^2} +2c_1 - \frac{x^3}{3} - c_2 -\ln(|x|) -c_3 \\
+&amp; = -\frac{1}{x^2} - \frac{x^3}{3}-\ln(|x|) + c  
+\end{align*}" /></p>
+<p>dove nell’ultimo passaggio ho raggruppato assieme le costanti visto che somme e differenze di costanti rimangono costanti (<img src="https://i.upmath.me/svg/c%20%3D%202c_1-c_2-c_3" alt="c = 2c_1-c_2-c_3" />).</p>
