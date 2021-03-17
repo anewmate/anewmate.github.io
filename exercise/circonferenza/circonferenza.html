@@ -166,7 +166,6 @@
                 </blockquote>
                 
               <p class="card-text"></p>
-              
               <div class="collapse" id="es2">
                   <blockquote>
                   <div class="row">
@@ -208,7 +207,76 @@ x^2+y^2+6x-2y+5 &amp; = 0
           </div>
         </div>
         <!-- NUOVO ESERCIZIO-->
-        
+      
+        <div class="col-12">
+          <div class="card mb-12 shadow-sm exercise-card">
+            <div class="card-body">
+              <h4 class="card-title">Esercizio 3</h4>
+              
+              <blockquote>
+                <p>Trova l’equazione della circonferenza di raggio <img src="https://i.upmath.me/svg/2%5Csqrt%7B3%7D" alt="2\sqrt{3}" /> avente il centro nel punto in cui la retta di equazione <img src="https://i.upmath.me/svg/2x%2B3y%20%3D%205" alt="2x+3y = 5" /> interseca la bisettrice del I quadrante.</p>
+                </blockquote>
+                
+                
+              <p class="card-text"></p>
+              <div class="collapse" id="es3">
+                  <blockquote>
+                  <div class="row">
+                    <div class="col-lg-11">
+                      <h5>Soluzione</h5>
+                    </div>
+                    <!-- remember to modify data-target with the righ ID and the parameter to changeTitle with the right ID of the button -->
+                    <div class="col-lg-1">
+                        <button type="button" class="close" aria-label="Close" onclick="changeTitle('btnes3')" data-toggle="collapse" data-target="#es3">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                    </div>
+                  </div>
+                  
+                  <p>Come prima cosa troviamo il punto di intersezione fra la retta data e la bisettrice del primo quadrante.</p>
+<p><strong>Memo</strong>: l’equazione della bisettrice del I quadrante è <img src="https://i.upmath.me/svg/y%20%3D%20x%20" alt="y = x " />.</p>
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%5Cbegin%7Balign*%7D%0A%5Cbegin%7Bcases%7D%0Ay%20%3D%20x%20%5C%5C%0A2x%2B3y%20%3D%205%20%0A%5Cend%7Bcases%7D%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\begin{cases}
+y = x \\
+2x+3y = 5 
+\end{cases}
+\end{align*}" /></p>
+<p>Sostituendo <img src="https://i.upmath.me/svg/y%20%3D%20x" alt="y = x" /> nella seconda equazione otteniamo</p>
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%5Cbegin%7Balign*%7D%0A2x%2B3x%20%26%20%3D%205%20%5C%5C%0A5x%20%26%20%3D%205%20%5C%5C%0A%5Cfrac%7B5x%7D%7B5%7D%20%26%20%3D%20%5Cfrac%7B5%7D%7B5%7D%20%5C%5C%0Ax%20%26%20%3D%201%20%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+2x+3x &amp; = 5 \\
+5x &amp; = 5 \\
+\frac{5x}{5} &amp; = \frac{5}{5} \\
+x &amp; = 1 
+\end{align*}" /></p>
+<p>Dal momento che <img src="https://i.upmath.me/svg/y%20%3D%20x" alt="y = x" /> e <img src="https://i.upmath.me/svg/x%20%3D%201" alt="x = 1" />, il punto di intersezione è <img src="https://i.upmath.me/svg/(1%3B1)" alt="(1;1)" />, che deve essere il centro della circonferenza che stiamo cercando.</p>
+<p><strong>Memo</strong>: l’equazione di una circonferenza noti il centro di coordinate <img src="https://i.upmath.me/svg/(x_C%3By_C)" alt="(x_C;y_C)" /> e il raggio di lunghezza <img src="https://i.upmath.me/svg/r" alt="r" /> è data dalla formula</p>
+<p align="center"><img align="center" src="https://i.upmath.me/svg/(x-x_C)%5E2%2B(y-y_C)%5E2%20%3D%20r%5E2" alt="(x-x_C)^2+(y-y_C)^2 = r^2" /></p>
+<p>Nel nostro caso, <img src="https://i.upmath.me/svg/x_C%20%3D%201%2C%20y_C%20%3D%201%2C%20r%20%3D%202%5Csqrt%7B3%7D" alt="x_C = 1, y_C = 1, r = 2\sqrt{3}" />.</p>
+<p>L’equazione è quindi</p>
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%5Cbegin%7Balign*%7D%0A(x-x_C)%5E2%2B(y-y_C)%5E2%20%26%20%3D%20r%5E2%20%5C%5C%0A(x-(1))%5E2%2B(y-(1))%5E2%20%26%20%3D%20(2%5Csqrt%7B3%7D)%5E2%20%5C%5C%0A(x-1)%5E2%20%2B(y-1)%5E2%20%26%20%3D%204%5Ccdot%203%20%20%5C%5C%0Ax%5E2-2x%2B1%2By%5E2-2y%2B1%20%26%20%3D%2012%20%5C%5C%0Ax%5E2%2By%5E2-2x-2y%2B1%2B1-12%20%26%20%3D%200%20%5C%5C%0Ax%5E2%2By%5E2-2x-2y-10%20%26%20%3D%200%20%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+(x-x_C)^2+(y-y_C)^2 &amp; = r^2 \\
+(x-(1))^2+(y-(1))^2 &amp; = (2\sqrt{3})^2 \\
+(x-1)^2 +(y-1)^2 &amp; = 4\cdot 3  \\
+x^2-2x+1+y^2-2y+1 &amp; = 12 \\
+x^2+y^2-2x-2y+1+1-12 &amp; = 0 \\
+x^2+y^2-2x-2y-10 &amp; = 0 
+\end{align*}" /></p>
+
+
+
+
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" id="btnes3" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" aria-expanded="false" aria-controls="es3" data-target="#es3" onclick="changeTitle('btnes3')">Mostra Soluzione</button>
+                </div>
+                <!--<small class="text-muted">1 Marzo 2020</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- NUOVO ESERCIZIO-->
+      
         
       </div>
     </div>
