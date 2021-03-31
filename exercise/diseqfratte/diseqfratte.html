@@ -388,7 +388,135 @@ x \neq 3 \\
         </div>
         <!-- NUOVO ESERCIZIO-->
         
+
+        <div class="col-12">
+          <div class="card mb-12 shadow-sm exercise-card">
+            <div class="card-body">
+              <h4 class="card-title">Esercizio 3</h4>
+              
+              <blockquote>
+                <p>Risolvi la seguente disequazione fratta</p>
+                </blockquote>
+                <p align="center"><img align="center" src="https://i.upmath.me/svg/%5Cfrac%7B2x%5E2%2B3x%2B5%7D%7Bx%5E2-x%2B3%7D%20%3C%20-1" alt="\frac{2x^2+3x+5}{x^2-x+3} &lt; -1" /></p>
+                
+              <p class="card-text"></p>
+              
+              <div class="collapse" id="es3">
+                  <blockquote>
+                  <div class="row">
+                    <div class="col-lg-11">
+                      <h5>Soluzione</h5>
+                    </div>
+                    <!-- remember to modify data-target with the righ ID and the parameter to changeTitle with the right ID of the button -->
+                    <div class="col-lg-1">
+                        <button type="button" class="close" aria-label="Close" onclick="changeTitle('btnes3')" data-toggle="collapse" data-target="#es3">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                    </div>
+                  </div>
+                  
+                  <p>Come prima cosa, avendo delle frazioni con l’incognita a denominatore, poniamo le condizioni di esistenza (C.E.): in questo caso dobbiamo imporre che la frazione esista, quindi che il suo denominatore sia diverso da zero.</p>
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%5Cbegin%7Balign*%7D%0A%5Ctext%7BC.E.%3A%7D%20%5C%3B%20x%5E2-x%2B3%20%5Cneq%200%20%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\text{C.E.:} \; x^2-x+3 \neq 0 
+\end{align*}" /></p>
+<p>Risoluzione:</p>
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%5Cbegin%7Balign*%7D%0Ax%5E2-x%2B3%20%26%20%3D%200%20%5C%5C%0Ax_%7B1%2F2%7D%20%26%20%3D%20%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D%20%5C%5C%0A%26%20%3D%20%5Cfrac%7B%2B1%5Cpm%20%5Csqrt%7B1-12%7D%7D%7B2%7D%20%5C%5C%0A%26%20%3D%20%5Cfrac%7B1%20%5Cpm%20%5Csqrt%7B%5Ctextcolor%7Bred%7D%7B-11%7D%7D%7D%7B2%7D%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+x^2-x+3 &amp; = 0 \\
+x_{1/2} &amp; = \frac{-b\pm\sqrt{b^2-4ac}}{2a} \\
+&amp; = \frac{+1\pm \sqrt{1-12}}{2} \\
+&amp; = \frac{1 \pm \sqrt{\textcolor{red}{-11}}}{2}
+\end{align*}" /></p>
+<p>Attenzione: abbiamo ottenuto che il <img src="https://i.upmath.me/svg/%5Ctextcolor%7Bred%7D%7B%5CDelta%7D%20%3D%20-%2011" alt="\textcolor{red}{\Delta} = - 11" /> è negativo. Ciò significa che l’equazione che volevamo risolvere non ha soluzione, ossia non esistono valori di <img src="https://i.upmath.me/svg/x" alt="x" /> che annullano il denominatore. In altre parole, qualunque valore di <img src="https://i.upmath.me/svg/x" alt="x" /> io inserisca in <img src="https://i.upmath.me/svg/x%5E2-x%2B3" alt="x^2-x+3" /> ottengo sempre un numero diverso da zero. Quindi non ho condizioni di esistenza:</p>
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%5Cbegin%7Balign*%7D%0A%5Ctext%7BC.E.%3A%7D%20%5C%3B%20x%5E2-x%2B3%20%5Cneq%200%20%5Crightarrow%20%5Cforall%20%5C%3B%20x%20%5Cin%20%5Cmathbb%7BR%7D%20%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\text{C.E.:} \; x^2-x+3 \neq 0 \rightarrow \forall \; x \in \mathbb{R} 
+\end{align*}" /></p>
+<p>Per poter poi risolvere la disequazione fratta, dobbiamo arrivare ad avere una forma del tipo</p>
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%5Cfrac%7BA(x)%7D%7BB(x)%7D%20%5Cgtrless%200" alt="\frac{A(x)}{B(x)} \gtrless 0" /></p>
+<p>ossia un’unica frazione a sinistra e zero a destra. Andiamo quindi a sommare i termini a sinistra</p>
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%5Cbegin%7Balign*%7D%0A%5Cfrac%7B2x%5E2%2B3x%2B5%7D%7Bx%5E2-x%2B3%7D%2B1%20%26%20%3C%200%20%5C%5C%0A%5Cfrac%7B2x%5E2%2B3x%2B5%2Bx%5E2-x%2B3%7D%7Bx%5E2-x%2B3%7D%20%26%20%3C%200%20%5C%5C%0A%5Cfrac%7B3x%5E2%2B2x%2B8%7D%7Bx%5E2-x%2B3%7D%20%26%20%3C%200%20%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+\frac{2x^2+3x+5}{x^2-x+3}+1 &amp; &lt; 0 \\
+\frac{2x^2+3x+5+x^2-x+3}{x^2-x+3} &amp; &lt; 0 \\
+\frac{3x^2+2x+8}{x^2-x+3} &amp; &lt; 0 
+\end{align*}" /></p>
+<p>Ci stiamo quindi chiedendo quando quella frazione è negativa: per poter rispondere a questa domanda, dobbiamo andare a studiare il segno del numeratore e del denominatore separatamente e poi, alla fine, moltiplicare i segni. Indipendentemente dal verso della disuguaglianza, vado quindi a vedere quando numeratore e denominatore sono positivi.</p>
+<p><h3>Studio del numeratore</h3></p>
+<p>Inizio chiedendomi quando il numeratore è positivo:</p>
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%203x%5E2%2B2x%2B8%20%3E%200%20" alt=" 3x^2+2x+8 &gt; 0 " /></p>
+<p>Abbiamo ottenuto quindi una disequazione di secondo grado.</p>
+<hr>
+<p><strong>Memo</strong>: Ricordiamo la regola in generale che ci dice. Se ho</p>
+<ol>
+<li>espressione del tipo <img src="https://i.upmath.me/svg/ax%5E2%2Bbx%2Bc%20%5Cgtrless%200" alt="ax^2+bx+c \gtrless 0" /></li>
+<li><img align="center" src="https://i.upmath.me/svg/%5Ctextbf%7Ba%7D%3E0" alt="\textbf{a}&gt;0" /></li>
+<li>delta positivo: <img src="https://i.upmath.me/svg/%5CDelta%20%3E%200" alt="\Delta &gt; 0" /></li>
+<li><img src="https://i.upmath.me/svg/x_1%2Cx_2" alt="x_1,x_2" /> soluzioni dell’equazione associata con <img src="https://i.upmath.me/svg/x_2%20%3C%20x_1" alt="x_2 &lt; x_1" /></li>
+</ol>
+<p>Allora <img src="https://i.upmath.me/svg/ax%5E2%2Bbx%2Bc%20%3E%200" alt="ax^2+bx+c &gt; 0" /> ha soluzione <img src="https://i.upmath.me/svg/x%20%3C%20x_2%20%5Ccup%20x%20%3E%20x_1" alt="x &lt; x_2 \cup x &gt; x_1" />, mentre <img src="https://i.upmath.me/svg/ax%5E2%2Bbx%2Bc%20%3C%200" alt="ax^2+bx+c &lt; 0" /> ha soluzione <img src="https://i.upmath.me/svg/x_2%20%3C%20x%20%3C%20x_1" alt="x_2 &lt; x &lt; x_1" />. A parole, se voglio l’espressione positiva devo prendere l’unione degli intervalli esterni ai due valori che ottengo nell’equazione associata. Se invece voglio l’espressione negativa, devo prendere l’intervallo interno. In entrambi i casi, escludo o includo i punti estremi se la disuguaglianza è stretta oppure no.</p>
+<hr>
+<p>Quindi</p>
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%5Cbegin%7Balign*%7D%0A3x%5E2%2B2x%2B8%20%26%20%3E%200%20%5C%5C%0A%26%20%5Cdownarrow%20%5C%5C%0A%5Ctext%7Bequazione%7D%20%26%20%5C%3B%20%5Ctext%7Bassociata%3A%7D%20%5C%5C%0A3x%5E2%2B2x%2B8%20%26%20%3D%200%20%5C%5C%0Ax_%7B1%2F2%7D%20%26%20%3D%20%5Cfrac%7B-b%5Cpm%20%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D%20%5C%5C%0A%26%20%3D%20%5Cfrac%7B-2%20%5Cpm%20%5Csqrt%7B4-4(3)(8)%7D%7D%7B2(3)%7D%20%5C%5C%0A%26%20%3D%20%5Cfrac%7B-2%20%5Cpm%20%5Csqrt%7B-92%7D%7D%7B2%7D%20%5C%5C%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+3x^2+2x+8 &amp; &gt; 0 \\
+&amp; \downarrow \\
+\text{equazione} &amp; \; \text{associata:} \\
+3x^2+2x+8 &amp; = 0 \\
+x_{1/2} &amp; = \frac{-b\pm \sqrt{b^2-4ac}}{2a} \\
+&amp; = \frac{-2 \pm \sqrt{4-4(3)(8)}}{2(3)} \\
+&amp; = \frac{-2 \pm \sqrt{-92}}{2} \\
+\end{align*}" /></p>
+<p>Abbiamo quindi trovato che il delta è negativo: l’equazione associata non ha mai soluzioni, ma noi volevamo risolvere la disequazione. Cosa possiamo dire su quella?</p>
+<hr>
+<p><strong>Memo</strong>: Ricordiamo la regola in generale che ci dice. Se ho</p>
+<ol>
+<li>espressione del tipo <img src="https://i.upmath.me/svg/ax%5E2%2Bbx%2Bc%20%5Cgtrless%200" alt="ax^2+bx+c \gtrless 0" /></li>
+<li><img align="center" src="https://i.upmath.me/svg/%5Ctextbf%7Ba%7D%3E0" alt="\textbf{a}&gt;0" /></li>
+<li>delta negativo: <img src="https://i.upmath.me/svg/%5CDelta%20%3C%200" alt="\Delta &lt; 0" /></li>
+</ol>
+<p>Allora <img src="https://i.upmath.me/svg/ax%5E2%2Bbx%2Bc%20%3E%200" alt="ax^2+bx+c &gt; 0" /> ha soluzione <img src="https://i.upmath.me/svg/%5Cforall%20%5C%3B%20x%20%5Cin%20%5Cmathbb%7BR%7D" alt="\forall \; x \in \mathbb{R}" />, mentre <img src="https://i.upmath.me/svg/ax%5E2%2Bbx%2Bc%20%3C%200" alt="ax^2+bx+c &lt; 0" /> ha soluzione <img src="https://i.upmath.me/svg/%5Cnexists%20%5C%3B%20x%20%5Cin%20%5Cmathbb%7BR%7D" alt="\nexists \; x \in \mathbb{R}" />. A parole, se <img src="https://i.upmath.me/svg/a%20%3E%200" alt="a &gt; 0" /> e delta è negativo, l’espressione <img src="https://i.upmath.me/svg/ax%5E2%2Bbx%2Bc" alt="ax^2+bx+c" /> è sempre positiva: quindi la disuguaglianza con il maggiore è sempre verificata mentre non lo è mai quella con il minore.</p>
+<hr>
+<p>Nel nostro caso <img src="https://i.upmath.me/svg/a%20%3D%203" alt="a = 3" /> e vogliamo <img src="https://i.upmath.me/svg/3x%5E2%2B2x%2B8%20%3E%200" alt="3x^2+2x+8 &gt; 0" />: la disuguaglianza quindi è sempre verificata (soluzione: <img src="https://i.upmath.me/svg/%5Cforall%20%5C%3B%20x%20%5Cin%20%5Cmathbb%7BR%7D" alt="\forall \; x \in \mathbb{R}" />). Ciò significa quindi che il nostro numeratore è sempre positivo.</p>
+<p><h3>Studio del denominatore</h3></p>
+<p>Mi chiedo ora quando il denominatore è positivo:</p>
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%5Cbegin%7Balign*%7D%0Ax%5E2-x%2B3%20%26%20%3E%200%20%0A%5Cend%7Balign*%7D" alt="\begin{align*}
+x^2-x+3 &amp; &gt; 0 
+\end{align*}" /></p>
+<p>Andando a studiare l’equazione associata (che avevamo fatto prima per determinare le C.E.), anche qui troviamo un delta negativo: <img src="https://i.upmath.me/svg/a%20%3D%201" alt="a = 1" /> e vogliamo <img src="https://i.upmath.me/svg/x%5E2-x%2B3%20%3E%200" alt="x^2-x+3 &gt; 0" />, disequazione sempre verificata con lo stesso ragionamento fatto per il numeratore. Abbiamo quindi trovato che anche il denominatore è sempre positivo.</p>
+<p><h3>Studio della frazione</h3></p>
+<p>Ora che abbiamo studiato numeratore e denominatore, possiamo mettere tutto insieme e studiare il segno della frazione. Andiamo a costruire il &quot;castello dei segni&quot;:</p>
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%0A%5Cbegin%7Btikzpicture%7D%0A%5Cdraw%20(0%2C0)%20--%20(2%2C0)%3B%0A%5Cnode%20at%20(-2%2C0.5)%20%7B%5Csmall%20Frazione%3A%7D%3B%0A%5Cnode%20at%20(-2%2C1.5)%20%7B%5Csmall%20Denominatore%3A%7D%3B%0A%5Cnode%20at%20(-2%2C2.5)%20%7B%5Csmall%20Numeratore%3A%7D%3B%0A%5Cdraw%20(0%2C1)%20--%20(2%2C1)%3B%0A%5Cdraw%20(0%2C2)%20--%20(2%2C2)%3B%0A%5Cnode%20at%20(1%2C2.5)%20%7B%24%2B%24%7D%3B%0A%5Cnode%20at%20(1%2C1.5)%20%7B%24%2B%24%7D%3B%0A%5Cnode%20at%20(1%2C0.5)%20%7B%24%2B%24%7D%3B%0A%5Cend%7Btikzpicture%7D%0A" alt="
+\begin{tikzpicture}
+\draw (0,0) -- (2,0);
+\node at (-2,0.5) {\small Frazione:};
+\node at (-2,1.5) {\small Denominatore:};
+\node at (-2,2.5) {\small Numeratore:};
+\draw (0,1) -- (2,1);
+\draw (0,2) -- (2,2);
+\node at (1,2.5) {$+$};
+\node at (1,1.5) {$+$};
+\node at (1,0.5) {$+$};
+\end{tikzpicture}
+" /></p>
+<p>Inerisco in ogni riga i risultati ottenuti in precedenza: metto una <img src="https://i.upmath.me/svg/%2B" alt="+" /> negli intervalli dove il numeratore è positivo e una <img src="https://i.upmath.me/svg/-" alt="-" /> nel resto. Stessa cosa per il denominatore: in generale, con i pallini vuoti indico il fatto che gli estremi sono esclusi. Nell’ultima riga, quella chiamata Frazione, si moltiplicano fra loro i segni delle due righe precedenti; è inoltre in questa riga che leggo il risultato finale.</p>
+<p>Dal momento che sia numeratore che denominatore sono sempre positivi, avrò un segno <img src="https://i.upmath.me/svg/%2B" alt="+" /> su tutta la riga del numeratore e su tutta la riga del denominatore.</p>
+<p>Il mio obiettivo era quello di scoprire quando la frazione è negativa: la soluzione sarà quindi data da tutti gli intervalli in cui ho un segno <img src="https://i.upmath.me/svg/-" alt="-" /> nella riga Frazione: nel nostro caso non abbiamo segni <img src="https://i.upmath.me/svg/-" alt="-" /> nella riga frazione, quindi possiamo concludere che la frazione non è mai negativa. La disequazione quindi non ha soluzione</p>
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%5Cnexists%20%5C%3B%20x%20%5Cin%20%5Cmathbb%7BR%7D" alt="\nexists \; x \in \mathbb{R}" /></p>
+<p>In generale, l’ultimo step consisterebbe nel confrontare la soluzione trovata con le C.E., che però in questo caso non abbiamo.</p>
+
+
+
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" id="btnes3" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" aria-expanded="false" aria-controls="es3" data-target="#es3" onclick="changeTitle('btnes3')">Mostra Soluzione</button>
+                </div>
+                <!--<small class="text-muted">1 Marzo 2020</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- NUOVO ESERCIZIO-->
         
+       
+
       </div>
     </div>
   </div>
