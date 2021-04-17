@@ -126,8 +126,14 @@
     text-align: center;
     color: white;
   }
+
 }
 
+h6 .ex-tag{
+  font-family: "coursive";
+    font-size: small;
+    color: grey;
+}
 
 div a strong {
   color: white;
@@ -163,7 +169,7 @@ div a strong {
   transition: background-color 200ms linear;
 }
 
-body{
+body {
   background-color:#232321;
 }
 
